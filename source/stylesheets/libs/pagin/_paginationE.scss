@@ -1,0 +1,107 @@
+/*****************************************************************/
+/* E																				  */
+/*****************************************************************/
+
+ul {
+  &.paginationE {
+    padding: 8px;
+    background: #FFFFFF;
+    border: solid 1px #E9E9E9;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    li {
+      a {
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background: #FFFFFF;
+        &:hover, &.current, &.first, &.previous, &.next, &.last {
+          color: #FFFFFF;
+          border-bottom: solid 1px;
+          box-shadow: 0px 1px #EDEDED;
+          -moz-box-shadow: 0px 1px #EDEDED;
+          -webkit-box-shadow: 0px 1px #EDEDED; } }
+      padding-bottom: 1px; } }
+  &.paginationE01 li a {
+    color: #A74E0D;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      color: #893A00;
+      text-shadow: 0px 1px #FFEF42;
+      border-bottom-color: #FFAB00;
+      background: #FFC800;
+      background: -moz-linear-gradient(top, #ffec01, #ffc800);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffec01), to(#ffc800)); } }
+  &.paginationE02 li a {
+    color: #0A7EC5;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #388BBC;
+      border-bottom-color: #358FDD;
+      background: #58B0E7;
+      background: -moz-linear-gradient(top, #64d1f1, #58b0e7);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#64d1ff), to(#58b0e7)); } }
+  &.paginationE03 li a {
+    color: #4A76C6;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #4674C8;
+      border-bottom-color: #355DDD;
+      background: #5A8CE7;
+      background: -moz-linear-gradient(top, #86b1ff, #5a8ce7);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#86b1ff), to(#5a8ce7)); } }
+  &.paginationE04 li a {
+    color: #8D62C8;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #7753A9;
+      border-bottom-color: #643EB3;
+      background: #9168C9;
+      background: -moz-linear-gradient(top, #b189e8, #9168c9);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#b189e8), to(#9168c9)); } }
+  &.paginationE05 li a {
+    color: #EF6420;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #C94510;
+      border-bottom-color: #DF361B;
+      background: #E95B2B;
+      background: -moz-linear-gradient(top, #ff7e00, #e95b2b);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7e00), to(#e95b2b)); } }
+  &.paginationE06 li a {
+    color: #E92F2F;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #B52D2D;
+      border-bottom-color: #C90000;
+      background: #E43838;
+      background: -moz-linear-gradient(top, #ff5656, #e43838);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5656), to(#e43838)); } }
+  &.paginationE07 li a {
+    color: #916C59;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #AC826E;
+      border-bottom-color: #865447;
+      background: #A37A66;
+      background: -moz-linear-gradient(top, #c79a84, #a37a66);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#c79a84), to(#a37a66)); } }
+  &.paginationE08 li a {
+    color: #478223;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #4D7F2B;
+      border-bottom-color: #35771C;
+      background: #599F2F;
+      background: -moz-linear-gradient(top, #7bc14c, #599f2f);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#7bc14c), to(#599f2f)); } }
+  &.paginationE09 li a {
+    color: #444444;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #626262;
+      border-bottom-color: #4D4D4D;
+      background: #777777;
+      background: -moz-linear-gradient(top, #939393, #777777);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#939393), to(#777777)); } }
+  &.paginationE10 li a {
+    color: #A74E0D;
+    &:hover, &.current, &.first, &.previous, &.next, &.last {
+      text-shadow: 0px 1px #3C3C3C;
+      border-bottom-color: #313131;
+      background: #525252;
+      background: -moz-linear-gradient(top, #6d6d6d, #525252);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#6d6d6d), to(#525252)); } } }
+

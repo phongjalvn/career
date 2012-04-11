@@ -1,0 +1,547 @@
+/*Mixin Library*/
+@import "mixin.sass";
+
+@mixin debug(){
+  /*background-image: url(../images/screen/1.1.1.Trangchu.png);*/
+  color: $font-color;
+  * {
+    /*outline: 1px dotted rgba(#f00, .3);*/
+    outline:none;
+  }
+  #main{
+    min-height: 500px;
+  }
+}
+button, input, select, textarea {
+  font-size: 12px;
+}
+html{
+  background: url(../images/bg.gif) top left repeat;
+}
+body {
+  /*@include debug;*/
+  background: url(../images/header.png) top left repeat-x;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $font-color;
+}
+
+a{
+  @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+  @include hover-link();
+  outline:0;
+}
+
+.container{
+  @include clearfix;
+  width: $main-widht;
+  margin: 0 auto;
+}
+
+#topbar{
+  height: 25px;
+
+  a{
+    @include link-colors(#fff);
+  }
+  .topmenu{
+    @include float-left;
+    line-height: 25px;
+    ul{
+      @include horizontal-list(8px);
+    }
+    li{
+      background: url(../images/menuser.png) top right no-repeat;
+      &:last-child{
+        background: none;
+      }
+    }
+
+    span{
+      color: #f78320;
+      font-weight: 700;
+    }
+  }
+
+  .topmisc{
+    @include float-right;
+    a, .language{
+      @include float-left;
+      margin-left: 10px;
+      line-height: 25px;
+    }
+    select{
+      @include float-left;
+      width: 109px;
+    }
+    .select{
+      background-image: url(../images/language-select.png);
+      color : #003366;
+      height: 21px;
+      margin-top:2px;
+      line-height:20px;
+      border:none;
+      option {
+        background-color:#C4E2F4;
+        border:none;
+        border-bottom:1px solide #c2e1f4;
+      }
+      span{
+        width: 107px;
+      }
+    }
+    a.ntd{
+      @include link-colors(#f0831e);
+      background: url('../images/ntd.png') no-repeat bottom top;
+      width: 185px;
+      height: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0 19px;
+    }
+
+  }
+}
+#menu{
+  height: 107px;
+  padding-top:42px;
+  font-weight: 700;
+  #logo{
+    position: absolute;
+    top:17px;
+  }
+  a{
+    text-decoration: none;
+  }
+  *{
+    position: static;
+  }
+  .menu{
+    @include float-right;
+
+    ul{
+      @include horizontal-list(1px);
+      overflow: visible;
+      height: 35px;
+      line-height: 35px;
+      margin-top: 5px;
+
+      a, span{
+        display: block;
+        padding: 0 0 0 10px;
+        background-image: url(../images/nav-a.png);
+      }
+      a{
+        @include link-colors(#034ca3);
+
+        span{
+          padding: 0 10px 0 0;
+          background-position: top right;
+          cursor: pointer;
+        }
+
+        &:hover, &:hover span,
+        &.active, &.active span{
+          margin-top: 1px;
+          background-image: url(../images/nav-a-active.png);
+          color: #fff;
+          height: 36px;
+          line-height: 35px;
+        }
+      }
+      ul{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        margin-top:0;
+        height: 25px;
+        line-height: 25px;
+
+        *{
+          height: 25px !important;
+          line-height: 25px !important;
+        }
+        li{
+          padding-left: 30px;
+          padding-right: 0;
+          background: url(../images/nav-a-sub.png) 15px 10px no-repeat;
+        }
+        a{
+          @include link-colors(#fff);
+          background: none;
+          padding: 0;
+          &:hover{
+            margin-top: 0;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  .login{
+    @include float-right;
+    height: 41px;
+    line-height: 39px;
+    background-image: url(../images/login-bg.png);
+    width: 208px;
+    margin-left: 10px;
+    padding-left: 4px;
+    padding-top: 2px;
+    position: relative;
+    ul{
+      @include horizontal-list(0px);
+      li, a{
+        border: none;
+      }
+      a{
+        @include link-colors(#d06100, #013d6d);
+        display: block;
+        width: 82px;
+        margin-left: 12px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      #btn-login{
+        width: 84px;
+        a{
+        color: #013d6d;
+        }
+      }
+    }
+  }
+}
+
+#loginform {
+  @include absolute;
+  @include border-radius(10px);
+  @include border-radius(10px);
+  @include box-shadow(rgba(0, 0, 0, 0.3) 3px 3px 3px 3px);
+  top:41px;
+  background-color: #004aa1;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  display: none;
+  padding: 10px;
+  h3 {
+    color: #034ca3;
+    line-height: 28px;
+    text-transform:uppercase;
+    font-weight: bold;
+  }
+  span {
+    text-transform: none;
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  li{
+    float: none;
+    display: block;
+    padding:0 !important;
+    margin: 5px 0;
+    span {
+    width: 62px;
+    display: inline-block;
+    font-style:normal;
+    color:#666;
+    }
+    input{
+      @include box-shadow(rgba(0, 0, 0, 0.3) 0px 1px 3px 0px inset, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px);
+      @include border-radius(3px);
+      border: 1px solid rgb(204, 204, 204);
+      padding: 6px;
+
+    }
+  }
+
+  .buttons{
+    @include buttonB03;
+    margin-top: 3px;
+    margin-left: 54px;
+  }
+}
+div.dialog {
+  background-color: #333;
+  @include clearfix;
+}
+div.dialog-titlebar {
+  position: relative;
+  a{
+    span {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  }
+
+}
+
+@import "slider.scss";
+
+@import "search.scss";
+@import "homecontent.scss";
+@import "chitiet.scss";
+@import "right.scss";
+
+#breadcrumb{
+  @extend .container;
+  padding: 7px 0 10px 10px;
+  margin-top:-20px;
+  ul{
+    @include horizontal-list(10px);
+
+    li{
+     background: url(../images/breadcrum-bg.png) left 5px no-repeat;
+      &:last-child{
+        font-weight: bold;
+        a{
+          color: #555;
+        }
+      }
+      &:first-child{
+        padding-left: 20px;
+        background: url(../images/home-icon.png) left top no-repeat;
+        a{
+          color: #005196;
+        }
+      }
+    }
+
+  }
+}
+#socialbottom {
+  li {
+    a {
+    background: url(../images/social-bottom.png) no-repeat;
+    width:32px; 
+    height:32px;
+    display:block;
+    @include float-left;
+    @include hide-text;
+    }
+  }
+  #rss {
+    a {
+          background-position: bottom left;
+    }
+    :hover {
+      background-position: top left;
+    }
+  }
+  #fb {
+    a {
+          background-position: -32px -32px;
+    }
+    :hover {
+      background-position: -32px 0;
+    }
+  }
+  #twitter {
+    a {
+          background-position: -64px -32px;
+    }
+    :hover {
+      background-position: -64px 0;
+    }
+  }
+  #in {
+    a {
+          background-position: -96px -32px;
+    }
+    :hover {
+      background-position: -96px 0;
+    }
+  }
+  #mail {
+    a {
+          background-position: bottom right;
+    }
+    :hover {
+      background-position: top right;
+    }
+  }
+}
+.overlay{
+  @include absolute;
+  background: url(../images/bg-overlay.png);
+}
+.dtop{
+  img{
+    margin:22px auto 0;
+  }
+}
+.job-des {
+  height: 36px;
+  
+}
+/* Mask for background, by default is not display */
+
+#mask {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 999; }
+
+/* You can customize to your needs  */
+
+.login-popup {
+  padding: 10px;
+  border: 1px transparent;
+  float: left;
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: none;
+  
+  background-color: #ddeef6; }
+
+img.btn_close {
+  float: right;
+  margin: -18px -18px 0 0; }
+
+fieldset {
+  border: none;
+  width: 210px; }
+
+#signin {
+  input {
+    &[type=text], &[type=password] {
+      display: block;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border: 1px solid #ACE;
+      background-color: #fff;
+      font-size: 13px;
+      margin: 0 0 5px;
+      padding: 5px;
+      width: 203px; } }
+  p {
+    margin: 0; }
+  a {
+    color: #6AC; }
+  p {
+    label {
+      font-weight: normal;
+      color: #778899;
+      font-size: 11px;
+      text-align: left; }
+    &.remember {
+      padding: 10px 0; }
+    &.forgot, &.complete {
+      clear: both;
+      margin: 5px 0;
+      font-size: 11px; }
+    a {
+      color: #27B!important;
+      font-size: 11px; } } }
+
+#signin_submit {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #3399dd url('../images/bg-btn-blue.png') repeat-x scroll 0 0;
+  border: 1px solid #39D;
+  color: #fff;
+  text-shadow: 0 -1px 0 #3399dd;
+  padding: 4px 10px 5px;
+  font-size: 11px;
+  margin: 0 5px 0 0;
+  font-weight: bold;
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0; } }
+
+input:-webkit-autofill {
+  background-color: #fff !important; }
+
+#signin_submit {
+  &:hover, &:focus {
+    background-position: 0 -5px;
+    cursor: pointer; } }
+
+/* ================ */
+/* = Vua them vao = */
+
+a.multiSelect {
+  background: white url(../images/dropdown.blue.png) right center no-repeat;
+  border: solid 1px #BBB;
+  
+  width:340px;
+  position: relative;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  &:link, &:visited, &:hover, &:active {
+    color: black;
+    text-decoration: none; }
+  span {
+    margin: 1px 0px 1px 3px;
+    
+    display: -moz-inline-stack;
+    display: inline-block;
+    white-space: nowrap; }
+  &.hover {
+    background-image: url(../images/dropdown.blue.hover.png); }
+  &.active, &.focus {
+    border: inset 1px #000; }
+  &.active {
+    background-image: url(../images/dropdown.blue.active.png); } }
+
+.multiSelectOptions {
+  margin-top: -1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: solid 1px #B2B2B2;
+  background: #FFF;
+  label {
+    padding: 0px 2px;
+    display: block;
+    white-space: nowrap;
+    &.optGroup {
+      font-weight: bold; } }
+  .optGroupContainer label {
+    padding-left: 10px; }
+  &.optGroupHasCheckboxes .optGroupContainer label {
+    padding-left: 18px; }
+  input {
+    vertical-align: middle; }
+  label {
+    clear: both;
+    &.checked {
+   }
+    &.selectAll, &.deSelectAll {
+      @include float-left;
+      width: 49%;
+      border-bottom: dotted 1px #CCC;
+      padding-left: 10px;
+      clear:none;
+      input{
+        display: none;
+      }
+    }
+    &.hover {
+      text-decoration:underline;
+    }
+  }
+}
+
+/* ================ */
+/*@import "debug.sass";*/
+@import "custom.css";
+@import "search-advance.scss";
+@import "create-resume.scss";
+@import "nhatuyendung.scss";

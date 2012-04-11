@@ -1,0 +1,186 @@
+/*****************************************************************/
+/* F																				  */
+/*****************************************************************/
+
+ul {
+  &.paginationF {
+    padding: 8px;
+    margin-bottom: 1px;
+    border-bottom: solid 1px;
+    box-shadow: 0px 1px #EDEDED;
+    -moz-box-shadow: 0px 1px #EDEDED;
+    -webkit-box-shadow: 0px 1px #EDEDED; }
+  &.paginationF01, &.paginationF02, &.paginationF03, &.paginationF04, &.paginationF05 {
+    border: solid 1px #AEAEAE;
+    background: #E9E9E9;
+    background: -moz-linear-gradient(top, white, #e9e9e9 97%, white 98%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, white), color-stop(0.97, #e9e9e9), color-stop(0.98, white)); }
+  &.paginationF {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    li a {
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      color: #FFFFFF;
+      text-shadow: none;
+      &:hover, &.current {
+        color: #FFFFFF;
+        text-shadow: none; } } }
+  &.paginationF01 li a {
+    color: #444444;
+    text-shadow: 0px 1px #FFFFFF;
+    &:hover, &.current {
+      color: #444444;
+      text-shadow: 0px 1px #FFFFFF; } }
+  &.paginationF02 li a, &.paginationF03 li a, &.paginationF04 li a, &.paginationF05 li a {
+    color: #444444;
+    text-shadow: 0px 1px #FFFFFF; }
+  &.paginationF01 li a {
+    padding: 6px 9px 6px 9px;
+    border: solid 1px transparent;
+    &:hover, &.current {
+      border-color: #AEAEAE;
+      background: transparent;
+      background: -moz-linear-gradient(top, transparent, transparent 95%, white 96%);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, transparent), color-stop(0.95, transparent), color-stop(0.96, white)); } }
+  &.paginationF02 li a {
+    &:hover, &.current {
+      background: #589D1E; } }
+  &.paginationF03 li a {
+    &:hover, &.current {
+      background: #2B8AC7; } }
+  &.paginationF04 li a {
+    &:hover, &.current {
+      background: #F77110; } }
+  &.paginationF05 li a {
+    &:hover, &.current {
+      background: #9A66BC; } }
+  &.paginationF06 {
+    border-color: #FFAB00;
+    background: #FFC700;
+    background: -moz-linear-gradient(top, #ffec01, #ffc700);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffec01), to(#ffc700));
+    li a {
+      color: #DF361B;
+      text-shadow: 0px 1px #FFFF00;
+      &:hover, &.current {
+        background: #DF361B; } } }
+  &.paginationF07 {
+    border-color: #DF361B;
+    background: #E95B2C;
+    background: -moz-linear-gradient(top, #ff7e00, #e95b2c);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7e00), to(#e95b2c));
+    li a {
+      &:hover, &.current {
+        color: #DF361B;
+        background: #FFFFFF; } } }
+  &.paginationF08 {
+    border-color: #941B1B;
+    background: #A72323;
+    background: -moz-linear-gradient(top, #ba3737, #a72323);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ba3737), to(#a72323));
+    li a {
+      &:hover, &.current {
+        color: #A72323;
+        background: #FFFFFF; } } }
+  &.paginationF09 {
+    border-color: #6B6B6B;
+    background: #949494;
+    background: -moz-linear-gradient(top, #b3b3b3, #949494);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(#949494));
+    li a {
+      color: #000000;
+      text-shadow: 0px 1px #B6B6B6;
+      &:hover, &.current {
+        background: #565656;
+        text-shadow: 0px 1px #404040; } } }
+  &.paginationF10 {
+    border-color: #4C1B1B;
+    background: #7F2D2D;
+    background: -moz-linear-gradient(top, #ae3a3a, #7f2d2d);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ae3a3a), to(#7f2d2d));
+    li a {
+      &:hover, &.current {
+        color: #7F2D2D;
+        background: #FFBA58; } } }
+  &.paginationF11 {
+    border-color: #28570F;
+    background: #438819;
+    background: -moz-linear-gradient(top, #5ba01e, #438819);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5ba01e), to(#438819));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #519D1D;
+        -moz-box-shadow: 0px 1px #519D1D;
+        -webkit-box-shadow: 0px 1px #519D1D;
+        background: #519D1D;
+        background: -moz-linear-gradient(top, #15450a 1px, #1c5c0d 1px, #256d12);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #15450a), color-stop(0.02, #1c5c0d), color-stop(1, #256d12)); } } }
+  &.paginationF12 {
+    border-color: #0E4B36;
+    background: #187D5B;
+    background: -moz-linear-gradient(top, #1da187, #187d5b);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1da187), to(#187d5b));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #1C946E;
+        -moz-box-shadow: 0px 1px #1C946E;
+        -webkit-box-shadow: 0px 1px #1C946E;
+        background: #1C946E;
+        background: -moz-linear-gradient(top, #0a3d2b 1px, #0e523a 1px, #136348);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #0a3d2b), color-stop(0.02, #0e523a), color-stop(1, #136348)); } } }
+  &.paginationF13 {
+    border-color: #173E93;
+    background: #2669B3;
+    background: -moz-linear-gradient(top, #2b8bc8, #2669b3);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2b8bc8), to(#2669b3));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #2C7DC1;
+        -moz-box-shadow: 0px 1px #2C7DC1;
+        -webkit-box-shadow: 0px 1px #2C7DC1;
+        background: #2C7DC1;
+        background: -moz-linear-gradient(top, #15450a 1px, #174886 1px, #1e5897);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #15450a), color-stop(0.02, #174886), color-stop(1, #1e5897)); } } }
+  &.paginationF14 {
+    border-color: #442E69;
+    background: #734D95;
+    background: -moz-linear-gradient(top, #9960ac, #734d95);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#9960ac), to(#734d95));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #895BA8;
+        -moz-box-shadow: 0px 1px #895BA8;
+        -webkit-box-shadow: 0px 1px #895BA8;
+        background: #895BA8;
+        background: -moz-linear-gradient(top, #38244a 1px, #4b3064 1px, #5b3d75);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #38244a), color-stop(0.02, #4b3064), color-stop(1, #5b3d75)); } } }
+  &.paginationF15 {
+    border-color: #865447;
+    background: #A27965;
+    background: -moz-linear-gradient(top, #c79a84, #a27965);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#c79a84), to(#a27965));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #B49078;
+        -moz-box-shadow: 0px 1px #B49078;
+        -webkit-box-shadow: 0px 1px #B49078;
+        background: #B49078;
+        background: -moz-linear-gradient(top, #593d31 1px, #785241 1px, #896250);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #593d31), color-stop(0.02, #785241), color-stop(1, #896250)); } } }
+  &.paginationF16 {
+    border-color: #313131;
+    background: #525252;
+    background: -moz-linear-gradient(top, #6d6d6d, #525252);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#6d6d6d), to(#525252));
+    li a {
+      &:hover, &.current {
+        box-shadow: 0px 1px #626262;
+        -moz-box-shadow: 0px 1px #626262;
+        -webkit-box-shadow: 0px 1px #626262;
+        background: #626262;
+        background: -moz-linear-gradient(top, #1a1a1a 1px, #242424 1px, #2e2e2e);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #1a1a1a), color-stop(0.02, #242424), color-stop(1, #2e2e2e)); } } } }
+

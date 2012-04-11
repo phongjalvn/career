@@ -1,0 +1,110 @@
+/*Compass Library*/
+
+@import "compass"
+@import "compass/css3/pie"
+
+$link-color:         #0388a6
+$link-hover-color:   #009ce0
+$link-focus-color:   false
+$link-active-color:  false
+$link-visited-color: false
+
+$blue: #034ea1
+$or: #eb7713
+$borderinput: #B5B5B5
+$tipcolor: rgba(#000, 0.8)
+$tiptext: rgba(#fff, 0.8)
+$tiptextsize: 10px
+
+$font-color:  #333
+$font-family: Arial, Verdana, sans-serif
+$font-family2: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif
+$base-font-size:   12px
+$base-line-height: 16px
+
+$total-cols: 12
+$col-width: 4em
+$gutter-width: 1em
+$side-gutter-width: $gutter-width
+
+$main-widht: 950px
+
+/*Third party modules*/
+
+@import "compass/reset"
+@import "libs/_helpers.scss"
+@import "libs/_kwicks.css.scss"
+@import "libs/pagin/_pagination.scss"
+@import "libs/pagin/_paginationA.scss"
+@import "libs/pagin/_paginationB.scss"
+@import "libs/pagin/_paginationC.scss"
+//@import "libs/pagin/_paginationD.scss"
+//@import "libs/pagin/_paginationE.scss"
+//@import "libs/pagin/_paginationF.scss"
+//@import "libs/pagin/_paginationG.scss"
+//@import "libs/pagin/_paginationH.scss"
+@import "libs/pagin/_paginationI.scss"
+@import "libs/normalize.css.scss"
+@import "libs/tipsy.css.scss"
+@import "libs/box.css.sass"
+
+//Sprite generator
+
+@import "banner/kwick*.png"
+
+//Layout mixin
+
+//Mixin Library
+*
+  position: relative
+  //background-position: top left
+  background-repeat: no-repeat
+  +box-sizing(border-box)
+
+
+//Button Library
+//a>span
+
+$button-color: #f3f3f3
+
+$button-text-color: #474747
+$button-text-shadow: darken($button-text-color, 15%)
+
+$button-padding: 6px 9px
+$button-border: 1px
+$button-margin: 0 0 0 5px
+$button-border-radius: 3px
+
+
+=button-color($button-color, $button-text-color)
+  $button-color2: darken($button-color, 15%)
+  background: $button-color
+  +background-image(linear-gradient(top, $button-color 0%, darken($button-color, 15%) 100%))
+  &:hover
+    $button-color-hover: lighten($button-color, 5%)
+    $button-color2-hover: lighten($button-color-hover, 5%)
+    background: $button-color2-hover
+    +background-image(linear-gradient(top, $button-color2-hover 0%, darken($button-color2-hover, 15%) 100%))
+
+=button($button-color, $button-text-color,$button-text-shadow, $button-padding, $button-margin, $button-border, $button-border-radius)
+  text-decoration: none
+
+  color: $button-text-color
+  padding: $button-padding
+  margin: $button-margin
+  border: $button-border
+
+  font: $font-family2
+
+  +border-radius($button-border-radius)
+  +button-color($button-color)
+  +text-shadow(0 1px $button-text-shadow)
+
+=newslist
+  img
+    @include float-left
+    margin-top: 3px
+  li
+    @include clearfix
+  .readmore
+    display: block

@@ -1,0 +1,24 @@
+@mixin basebutton{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+  font: 12px 'Tahoma';
+  list-style-type: none;
+  float: left;
+  &:first-child {
+    a{
+      margin-left: 0px;
+    }
+  }
+  a {
+    margin-left: 10px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 7px 10px 7px 10px;
+    img {
+      border: none; 
+    }
+  }
+}

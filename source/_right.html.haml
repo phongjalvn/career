@@ -1,0 +1,12 @@
+#right
+  .ad.box
+    = image_tag "banner-doc1.png"
+  #forjobseeker.box
+    %h4 Dành cho ứng viên
+    = partial(:list, :locals => {:list=>[{  :title => "Đăng ký thành viên", :link => "#"  },{  :title => "Tạo hồ sơ tìm việc", :link => "#"  },{  :title => "Cẩm nang tìm việc", :link => "#"  }]})
+  #lastestnews.box
+    %h4 Tin tức cập nhật
+    = partial(:looplist, :locals => {:loops => 3, :item=>{:image => "tintucdemo.png", :title =>5, :texttitle => 4, :text => 10, :link => "#"}});
+    %a.readmore{:href => "#"} Xem tất cả
+  .ad.box
+    = image_tag "banner-doc1.png"

@@ -1,0 +1,18 @@
+- thanhpho=["Hồ Chí Minh",  "Hà Nội",  "Đà Nẵng",  "An Giang",  "Bà Rịa - Vũng Tàu",  "Bắc Cạn",  "Bắc Giang",  "Bạc Liêu",  "Bắc Ninh",  "Bến Tre",  "Bình Định",  "Bình Dương",  "Bình Phước",  "Bình Thuận",  "Cà Mau",  "Cần Thơ",  "Cao Bằng",  "Đắk Lắk",  "Đăk Nông",  "Điện Biên",  "Đồng Nai",  "Đồng Tháp",  "Gia Lai",  "Hà Giang",  "Hà Nam",  "Hà Tây",  "Hà Tĩnh",  "Hải Dương",  "Hải Phòng",  "Hậu Giang",  "Hòa Bình",  "Hưng Yên",  "Kiên Giang",  "Khánh Hòa",  "Kon Tum",  "Lai Châu",  "Lâm Đồng",  "Lạng Sơn",  "Lào Cai",  "Long An",  "Nam Định",  "Nghệ An",  "Ninh Bình",  "Ninh Thuận",  "Phú Thọ",  "Phú Yên",  "Quảng Bình",  "Quảng Nam",  "Quảng Ngãi",  "Quảng Ninh",  "Quảng Trị",  "Sóc Trăng",  "Sơn La",  "Tây Ninh",  "Thái Bình",  "Thái Nguyên",  "Thanh Hóa",  "Thừa Thiên - Huế",  "Tiền Giang",  "Trà Vinh",  "Tuyên Quang",  "Vĩnh Long",  "Vĩnh Phúc",  "Yên Bái",  "Khác",  "Nước Ngoài"]
+- case format
+- when 'table'
+  - even = true
+  - rows = thanhpho.length / cols + 1
+  - rows.times do |row|
+    - even = !even
+    %tr{:class => even ? 'even' : 'odd'}
+      - cols.times do |col|
+        %td=thanhpho[(col+1)*(row+1)]
+- when 'list'
+  = list_of(thanhpho) do |i|
+    - if link
+      - haml_tag('a', i, attributes = {:href=>'#'})
+    - else i
+- when 'select'
+  - for tp in thanhpho do
+    %option= tp

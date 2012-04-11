@@ -1,0 +1,86 @@
+/*****************************************************************/
+/* H																				  */
+/*****************************************************************/
+
+ul {
+  &.paginationH {
+    border: solid 1px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    li a {
+      color: #222222;
+      padding: 15px 9px 15px 9px;
+      text-shadow: 0px 1px #FFFFFF; } }
+  &.paginationH01 li a, &.paginationH02 li a {
+    border: solid 1px transparent;
+    border-width: 0px 1px 0px 1px; }
+  &.paginationH03 li a {
+    border: solid 1px transparent;
+    border-width: 0px 1px 0px 1px;
+    text-shadow: 0px 1px #FFFFFF; }
+  &.paginationH04 li a {
+    text-shadow: 0px 1px #FFFFFF; }
+  &.paginationH li {
+    &:first-child a {
+      border-radius: 3px 0px 0px 3px;
+      -moz-border-radius: 3px 0px 0px 3px;
+      -webkit-border-radius: 3px 0px 0px 3px; }
+    &:last-child a {
+      border-radius: 0px 3px 3px 0px;
+      -moz-border-radius: 0px 3px 3px 0px;
+      -webkit-border-radius: 0px 3px 3px 0px; } }
+  &.paginationH01 li a.last:hover, &.paginationH02 li a.last:hover, &.paginationH03 li a.last:hover {
+    border-right-color: transparent; }
+  &.paginationH01 li a.first:hover, &.paginationH02 li a.first:hover, &.paginationH03 li a.first:hover {
+    border-left-color: transparent; }
+  &.paginationH01 {
+    border-color: #A6A6A6;
+    li a {
+      &:hover, &.current {
+        border-color: #A6A6A6; } }
+    background: #EDEDED;
+    background: -moz-linear-gradient(top, white 0px, #ededed 97%, white 98%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, white), color-stop(0.97, #ededed), color-stop(0.98, white)); }
+  &.paginationH02 {
+    border-color: #C3C3C3;
+    li a {
+      &:hover, &.current {
+        border-color: #C3C3C3; }
+      color: #2A619F;
+      &:hover, &.current {
+        background: #EEEEEE;
+        background: -moz-linear-gradient(top, #eeeeee, #fefefe);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#fefefe)); } }
+    background: #EFEFEF;
+    background: -moz-linear-gradient(top, white, #efefef);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#efefef)); }
+  &.paginationH03 {
+    border-color: #B6B6B6;
+    li a {
+      &:hover, &.current {
+        border-color: #B6B6B6; }
+      &:hover, &.current {
+        background: #EEEEEE;
+        background: -moz-linear-gradient(top, #eeeeee 0px, #f4f4f4 97%, white 98%);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #eeeeee), color-stop(0.97, #f4f4f4), color-stop(0.98, white)); } }
+    background: #E5E5E5;
+    background: -moz-linear-gradient(top, white 0px, #f4f4f4 1px, #e5e5e5);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #f4f4f4), color-stop(1, #e5e5e5)); }
+  &.paginationH04 {
+    border-color: #CFCFCF;
+    li a {
+      &:hover, &.current {
+        border-color: #CFCFCF; }
+      border: solid 1px transparent;
+      border-width: 1px 1px 0px 1px;
+      &:hover, &.current {
+        border-width: 1px 1px 0px 1px;
+        background: #F0F0F0;
+        background: -moz-linear-gradient(top, #f0f0f0, white);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#f0f0f0), to(white)); } }
+    border-width: 0px 0px 1px 0px;
+    background: #EFEFEF;
+    background: -moz-linear-gradient(top, white, #efefef);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#efefef)); } }
+

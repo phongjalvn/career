@@ -1,0 +1,379 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Hồ sơ việc làm"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Hồ sơ việc làm
+#profiles.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Hồ sơ việc làm của tôi
+    .thongtinkhac
+      .social
+        %img{:alt => "Social", :height => "22", :src => "images/social.png", :width => "352"}
+    .contents
+      .bg.clearfix
+        #left
+          .box.type1.clearfix
+            %h3 Tủ hồ sơ
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th
+                    Thao tác
+                  %th Chức danh
+                  %th Ngày hết hạn
+                  %th Trạng thái
+                  %th Mở rộng
+                  %th Lượt xem
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    Gia han
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Gia hạn
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                   
+                  %td
+                    %span.lx
+                      50
+            .new-resume.clearfix
+              %li
+                %a.current.new-resume-button{:href => "#"} Tạo hồ sơ mới
+          .box.type1.clearfix
+            / =======================
+            / = Noi dung box type 2 =
+            %h3 Thư xin việc
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th
+                    Thao tác
+                  %th Tiêu đề hồ sơ
+                  %th Ngày sửa đổi
+                  %th Trạng thái
+                  %th Mo rong
+                  %th Lượt xem
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    
+                  %td
+                    %span.lx
+                      50
+            .new-resume.clearfix
+              %li
+                %a.current.new-resume-button{:href => "#"} Tạo thư xin việc mới
+            / =======================
+          / ==================================
+          / = Noi dung cac cong viec cua toi =
+          .box.type2.clearfix
+            %h3 Các công việc của tôi
+            %h4
+              Công việc đã Ứng tuyển
+              %a{:href => "#"} Xem thêm
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th{:width => "3%"}
+                  %th{:align => "center", :width => "37%"} Chức danh
+                  %th{:align => "center", :width => "30%"} Tên công ty
+                  %th{:align => "center", :width => "15%"} Địa điểm
+                  %th{:align => "center", :width => "15%"} Ngày ứng tuyển
+                %tr.odd
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.odd
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+            %h4
+              Công việc đã lưu
+              %a{:href => "#"} Xem thêm
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th{:width => "3%"}
+                  %th{:align => "center", :width => "37%"} Chức danh
+                  %th{:align => "center", :width => "30%"} Tên công ty
+                  %th{:align => "center", :width => "15%"} Địa điểm
+                  %th{:align => "center", :width => "15%"} Ngày đăng
+                %tr.odd
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.odd
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+          / = Noi dung cac cong viec cua toi =
+          / =====================================
+          / = Luu tim kiem - thong bao viec lam =
+          / ==================================
+          / = Noi dung cac cong viec cua toi =
+          .box.type2.clearfix
+            %h3 Các công việc của tôi
+            %p
+              Hiện tại bạn vẫn chưa lưu tìm kiếm - thông báo việc làm
+            .new-alert.clearfix
+              %li
+                %a.current.new-alert-button{:href => "#"} Tạo thông báo mới
+          / ===End luu tim - thong bao viec lam==================================
+        #right
+          / ===================
+          / = Logininfomation =
+          .login-info
+            %img{:alt => "User Demo", :height => "73", :src => "images/user-demo.png", :width => "73"}
+              %span.name Lu Hoang ThanhThuy
+              %span.edit Chỉnh sửa tài khoản
+              %span.logout Đăng xuất
+              %span.login-time Đăng ký: 24/07/2009
+              %span.lastlogin Đăng nhập lần cuối: 07/03/2012
+              %span.lastedit Chỉnh sửa lần cuối: 04/03/2012
+          / ==end Login infomation=================
+          / = Hoanthanhhoso =
+          .my-status
+            %h3
+              Trạng thái của tôi
+            %ul
+              %li
+                %a{:href => "#"} Các thư xin việc đã nhận
+              %li
+                %a{:href => "#"} Các thư xin việc đã xem
+          / ===================
+          / = Vieclam phu hop =
+          .app-job
+            %h3 Việc làm phù hợp
+            %ul.app-job-list
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span Biziwave Vietnam - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior Perl Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior Perl Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+          / ===================
+          / = Cam nang gneh nghiep =
+          .career-advice
+            %h3 Cẩm nang tìm việc
+            %ul.advice-list
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Năm mới, tự tin khởi đầu thành công mới.
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+          / ===================
+      #right

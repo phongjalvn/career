@@ -1,0 +1,122 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Ket qua tim kiem"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#searchresult.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Ket qua tim kiem
+    .contents
+      %p.desc Chung toi da tim duoc 29 cong viec theo yeu cau: Tu khoa: <strong>designer</strong> | Viec lam phai co: <strong>tu khoa chinh xac</strong> | Nghanh nghe: <strong>IT - Phan mem</strong> | Dia diem: <strong>Ho Chi Minh</strong>
+      #left
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.views
+            %li
+              %strong Xem
+            %li
+              %label
+                %input{ :name => "views", :type => "radio"}
+                  Ngắn gọn
+            %li.ser
+              |
+            %li
+              %label
+                %input{:checked => "checked",:name => "views", :type => "radio"}
+                  Chi tiết
+        / =========
+        / = Table =
+        %table.view-rutgon.view-chitiet{:border => "0", :bordercolor => "#FFCC00", :cellpadding => "0", :cellspacing => "5", :style => "background-color:", :width => "710"}
+          %tbody
+            %tr.header
+              %th{:align => "center", :width => "3%"}
+                %input#check_all{:type => "checkbox", :value => ""}/
+              %th{:align => "center", :width => "48%"} Tên ứng viên
+              %th{:align => "center", :width => "14%"} Kinh nghiệm
+              %th{:align => "center", :width => "10%"} Mức lương
+              %th{:align => "center", :width => "15%"} Nơi làm việc
+              %th{:align => "center", :width => "10%"} Cập nhật
+            - even = true
+            - 5.times do
+              - even = !even
+              %tr{:class=> even ? "even" : "odd"}
+                %td{:align => "center", :width => "3%"}
+                  %input{:type => "checkbox"}/
+                %td{:align => "center", :width => "82%",:colspan=>"3"}
+                  %span.jobtitle.clearfix
+                    %span.job-title
+                      %a{:href=>"#"}
+                        = lorem.words 4
+                    %span.kn 5 nam
+                    %span.jobsalary 1500USD
+                  %span.recentemployeer
+                    %a{:href=>"#"}
+                      %a{:href=>"#"}
+                        = lorem.words 3
+                  %span.job-des= lorem.words 20
+                  %span.nganhnghe
+                    Ngành nghề:
+                    %span
+                      %a{:href=>"#"} IT
+                    |
+                    Tuoi:
+                    %span
+                      %a{:href=>"#"} 20
+                %td.vttop{:align => "center", :width => "25%", :colspan=>"2"}
+                  .dtop.clearfix
+                    %span.h.clearfix
+                      %span.noilamviec 
+                        Ha Noi<br/>
+                        Ho Chi Minh<br/>
+
+                      %span.date 22-2-2012
+                    %span.nganhnghe.loaihoso.clearfix
+                      Loại hồ sơ:
+                      %span 
+                        %a{:href =>"#"}Sao chép nội dung
+        / =========
+        / =========
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.buttons
+            %li.luuviec
+              %a{:href => "#"} Lưu
+            %li.guibanbe
+              %a{:href => "#"} Gửi cho bạn bè
+      = partial(:searchright)

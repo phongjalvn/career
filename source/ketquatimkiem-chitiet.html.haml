@@ -1,0 +1,145 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Ket qua tim kiem"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#searchresult.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Ket qua tim kiem
+    .contents
+      %p.desc Chung toi da tim duoc 29 cong viec theo yeu cau: Tu khoa: <strong>designer</strong> | Viec lam phai co: <strong>tu khoa chinh xac</strong> | Nghanh nghe: <strong>IT - Phan mem</strong> | Dia diem: <strong>Ho Chi Minh</strong>
+      #left
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.views
+            %li
+              %strong Xem
+            %li
+              %label
+                %input{:checked => "checked", :name => "views", :type => "radio"}
+                  Ngan gon
+            %li.ser
+              |
+            %li
+              %label
+                %input{:name => "views", :type => "radio"}
+                  Chi tiet
+        / =========
+        / = Table =
+        %table.view-rutgon.view-chitiet{:border => "0", :bordercolor => "#FFCC00", :cellpadding => "0", :cellspacing => "5", :style => "background-color:", :width => "710"}
+          %tbody
+            %tr.header
+              %td{:align => "center", :width => "3%"}
+                %input#check_all{:type => "checkbox", :value => ""}/
+              %td{:align => "center", :width => "53%"} Chức danh
+              %td{:align => "center", :width => "15%"} Mức lương
+              %td{:align => "center", :width => "15%"} Nơi làm việc
+              %td{:align => "center", :width => "15%"} Cập nhật
+            %tr
+              %td.viptd{:colspan => "5"}
+                %table.vip{:border => "0", :cellpadding => "0", :cellspacing => "5", :width => "100%"}
+                  %tbody
+                  - even = true
+                  - 5.times do
+                    - even = !even
+                    %tr.vip{:class=> even ? "even" : "odd"}
+                      %td{:align => "center", :width => "3%"}
+                        %input{:type => "checkbox"}/
+                      %td{:align => "center", :width => "68%",:colspan=>"2"}
+                        %span.jobtitle.clearfix
+                          %span.job-title
+                            %a{:href=>"#"}
+                              = lorem.words 4
+                          %span.jobsalary 900USD
+                        %span.recentemployeer
+                          %a{:href=>"#"}
+                            = lorem.words 3
+                        %span.job-des= lorem.words 20
+                        %span.nganhnghe
+                          Nganh nghe:
+                          %span
+                            %a{:href=>"#"} IT
+                      %td.vttop{:align => "center", :width => "15%"}
+                        %a{:href=>"#"} Hồ Chí Minh
+                      %td.vttop{:align => "center", :width => "15%"}
+                        .dtop.clearfix
+                          %span.date= lorem.date
+                          %span.images
+                            %img{:alt => "Log138", :height => "56", :src => "images/log138.png", :width => "91"}
+            - even = true
+            - 5.times do
+              - even = !even
+              %tr{:class=> even ? "even" : "odd"}
+                %td{:align => "center", :width => "3%"}
+                  %input{:type => "checkbox"}/
+                %td{:align => "center", :width => "68%",:colspan=>"2"}
+                  %span.jobtitle.clearfix
+                    %span.job-title
+                      %a{:href=>"#"}
+                        = lorem.words 4
+                    %span.jobsalary 1500USD
+                  %span.recentemployeer
+                    %a{:href=>"#"}
+                      %a{:href=>"#"}
+                        = lorem.words 3
+                  %span.job-des= lorem.words 20
+                  %span.nganhnghe
+                    Nganh nghe:
+                    %span
+                      %a{:href=>"#"} IT
+                %td.vttop{:align => "center", :width => "15%"}
+                  %a{:href=>"#"}Hồ Chí Minh
+                  %a{:href=>"#"}Hà Nội
+                  %a{:href=>"#"}Cà Mau
+                  %a{:href=>"#"}Vĩnh Long
+                  %a{:href=>"#"}Bạc Liêu
+                %td.vttop{:align => "center", :width => "15%"}
+                  .dtop.clearfix
+                    %span.date= lorem.date
+                    %span.images
+                      %img{:alt => "Log138", :height => "56", :src => "images/log138.png", :width => "91"}
+        / =========
+        / =========
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.buttons
+            %li.luuviec
+              %a{:href => "#"} Luu
+            %li.guibanbe
+              %a{:href => "#"} Gui cho ban be
+      = partial(:searchright)

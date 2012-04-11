@@ -1,0 +1,218 @@
+/*****************************************************************/
+/*	I																				  */
+/*****************************************************************/
+
+
+@mixin buttonI {
+    color: #FFFFFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    a {
+      color: #FFFFFF;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px; } }
+  @mixin buttonIa{
+    color: #444444;
+    padding: 6px 9px 6px 9px;
+    border: solid 1px #BCBCBC;
+    background: #F3F3F3;
+    background: -moz-linear-gradient(top, white 1px, #fefefe 1px, #f3f3f3);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #fefefe), color-stop(1, #f3f3f3)); 
+  img {
+    *margin: 2px 0px 2px 0px; }
+  }
+  @mixin buttonI01{
+    @include basebutton;
+    @include buttonI;
+    a {
+    @include buttonIa;
+    &.first, &.previous, &.next, &.last, &.current, &:hover {
+      border-color: #77AADD;
+      background: #DEEEFF;
+      background: -moz-linear-gradient(top, white 1px, #ebf5ff 1px, #deeeff);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #ebf5ff), color-stop(1, #deeeff)); } } }
+  @mixin buttonI02{
+    @include basebutton;
+    @include buttonI;
+    a {
+    @include buttonIa;
+    &.first, &.previous, &.next, &.last, &.current, &:hover {
+      border-color: #BC8484;
+      background: #F2DFDF;
+      background: -moz-linear-gradient(top, white 1px, #f9efef 1px, #f2dfdf);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #f9efef), color-stop(1, #f2dfdf)); } } }
+  @mixin buttonI03{
+    @include basebutton;
+    @include buttonI;
+    a {
+    @include buttonIa;
+    &.first, &.previous, &.next, &.last, &.current, &:hover {
+      border-color: #74AF45;
+      background: #E2F4D3;
+      background: -moz-linear-gradient(top, white 1px, #eff5e9 1px, #e2f4d3);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #eff5e9), color-stop(1, #e2f4d3)); } } }
+  @mixin buttonI04{
+    @include basebutton;
+    @include buttonI;
+    a {
+    @include buttonIa;
+    &.first, &.previous, &.next, &.last, &.current, &:hover {
+      border-color: #CE9900;
+      background: #FFE592;
+      background: -moz-linear-gradient(top, white 1px, #fff0c1 1px, #ffe592);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #fff0c1), color-stop(1, #ffe592)); } } }
+  @mixin buttonI05{
+    @include basebutton;
+    @include buttonI;
+    a {
+    @include buttonIa;
+    &.first, &.previous, &.next, &.last, &.current, &:hover {
+      border-color: #9D9D9D;
+      background: #D9D9D9;
+      background: -moz-linear-gradient(top, white 1px, #eaeaea 1px, #d9d9d9);
+      background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #eaeaea), color-stop(1, #d9d9d9)); } } }
+  @mixin buttonI06{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #E6650C;
+    background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c));
+    &.current, &:hover {
+      background: #683664;
+      background: -moz-linear-gradient(top, #83457e, #683664);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#83457e), to(#683664)); } } }
+  @mixin buttonI07{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #683664;
+    background: -moz-linear-gradient(top, #83457e, #683664);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#83457e), to(#683664));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI08{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #105C90;
+    background: -moz-linear-gradient(top, #2775aa, #105c90);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2775aa), to(#105c90));
+    &.current, &:hover {
+      background: #348800;
+      background: -moz-linear-gradient(top, #42ac00, #348800);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#42ac00), to(#348800)); } } }
+  @mixin buttonI09{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #348800;
+    background: -moz-linear-gradient(top, #42ac00, #348800);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#42ac00), to(#348800));
+    &.current, &:hover {
+      background: #966B5E;
+      background: -moz-linear-gradient(top, #b68d81, #966b5e);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#b68d81), to(#966b5e)); } } }
+  @mixin buttonI10{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #A8436E;
+    background: -moz-linear-gradient(top, #c8618d, #a8436e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#c8618d), to(#a8436e));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI11{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #1889B2;
+    background: -moz-linear-gradient(top, #26bdd5, #1889b2);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#26bdd5), to(#1889b2));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI12{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #208B32;
+    background: -moz-linear-gradient(top, #36a949, #208b32);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#36a949), to(#208b32));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI13{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #B11C34;
+    background: -moz-linear-gradient(top, #d63048, #b11c34);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d63048), to(#b11c34));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI14{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #7D4835;
+    background: -moz-linear-gradient(top, #a3644f, #7d4835);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#a3644f), to(#7d4835));
+    &.current, &:hover {
+      background: #E6650C;
+      background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c)); } } }
+  @mixin buttonI15{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #966B5E;
+    background: -moz-linear-gradient(top, #b68d81, #966b5e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b68d81), to(#966b5e));
+    &.current, &:hover {
+      background: #348800;
+      background: -moz-linear-gradient(top, #41ab00, #348800);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#41ab00), to(#348800)); } } }
+  @mixin buttonI16{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #E6650C;
+    background: -moz-linear-gradient(top, #ff9c00, #e6650c);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9c00), to(#e6650c));
+    &.current, &:hover {
+      background: #348800;
+      background: -moz-linear-gradient(top, #42ac00, #348800);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#42ac00), to(#348800)); } } }
+  @mixin buttonI17{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #105C90;
+    background: -moz-linear-gradient(top, #2775aa, #105c90);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2775aa), to(#105c90));
+    &.current, &:hover {
+      background: #AE2626;
+      background: -moz-linear-gradient(top, #de423b, #ae2626);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#de423b), to(#ae2626)); } } }
+  @mixin buttonI18{
+    @include basebutton;
+    @include buttonI;
+    a {
+    background: #474747;
+    background: -moz-linear-gradient(top, #5d5d5d, #474747);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5d5d5d), to(#474747));
+    &.current, &:hover {
+      background: #3377B5;
+      background: -moz-linear-gradient(top, #4798d6, #3377b5);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#4798d6), to(#3377b5)); } } }

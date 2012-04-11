@@ -1,0 +1,137 @@
+/*****************************************************************/
+/*	A																				  */
+/*****************************************************************/
+
+@mixin buttonA {
+  a {
+    color: #FFFFFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+}
+@mixin buttonA01 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    color: #474747;
+    border: solid 1px #B6B6B6;
+    padding: 4px 8px 4px 8px;
+    background: #E6E6E6;
+    background: -moz-linear-gradient(top, white 1px, #f3f3f3 1px, #e6e6e6);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, white), color-stop(0.02, #f3f3f3), color-stop(1, #e6e6e6));
+    &:hover, &.current {
+background: #FFFFFF; } } }
+@mixin buttonA02 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    color: #893A00;
+    background: #FFCB00;
+    background: -moz-linear-gradient(top, #ffd500, #ffcb00);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd500), to(#ffcb00));
+    &:hover, &.current {
+background: #FFF4BA; } } }
+@mixin buttonA03 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #FF7217;
+    background: -moz-linear-gradient(top, #ff8e1f, #ff7217);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8e1f), to(#ff7217));
+    &:hover, &.current {
+      color: #C34E00;
+background: #FFECDE; } } }
+@mixin buttonA04 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #D22020;
+    background: -moz-linear-gradient(top, #db2b2b, #d22020);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#db2b2b), to(#d22020));
+    &:hover, &.current {
+      color: #9F0F0F;
+background: #FFE0E0; } } }
+@mixin buttonA05 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #699613;
+    background: -moz-linear-gradient(top, #87ab19, #699613);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#87ab19), to(#699613));
+    &:hover, &.current {
+      color: #4F7119;
+background: #E7F2C7; } } }
+@mixin buttonA06 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #1D8A11;
+    background: -moz-linear-gradient(top, #26a116, #1d8a11);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#26a116), to(#1d8a11));
+    &:hover, &.current {
+      color: #176D0E;
+background: #DCF4C9; } } }
+@mixin buttonA07 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #45ABEC;
+    padding: 4px 8px 4px 8px;
+    font-style: 11px;
+    margin-left: 4px;
+    background: -moz-linear-gradient(top, #5cbcf0, #45abec);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5cbcf0), to(#45abec));
+    &:hover, &.current {
+      color: #358FDD;
+background: #DFF4FF; } } }
+@mixin buttonA08 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #3862C8;
+    background: -moz-linear-gradient(top, #4a81d3, #3862c8);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#4a81d3), to(#3862c8));
+    &:hover, &.current {
+      color: #355DDD;
+background: #DDE8FE; } } }
+@mixin buttonA09 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #5A7075;
+    background: -moz-linear-gradient(top, #788c90, #5a7075);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#788c90), to(#5a7075));
+    &:hover, &.current {
+      color: #355DDD;
+background: #DDE8FE; } } }
+@mixin buttonA10 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #684BA6;
+    background: -moz-linear-gradient(top, #8663b8, #684ba6);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#8663b8), to(#684ba6));
+    &:hover, &.current {
+      color: #643EB3;
+background: #EAE4F4; } } }
+@mixin buttonA11 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #9A6654;
+    background: -moz-linear-gradient(top, #ae846f, #9a6654);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ae846f), to(#9a6654));
+    &:hover, &.current {
+      color: #78594A;
+background: #F0E7E3; } } }
+@mixin buttonA12 {
+  @include basebutton;
+  @include buttonA;
+  a {
+    background: #323232;
+    background: -moz-linear-gradient(top, #434343, #323232);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#434343), to(#323232));
+    &:hover, &.current {
+      color: #2F2F2F;
+background: #EAEAEA; } } }

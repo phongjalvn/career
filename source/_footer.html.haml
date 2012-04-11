@@ -1,0 +1,17 @@
+#footer
+  .container
+    = partial(:list, :locals=>{:list=>[                  |
+        {:title => "Tìm việc làm", :link => "#"},        |
+        {:title => "Quy định về bảo mật", :link => "#"}, |
+        {:title => "Về careerlink", :link => "#"},       |
+        {:title => "Thỏa thuận sử dụng", :link => "#"},  |
+        {:title => "Liên hệ", :link => "#"},             |
+        {:title => "faq", :link => "#"},                 |
+        {:title => "Sơ đồ trang web", :link => "#"},     |
+        {:title => "clvietnam.com", :link => "#"},       |
+      ]})                                                |
+    %a.backtotop{:href => "#", :title => "Back to top"}
+      = image_tag "top.png"
+    %p
+      = image_tag "logo-small.png", :class=>"logo"
+      = lorem.paragraph

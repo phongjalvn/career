@@ -1,0 +1,104 @@
+#search.searchfooter {
+  .holder {
+    padding-bottom:0;
+    
+  }
+}
+.search-top{
+  padding: 6px 0 20px;
+  /*height: 121px;*/
+  /*background:transparent url('../images/search.png') center bottom no-repeat;*/
+  .holder{
+    border:1px solid #cbe1f9;
+    background-color:#fff;
+    padding-bottom:15px;
+  }
+  ul{
+    @include clearfix;
+    margin-left: 5px;
+  }
+  li {
+    @include float-left;
+    margin-top: 15px;
+    background-color: #6db3e2;
+    padding: 0 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1px;
+    a{
+      color: #fff;
+    }
+  }
+
+  label{
+    @include float-left;
+
+    input, select, span{
+      @include float-left;
+      height:29px;
+      color: #005196;
+      font-family: Verdana;
+      font-size: 13px;
+      font-weight: normal;
+      line-height:29px;
+      background-color: #fff;
+      border: 1px solid $borderinput;
+      margin:16px 0 16px 9px;
+      padding:0 0 0 10px;
+    }
+    &:nth-child(1){
+      input{
+        width:338px;
+        margin-left: 15px;
+        overflow:hidden;
+      }
+    }
+    &:nth-child(2){
+      select, span{
+        width:263px;
+        overflow:hidden;
+      }
+    }
+    &:nth-child(3){
+      select, span{
+        width:225px;
+        overflow:hidden;
+      }
+    }
+  }
+  button{
+    @include hide-text;
+    background: url(../images/search-button.png);
+    margin-top: 17px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 49px;
+    line-height:29px;
+    padding: 0;
+  }
+  span{
+    background-image:url(../images/dropdown.png);
+    background-position:center right;
+  }
+  .ui-tabs-hide{
+    display: none;
+  }
+  .ui-state-active{
+    background: #fff url(../images/tab-active.png);
+    margin-top: 10px;
+    border:1px solid #6db3e2;
+    border-bottom:none;
+   
+    padding-top: 5px;
+    a{
+      @include link-colors(#6db3e2);
+    }
+  }
+  .ui-tabs-panel{
+    padding: 0 5px;
+    /*background: transparent url('../images/searchbg2.png') center bottom repeat-y;*/
+  }
+}
+

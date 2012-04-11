@@ -1,0 +1,21 @@
+%ul
+  - for item in list
+    %li
+      - if item[:image] then
+        %a{:href => item[:link]}
+          = image_tag item[:image], :alt => item[:title]
+      - else
+        - if item[:title] then
+          %a{:href => item[:link]}
+            = item[:title]
+      - if item[:texttitle] then
+        .newscontent
+          %h3
+            %a{:href => item[:link]}
+              = item[:texttitle]
+          - if item[:text] then
+            %p= item[:text]
+      - else
+        - if item[:text] then
+          %a{:href => item[:link]}
+            %span= item[:text]

@@ -1,0 +1,12 @@
+%table{:class => tableclass}
+  %tr
+    - for col in cols
+      %th
+        = col[:title]
+  - even = true
+  - rows.times do
+    - even = !even
+    %tr{:class => even ? 'even' : 'odd'}
+      - for col in cols
+        %td
+          = lorem.words col[:text]

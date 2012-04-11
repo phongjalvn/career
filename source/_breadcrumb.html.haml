@@ -1,0 +1,5 @@
+#breadcrumb
+  %ul
+    - data.page.trails.each do |link|
+      %li
+        %a{:href => link[:title], :title => link[:link]}= link[:title]

@@ -1,0 +1,23 @@
+#bottombox
+  .container
+    .box.col-1
+      %h3 Lời khuyên khi tìm việc
+      = partial(:looplist, :locals => {:loops => 5, :item=>{ :title => 5, :link => "#" }})
+    .box.col-2
+      %h3 Cẩm nang tìm việc
+      = partial(:looplist, :locals => {:loops => 5, :item=>{ :title => 5, :link => "#" }})
+    .box.col-3
+      %h3 Kết nối Careerlink
+      %ul#socialbottom
+        %li#rss
+          %a{:href => "#"} RSS
+        %li#fb
+          %a{:href => "#"} Facebook
+        %li#twitter
+          %a{:href => "#"} Twitter
+        %li#in
+          %a{:href => "#"} Linkedin
+        %li#mail
+          %a{:href => "#"} Mail
+      %blockquote
+        %p= lorem.words 20

@@ -1,0 +1,380 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Ket qua tim kiem"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#profiles.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Ket qua tim kiem
+    .thongtinkhac
+      .social
+        %img{:alt => "Social", :height => "22", :src => "images/social.png", :width => "352"}
+    .contents
+      .bg.clearfix
+        #left
+          .box.type1
+            %h3 Tu ho so
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th
+                    Thao tác
+                  %th Tiêu đề hồ sơ
+                  %th Ngày sửa đổi
+                  %th Trạng thái
+                  %th Cho phép tìm kiếm
+                  %th Lượt xem
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+            .new-resume.clearfix
+              %a.new-resume-button{:href => "#"} Tạo hồ sơ mới
+          .box.type1
+            / =======================
+            / = Noi dung box type 2 =
+            %h3 Thư xin việc
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th
+                    Thao tác
+                  %th Tiêu đề hồ sơ
+                  %th Ngày sửa đổi
+                  %th Trạng thái
+                  %th Cho phép tìm kiếm
+                  %th Lượt xem
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kich hoat
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.odd
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+                %tr.even
+                  %td
+                    %a{:href => "#"}
+                      Chỉnh sửa
+                    |
+                    %a{:href => "#"}
+                      Xóa
+                  %td
+                    %span.title
+                      Web Design
+                  %td 21-2-2012
+                  %td
+                    %span.kh
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %span.lx
+                      50
+            .new-resume.clearfix
+              %a.new-resume-button{:href => "#"} Tạo thư xin việc mới
+            / =======================
+          / ==================================
+          / = Noi dung cac cong viec cua toi =
+          .box.type2
+            %h3 Các công việc của tôi
+            %h4
+              Công việc đã Ứng tuyển
+              %a{:href => "#"} Xem thêm
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th{:width => "3%"}
+                  %th{:align => "center", :width => "37%"} Chức danh
+                  %th{:align => "center", :width => "30%"} Tên công ty
+                  %th{:align => "center", :width => "15%"} Địa điểm
+                  %th{:align => "center", :width => "15%"} Ngày ứng tuyển
+                %tr.odd
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.odd
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+            %h4
+              Công việc đã lưu
+              %a{:href => "#"} Xem thêm
+            %table.view-rutgon
+              %tbody
+                %tr.header
+                  %th{:width => "3%"}
+                  %th{:align => "center", :width => "37%"} Chức danh
+                  %th{:align => "center", :width => "30%"} Tên công ty
+                  %th{:align => "center", :width => "15%"} Địa điểm
+                  %th{:align => "center", :width => "15%"} Ngày đăng
+                %tr.odd
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.odd
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+                %tr.even
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
+                  %td
+                    %a{:href => "#"} Chief Electrical Engineer
+                  %td Viet Thai International - 4D BU
+                  %td Hồ Chí Minh
+                  %td 21-2-2012
+          / = Noi dung cac cong viec cua toi =
+          / =====================================
+          / = Luu tim kiem - thong bao viec lam =
+          / ==================================
+          / = Noi dung cac cong viec cua toi =
+          .box.type2
+            %h3 Các công việc của tôi
+            %p
+              Hiện tại bạn vẫn chưa lưu tìm kiếm - thông báo việc làm
+            .new-alert.clearfix
+              %a.new-alert-button{:href => "#"} Tạo thong bao mới
+          / ===End luu tim - thong bao viec lam==================================
+        #right
+          / ===================
+          / = Logininfomation =
+          .login-info
+            %img{:alt => "User Demo", :height => "73", :src => "images/user-demo.png", :width => "73"}
+              %span.name Lu Hoang ThanhThuy
+              %span.edit Chỉnh sửa tài khoản
+              %span.logout Đăng xuất
+              %span.login-time Đăng ký: 24/07/2009
+              %span.lastlogin Đăng nhập lần cuối: 07/03/2012
+              %span.lastedit Chỉnh sửa lần cuối: 04/03/2012
+          / ==end Login infomation=================
+          / = Hoanthanhhoso =
+          .progess-job
+            .jslider{:current => "80", :total => "100"}
+              .filler     
+            .ttip
+              Hoàn thành hồ sơ <span>80%</span>        
+            %p
+              %a{:href => "#"} Upload CV để hoàn thành hồ sơ nhanh chóng. 
+          / ===================
+          / = Nha tuyen dung xem ho so =
+          .app-job.ntd-view
+            %h3 Nhà tuyển dụng xem hồ sơ
+            %p
+              Có <span>30</span> nhà tuyển dụng xem hồ sơ của bạn  
+          / ===================
+          / = Vieclam phu hop =
+          .app-job
+            %h3 Việc làm phù hợp
+            %ul.app-job-list
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span Biziwave Vietnam - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior Perl Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior Perl Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+              %li
+                %a{:href => "#"} Senior ASP.NET Web Developer
+                %span ELISOFT - TP. Ho Chi Minh
+          / ===================
+          / = Cam nang gneh nghiep =
+          .career-advice
+            %h3 Cẩm nang tìm việc
+            %ul.advice-list
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Năm mới, tự tin khởi đầu thành công mới.
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+              %li.clearfix
+                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+                  %a{:href => "#"} Senior ASP.NET Web Developer
+          / ===================
+      #right

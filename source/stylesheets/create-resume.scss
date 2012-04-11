@@ -1,0 +1,71 @@
+.create-resume {
+  h4{
+    background:url('../images/title-hosotungbuoc.png') no-repeat;
+    line-height: 28px;
+    padding-left: 10px;
+    color: #fff;
+
+    font-weight: bold;
+    font-size: 13px;
+    text-transform:uppercase;
+    margin:12px 0;
+  }
+  .tit2 {
+    border-bottom: 1px solid #DDDDDD;
+    color: #666666;
+    background-image:none;
+    margin-top:0;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+.danghoso {
+  input, select {
+    border:1px solid $borderinput;
+    padding:3px;
+  }
+  input[type="text"] {
+    min-width:300px;
+  }
+  select {
+    padding:2px;
+  }
+  p {
+    margin:12px 0;
+    span {
+      font-weight:bold;
+      color:#034CA3;
+      width:200px;
+      display:inline-block;
+      text-align:right;
+      .impor,span {
+        float:right;
+        width:auto;
+      }
+      .red {
+      color:red;
+      }
+      
+
+    }
+    
+  }
+  
+}
+#search-center.create-resume {
+  .danghinh {
+    background-color: #f7f9fe;
+    border:1px solid #a1bef2;
+    color:#4a76c6;
+    border-radius:3px;
+    padding:2px 4px;
+  }
+  .taohoso-button {
+    margin-left:180px;
+    li {
+      @include buttonB05;
+      width:auto;
+    }
+  }
+}

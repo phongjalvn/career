@@ -1,0 +1,127 @@
+#right{
+  @include float-right;
+  width: 300px;
+  margin-right: 6px;
+  h4{
+    font-size: 16px;
+    color: $blue;
+  }
+  .box{
+    margin-bottom: 12px;
+  }
+}
+#forjobseeker{
+  background-image: url(../images/forjobseeker.png);
+  padding:10px 0 0 90px;
+  width: 300px;
+  height: 118px;
+  li{
+    @include float-left;
+    width: 50px;
+    font-family: Arial;
+    color: $blue;
+    font-size: 11px;
+    margin:10px 20px 0 0;
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  a{
+    padding-top: 45px;
+    display: block;
+  }
+}
+#lastestnews{
+  @include newslist;
+  background-image: url(../images/right-side-home-bg.png);
+  background-repeat: repeat;
+  border-top: 1px solid #cfe1ff;
+  border-bottom: 1px solid #cfe1ff;
+  h4{
+    line-height: 42px;
+    padding: 0 10px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  ul{
+    border-top: 1px solid #cfe1ff;
+  }
+  li{
+    padding: 14px 0;
+    margin: 0 12px;
+    border-bottom: 1px dotted #727272;
+    .newscontent{
+      margin-left: 128px;
+      a{
+        @include link-colors(#333);
+        font-weight: bold;
+      }
+    }
+  }
+  .readmore{
+    color: #fa4301;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 10px 5px;
+  }
+}
+li.check{
+  line-height:20px;
+  .checklist {
+    margin:10px 0;
+    @include clearfix;
+    font-style:italic;
+    color:#666;
+    font-size:11px;
+    font-weight:100;
+    input {
+      float:left;
+      width:auto;
+      margin-right:8px;
+      padding:10px 0;
+    }
+  }
+}
+.progess-job {
+  @include clearfix;
+  background-image: url(../images/propress-right.png);
+  margin:10px auto;
+  width:231px;
+  padding:15px;
+  p {
+    padding: 10px 10px 5px 50px;
+    color:#f6811f;
+    font-weight:700;
+  }
+  .jslider {
+    width:auto;
+    margin:0 auto;
+    background-color:#acc8cf;
+    .filler {
+      background-image: url(../images/bg-propressbar.png);
+      background-repeat: repeat;
+    }
+  }
+}
+.ttip {
+  padding-top:10px;
+  color:#3d72c8;
+  font-weight:700;
+  span {
+    font-size:18px;
+  }
+}
+.ntd-view {
+  padding-bottom:10px;
+  p{
+    border-top: 1px solid #EBF3F6;
+    padding-top:10px;
+    span {
+      color:#f6811f;
+      font-weight:700;
+    }
+  }
+}

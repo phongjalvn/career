@@ -1,0 +1,54 @@
+/* Hide from both screenreaders and browsers: h5bp@mixin com/u */
+@mixin hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp@mixin com/v */
+@mixin visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+@mixin invisible { visibility: hidden; }
+
+
+//Abosute position
+@mixin absolute($top: 0, $right: auto, $bottom: auto, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+.select{
+  line-height: 26px;
+  margin-top: 1px;
+  span{
+    @include absolute;
+    display: block;
+    margin-left:0;
+    padding-left:14px;
+    font-weight: 700;
+
+    /*Hover state*/
+    &:hover, &.hover{
+      /*background-image: url(../images/language-select-hover.png);*/
+    }
+
+    /*Active state*/
+    &:active{
+      /*background-image: url(../images/language-select-active.png);*/
+    }
+  }
+}
+/* new clearfix */
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
+@mixin clearfix{
+  &:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}

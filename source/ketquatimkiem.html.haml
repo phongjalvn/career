@@ -1,0 +1,116 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Ket qua tim kiem"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#searchresult.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Kết quả tìm kiếm
+    .contents
+      %p.desc Chung toi da tim duoc 29 cong viec theo yeu cau: Tu khoa: <strong>designer</strong> | Viec lam phai co: <strong>tu khoa chinh xac</strong> | Nghanh nghe: <strong>IT - Phan mem</strong> | Dia diem: <strong>Ho Chi Minh</strong>
+      #left
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.views
+            %li
+              %strong Xem
+            %li
+              %label
+                %input{:checked => "checked", :name => "views", :type => "radio"}
+                  Ngắn gọn
+            %li.ser
+              |
+            %li
+              %label
+                %input{:name => "views", :type => "radio"}
+                  Chi tiết
+        / =========
+        / = Table =
+        %table.view-rutgon
+          %tbody
+            %tr.header
+              %th{:align => "center", :width => "5%"}
+                %input#check_all{:type => "checkbox", :value => ""}/
+              %th{:align => "center", :width => "35%"} Chức danh
+              %th{:align => "center", :width => "30%"} Tên công ty
+              %th{:align => "center", :width => "15%"} Địa điểm
+              %th{:align => "center", :width => "15%"} Ngày đăng
+            %tr
+              %td.viptd{:colspan => "5"}
+                %table.vip
+                  %tbody
+                    - even = true
+                    - 5.times do
+                      - even = !even
+                      %tr.vip{:class=> even ? "even":"odd"}
+                        %td{:align => "center", :width => "5%"}
+                          %input{:type => "checkbox"}/
+                        %td{:align => "center", :width => "241px"} 
+                          %a{:href=>"#"}Chief Electrical Engineer
+                        %td{:align => "center", :width => "208px"} 
+                          %a{:href=>"#"}Viet Thai International - 4D BU
+                        %td{:align => "center", :width => "106px"} 
+                          %a{:href=>"#"}Hồ Chí Minh
+                        %td{:align => "center", :width => "105px"} 21-2-2012
+            - even = true
+            - 10.times do
+              - even = !even
+              %tr{:class=> even ? "even":"odd"}
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}/
+                %td 
+                  %a{:href=>"#"}Chief Electrical Engineer
+                %td 
+                  %a{:href=>"#"}Viet Thai International - 4D BU
+                %td 
+                  %a{:href=>"#"}Hồ Chí Minh
+                  %a{:href=>"#"}Hà Nội
+                  %a{:href=>"#"}Cà Mau
+                  %a{:href=>"#"}Vĩnh Long
+                  %a{:href=>"#"}Bạc Liêu
+                %td 21-2-2012
+        / =========
+        / =========
+        .toolbar
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %ul.buttons
+            %li.luuviec
+              %a{:href => "#"} Lưu 
+            %li.guibanbe
+              %a{:href => "#"} Gửi cho bạn bè
+      = partial(:searchright)

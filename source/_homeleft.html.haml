@@ -1,0 +1,25 @@
+#left
+  #newestjob.box
+    %h3.title
+      Việc làm mới nhất
+    .listjob
+      = partial(:looplist, :locals => {:loops => 14, :item=>{ :title => 5, :link => "#", :text => 3 }})
+  #hotemployer.box
+    %h3.title 
+      Việc Làm Của Nhà Tuyển Dụng Hàng Đầu
+      %span 
+        %a{:href => "#"}
+          Xem tất cả nhà tuyển dụng
+    .listemployeer
+      = partial(:looplist, :locals => {:loops => 8, :item=>{:image =>"doitac-img.png", :title => 5, :link => "#"}})
+  #newsletter.newsletter.box
+    .description
+      %h2 Nhận bản tin việc làm
+      %p Cơ hội nhận cẩm nang việc làm và thông tin công việc mới mỗi tuần.
+    %form{:action => "#"}
+      %input{:placeholder => "Nhap tu khoa cong viec", :type => "text"}/
+      %button send
+  .ad.box
+    %img{:alt => "", :src => "images/banner1.jpg"}/
+  .ad.box
+    %img{:alt => "", :src => "images/banner2.jpg"}/

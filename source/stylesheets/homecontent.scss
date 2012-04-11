@@ -1,0 +1,233 @@
+#left{
+  @include float-left;
+  width: 630px;
+  margin-left: 6px;
+
+  h3{
+    background-image: url(../images/title-bg-home.png);
+    padding-left: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    height: 38px;
+    color: #fff;
+    margin-left: -9px;
+    span a {
+      float:right;
+      color:#90CCFF;
+      font-style:italic;
+      margin-right:10px;
+    }
+  }
+  .box {
+    margin-bottom: 10px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+  }
+
+  .ad img{
+    display: block;
+  }
+}
+.listjob{
+  background: #fff url(../images/left-side-home-bottom.png) center bottom no-repeat;
+  padding: 10px;
+  ul{
+    @include clearfix;
+    li{
+      @include float-left;
+      color: #666;
+      font-family: Verdana,serif;
+      font-size: 11px;
+      background: url(../images/square.png) 0 12px no-repeat;
+      padding: 5px 5px 5px 12px;
+      width: 290px;
+      border-bottom: 1px dotted #cccccc;
+      *{
+        @include ellipsis;
+      }
+      &:nth-child(2n){
+        @include float-right;
+      }
+      a{
+        color: #333;
+        font-weight: bold;
+        text-decoration: underline;
+        display: block;
+      }
+      span{
+        padding-top: 3px;
+        display:block;
+      }
+      &:nth-child(13),&:nth-child(14){
+        border:none;
+      }
+    }
+  }
+
+}
+.listemployeer {
+  background-color: #FFF;
+  padding-bottom: 10px;
+  ul{
+    text-align: center;
+    li{
+      @include inline-block;
+      background: url(../images/doitac-large-bg.png);
+      width: 137px;
+      height: 88px;
+      margin: 5px 7px;
+    }
+    img{
+      display: block;
+      border-left:1px solid #efefef;
+      border-top:1px solid #efefef;
+      width: 131px;
+      height: 80px;
+    }
+  }
+}
+.newsletter {
+  background-image: url(../images/newsletter.png);
+  color: #fff;
+  height: 81px;
+  position: relative;
+  .description {
+    @include float-left;
+    width: 50%;
+    padding: 15px 0 0 15px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+  }
+  form {
+    input {
+      @include absolute;
+      top:27px;
+      left: 343px;
+      width: 204px;
+      background-color: transparent;
+      border: none;
+      padding: 5px;
+    }
+    button {
+      @include hide-text;
+      @include absolute(27px, 21px, auto, auto);
+      cursor: pointer;
+      padding:0;
+      background-color: transparent;
+      border: none;
+      width: 48px;
+      height: 40px;
+    }
+  }
+}
+#doitac{
+  @extend .container;
+  .container{
+    margin: 0 6px;
+    width: auto;
+    background: url(../images/doitac-bg.png) repeat;
+    border-bottom: 1px solid #90ccff;
+  }
+  margin-bottom: 17px;
+  ul{
+    @include horizontal-list(0);
+    padding: 11px 0 11px 10px;
+    border-bottom: 2px solid #fff;
+    li{
+      border: 1px solid #90ccff;
+      margin-right: 7px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  img{
+    @include opacity(0);
+    @include single-transition(all, .5s);
+    display: block;
+
+    &:hover, &.hover{
+      @include opacity(1);
+      @include single-transition(all, .5s);
+    }
+  }
+}
+#bottombox{
+  background-color: #38649d;
+  padding: 20px;
+  color: #fff;
+  h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  a{
+    @include link-colors(#fff);
+  }
+  .box{
+    @include float-left;
+    width: 33.3%;
+    padding: 0 20px;
+  }
+  .col-1{
+    padding-left: 6px;
+  }
+  .col-1, .col-2{
+    li{
+      line-height: 20px;
+      border-bottom: 1px solid #b4c6db;
+    }
+  }
+  .col-3{
+    padding-right: 6px;
+    ul{
+      @include horizontal-list(5px);
+      @include clearfix;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #b4c6db;
+    }
+  }
+  blockquote{
+    margin: 15px 0 0 0;
+    padding-left: 38px;
+    background-image: url(../images/b-start.png);
+    p{
+      background-image: url(../images/b-end.png);
+      background-position: bottom right;
+      padding-right: 38px;
+    }
+  }
+}
+
+#footer{
+  padding: 20px 0;
+  ul{
+    @include horizontal-list(8px);
+  }
+  li{
+    font-size: 11px;
+    border-right: 1px solid $link-color;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:last-child{
+      border: none;
+    }
+  }
+  a{
+    @include link-colors(#467dbf);
+  }
+  .logo{
+    @include float-left;
+    margin: 10px 15px 0 0;
+  }
+  p{
+    width: 800px;
+  }
+  .backtotop{
+    @include float-right;
+  }
+}

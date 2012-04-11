@@ -1,0 +1,24 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Home
+- content_for :banner do
+  #banner
+    .container
+      .effs
+        %ul
+          = partial(:banner, :locals => {:image => "timviec", :title => "#{ lorem.words 1 }", :header => "Việc làm lương cao?", :text => "Với mong muốn mỗi người đều có 1 việc làm,<br/> Chúng tôi sẽ mang đến cho bạn những cơ hội tốt nhất. <br/>Đăng ký ngay."})
+          = partial(:banner, :locals => {:image => "careerlink", :title => "#{ lorem.words 1 }", :header => "#{ lorem.words 3 }", :text => lorem.sentence})
+          = partial(:banner, :locals => {:image => "vieclamgap", :title => "#{ lorem.words 1 }", :header => "#{ lorem.words 3 }", :text => lorem.sentence})
+          = partial(:banner, :locals => {:image => "vieclamthoivu", :title => "#{ lorem.words 1 }", :header => "#{ lorem.words 3 }", :text => lorem.sentence})
+= partial(:search)
+#homecontent.homecontent
+  .container
+    = partial(:breadcrumb)
+    = partial(:homeleft)
+    = partial(:right)
+  = partial(:homebottom)

@@ -1,0 +1,20 @@
+%ul
+  - loops.times do |num|
+    %li
+      - if item[:image] then
+        %a{:href => :link}
+          = image_tag item[:image], :alt => item[:title]
+      - else
+        - if item[:title] then
+          %a{:href => item[:link]}
+            = lorem.words item[:title]
+      - if item[:texttitle] then
+        .newscontent
+          %h3
+            %a{:href => item[:link]}
+              = lorem.words item[:texttitle]
+          - if item[:text] then
+            %p= lorem.words item[:text]
+      - else
+        - if item[:text] then
+          %span= lorem.words item[:text]

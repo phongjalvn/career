@@ -1,0 +1,148 @@
+/ #right
+#right
+  / .mota
+  .mota
+    %h3 Sửa yêu cầu tìm kiếm
+    / .list-mota
+    .list-search.list-mota
+      %ul
+        %li
+          %label
+            %input{:name => "ntk", :placeholder => "Nhap tu khoa tim kiem...", :type => "text"}/
+        %li
+          %label
+            %select#nganhnghe{:name => "nganhnghe"}
+              %option{:value => "IT-phan mem"} IT - Phần mềm
+              %option{:value => "IT-phan cmem"} IT - Phần mềm 
+              %option{:value => "IT-phan msem"} Biên phiên dịch tiếng Nhật
+              %option{:value => "IT-phan meem"} IT - Phần mềm
+              %option{:value => "IT-phan mtrem"} IT - Phần mềm
+              %option{:value => "IT-phertan mem"} IT - Phần mềm
+              %option{:value => "IT-phanvbt mem"} IT - Phần mềm
+              %option{:value => "IT-phan saemem"} IT - Phần mềm
+        %li
+          %label
+            %select#thanhpho{:name => "thanhpho"}
+              %option{:value => "tp hcm"} TP Hồ Chí Minh
+              %option{:value => "tp hcaasm"} TP Hồ Chí Minh
+              %option{:value => "tp hwercm"} TP Hồ Chí Minh
+              %option{:value => "tp erthcm"} TP Hồ Chí Minh
+              %option{:value => "tp hctyum"} TP Hồ Chí Minh
+              %option{:value => "tp hcerm"} TP Hồ Chí Minh
+              %option{:value => "tp hytcm"} TP Hồ Chí Minh
+              %option{:value => "tp hiucm"} TP Hồ Chí Minh
+              %option{:value => "tp hcopm"} TP Hồ Chí Minh
+              %option{:value => "tp hcpom"} TP Hồ Chí Minh
+        #right-more
+          %li
+            %label
+              %select#cbEducatiodnLevel.TEXTBOX{:name => "cbEducationLevel", :title => "Chon trinh do hoc van"}
+                %option{:selected => "", :value => ""} Chọn trình độ học vấn
+                %option{:value => "JHS"} PTCS
+                %option{:value => "HSC"} Trung học
+                %option{:value => "ITI"} Chứng chỉ
+                %option{:value => "ASD"} Trung cấp
+                %option{:value => "DIP"} Cao đẳng
+                %option{:value => "BAC"} Cử nhân
+                %option{:value => "MAS"} Thạc sĩ
+                %option{:value => "MAR"} Thạc sĩ Nghệ thuật
+                %option{:value => "MAC"} Thạc sĩ Thương mại
+                %option{:value => "MSC"} Thạc sĩ Khoa học
+                %option{:value => "MAA"} Thạc sĩ Kiến trúc
+                %option{:value => "MBA"} Thạc sĩ QTKD
+                %option{:value => "MAE"} Thạc sĩ Kỹ thuật ứng dụng
+                %option{:value => "MAL"} Thạc sĩ Luật
+                %option{:value => "MDMS"} Thạc sĩ Y học
+                %option{:value => "MAP"} Thạc sĩ Dược phẩm
+                %option{:value => "PHD"} Tiến sĩ
+                %option{:value => "OTH"} Khác
+          %li
+            %label
+              %select#cbPositasisonType.TEXTBOX{:name => "cbPositidsonType", :title => "Chon loai cong viec"}
+                %option{:selected => "", :value => ""} Chọn loại công việc
+                %option{:value => "Full-time Pernament"} Toàn thời gian cố định
+                %option{:value => "Full-time Temporary"} Toàn thời gian tạm thời
+                %option{:value => "Part-time Pernament"} Bán thời gian
+                %option{:value => "Part-time Temporary"} Bán thời gian tạm thời
+                %option{:value => "Contract"} Hợp đồng
+                %option{:value => "Other"} Khác
+          %li
+            %label
+              %select#cbCarseerLevel.normal.TEXTBOX{:name => "cbCasdreerLevel"}
+                %option{:selected => "", :value => ""} Chọn cấp bậc
+                %option{:value => "New Entry"} Mới đi làm
+                %option{:value => "Labor"} Nhân viên
+                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+                %option{:value => "Professional"} Chuyên viên
+                %option{:value => "Executive"} Điều hành
+          %li
+            %label
+              %select#cbCareearLevel.normal.TEXTBOX{:name => "cbCarsdaseerLevel"}
+                %option{:selected => "", :value => ""} Chọn cấp bậc
+                %option{:value => "New Entry"} Mới đi làm
+                %option{:value => "Labor"} Nhân viên
+                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+                %option{:value => "Professional"} Chuyên viên
+                %option{:value => "Executive"} Điều hành
+          %li
+            %label
+              %select#cbCareerLrevel.normal.TEXTBOX{:name => "cbCarrgeerLevel"}
+                %option{:selected => "", :value => ""} Chọn cấp bậc
+                %option{:value => "New Entry"} Mới đi làm
+                %option{:value => "Labor"} Nhân viên
+                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+                %option{:value => "Professional"} Chuyên viên
+                %option{:value => "Executive"} Điều hành
+          %li
+            %label
+              %select#cbCareedrrLevel.normal.TEXTBOX{:name => "cbCareyterLevel"}
+                %option{:selected => "", :value => ""} Chọn cấp bậc
+                %option{:value => "New Entry"} Mới đi làm
+                %option{:value => "Labor"} Nhân viên
+                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+                %option{:value => "Professional"} Chuyên viên
+                %option{:value => "Executive"} Điều hành
+        %li.moresearch.clearfix
+          %a{:href => "#"}
+            %span Mở rộng tiêu chí tìm kiếm
+        %li.editsearch.clearfix
+          %a.current{:href => "#"} Tìm kiếm
+  / /.mota
+  .mota
+    %h3 Mục tìm kiếm liên quan
+    / .list-mota
+    .list-search.list-mota
+      %ul
+        %li
+          %a{:href => "#"} IT - Phần cứng
+        %li
+          %a{:href => "#"} Kỹ thuật
+        %li
+          %a{:href => "#"} Công nghệ
+        %li
+          %a{:href => "#"} Khác 
+        %li
+          %a{:href => "#"} QC/QA
+        %li
+          %a{:href => "#"} IT - Phần cứng
+        %li
+          %a{:href => "#"} Kỹ thuật
+        %li
+          %a{:href => "#"} Công nghệ
+        %li
+          %a{:href => "#"} Khác 
+        %li
+          %a{:href => "#"} QC/QA
+        %li
+          %a{:href => "#"} IT - Phần cứng
+        %li
+          %a{:href => "#"} Kỹ thuật
+        %li
+          %a{:href => "#"} Công nghệ
+        %li
+          %a{:href => "#"} Khác 
+        %li
+          %a{:href => "#"} QC/QA
+
+
+/ /#right

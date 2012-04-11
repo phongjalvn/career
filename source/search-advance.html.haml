@@ -1,0 +1,88 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Trang tim viec nang cao"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.advance-search
+  .container
+    = partial(:breadcrumb)
+    %h2 Trang tim viec nang cao
+    .contents.clearfix
+      .bg.clearfix
+        %h3 Trang tim viec chung
+        %ul.timkiemnangcao
+          %li
+            %label
+              %span Tu khoa: 
+              %input{:type => "text"}
+          %li
+            %label
+              %span Su dung: 
+              %select
+                %option Tat ca tu khoa
+                %option Bat ky tu khoa nao
+          %li
+            %label
+              %span Chon nganh nghe: 
+              %div.multi-two
+                %select#myselecttsms.multiselect{:multiple => "true", :name => "myselecttsms", :size => "6"}
+                  %option{:rel => "0", :title => "One", :value => "1"} Bán hàng
+                  %option{:rel => "1", :title => "Two", :value => "2"} Báo chí/ Biên tập viên/ Xuất bản
+                  %option{:rel => "2", :title => "Three", :value => "3"} Biên phiên dịch/ Thông dịch viên
+                  %option{:rel => "3", :title => "Four", :value => "4"} Chăm sóc sức khỏe/ Y tế
+                  %option{:rel => "4", :title => "Five", :value => "5"} Báo chí/ Biên tập viên/ Xuất bản
+                  %option{:rel => "5", :title => "Six", :value => "6"} Biên phiên dịch/ Thông dịch viên
+          %li
+            %label
+              %span Chon dia diem: 
+              %div.multi-two
+                %select#myselecttsmss.multiselect{:multiple => "true", :name => "myselecttsmss", :size => "6"}
+                  %option{:rel => "0", :title => "One", :value => "1"} TP Ho Chi Minh
+                  %option{:rel => "1", :title => "Two", :value => "2"} Ha Noi
+                  %option{:rel => "2", :title => "Three", :value => "3"} TP Ho Chi Minh
+                  %option{:rel => "3", :title => "Four", :value => "4"} Ha Noi
+                  %option{:rel => "4", :title => "Five", :value => "5"} TP Ho Chi Minh
+                  %option{:rel => "5", :title => "Six", :value => "6"} Ha Noi
+          %li
+            %label
+              %span Tinh - Thanh pho: 
+              %select
+                %option Ha noi
+                %option TP. Ho Chi Minh
+          %li
+            %label
+              %span Trinh do hoc van: 
+              %select
+                %option Dai hoc
+                %option Cao dang
+          %li
+            %label
+              %span Loai cong viec: 
+              %select
+                %option Toan thoi gian
+                %option Ban thoi gian
+          %li
+            %label
+              %span Muc kinh nghiem: 
+              %select
+                %option 3 nam
+                %option 5 nam
+          %li
+            %label
+              %span Cong viec dang trong vong: 
+              %select
+                %option 1 ngay
+                %option 5 ngay
+          %li.nut
+            %ul.clearfix
+              %li.search-enter
+                %a.current{:href=>"#"} Tim kiem
+              %li.reset
+                %a{:href=>"#"} Lam lai
+
