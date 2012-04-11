@@ -175,11 +175,11 @@ a{
           background: url(../images/nav-a-sub.png) 15px 10px no-repeat;
         }
         &:first-child, .first  {
-          background:none;
+          background-image:none;
         }
         a{
           @include link-colors(#fff);
-          background: none;
+          background-image: none;
           padding: 0;
           &:hover{
             margin-top: 0;
@@ -331,7 +331,7 @@ div.dialog-titlebar {
     @include hide-text;
     }
   }
-  #rss {
+  #gplus {
     a {
           background-position: bottom left;
     }
@@ -363,7 +363,23 @@ div.dialog-titlebar {
       background-position: -96px 0;
     }
   }
-  #mail {
+  #rss {
+    a {
+          background-position: -128px -32px;
+    }
+    :hover {
+      background-position: -128px 0;
+    }
+  }
+  #linkhay {
+    a {
+          background-position: -160px -32px;
+    }
+    :hover {
+      background-position: -160px 0;
+    }
+  }
+  #zing {
     a {
           background-position: bottom right;
     }
@@ -514,6 +530,7 @@ a.multiSelect {
 .multiSelectOptions {
   margin-top: -1px;
   overflow-y: auto;
+  height:100px;
   overflow-x: hidden;
   border: solid 1px #B2B2B2;
   background: #FFF;

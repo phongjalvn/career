@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	$('.moresearch').toggle(function(){
 	    $('a',(this)).text("- Rút gọn tiêu chí tìm kiếm").addClass('showless');
 	    $('#right-more').show();

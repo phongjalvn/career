@@ -31,6 +31,17 @@ $(document).ready ->
       title = $('option:selected', ele).text()
       ele.next().text(title)
 
+ 
+  
+  $(document).on 'click', '.xbutton', (e) ->
+    holder = $('.multiSelectOptions:hidden')
+    if holder.length?
+      holder.hide()
+    e.preventDefault()
+    e.event.stopPropagation()
+
+   $('.xbutton').click ->
+    $(document).trigger 'click'
 
   $('#search .container').tabs()
 
@@ -68,7 +79,7 @@ $(document).ready ->
 
   $('.contents input').tipsy
     fade: true
-    gravity: 'w'
+    gravity: 's'
     html: false
     live: true
     offset: 5
