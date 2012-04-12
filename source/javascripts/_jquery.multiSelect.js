@@ -124,13 +124,16 @@ if(jQuery) (function($){
 		// if we should have a select all option then add it
 		if( o.selectAll ) {
 			html += '<label class="selectAll"><input type="checkbox" class="selectAll" />' + o.selectAllText + '</label>';
-      			html += '<label class="deSelectAll"><input type="checkbox" class="deSelectAll" />' + o.deSelectAllText + '</label>';
 		}
 
 		// generate the html for the new options
 		html += renderoptions(multiSelect.attr('id'), options, o);
-		html += '<span class="xbutton"><span>' + o.xbutton + '</span></span>';
 		multiSelectOptions.html(html);
+    html = '<div class="xbutton">'
+    html += '<label class="deSelectAll"><input type="checkbox" class="deSelectAll" />' + o.deSelectAllText + '</label>';
+    html += '<span class="selclose">' + o.xbutton + '</span>';
+    html += '</div>'
+    multiSelectOptions.wrapInner('<div class="multiSelectHolder"/>').append(html)
 		
 		// variables needed to account for width changes due to a scrollbar
 		var initialWidth = multiSelectOptions.width();
@@ -418,8 +421,8 @@ if(jQuery) (function($){
 			if( o.selectAll == undefined ) o.selectAll = true;
       if( o.deSelectAll == undefined ) o.deSelectAll = true;
 			if( o.selectAllText == undefined ) o.selectAllText = "Select All";
-      			if( o.deSelectAllText == undefined ) o.deSelectAllText = "Unselect All";
-      			if( o.xbuton == undefined ) o.xbutton = "close";
+      if( o.deSelectAllText == undefined ) o.deSelectAllText = "Unselect All";
+      if( o.xbuton == undefined ) o.xbutton = "close";
 			if( o.noneSelected == undefined ) o.noneSelected = 'Select options';
 			if( o.oneOrMoreSelected == undefined ) o.oneOrMoreSelected = '% selected';
 			if( o.optGroupSelectable == undefined ) o.optGroupSelectable = false;

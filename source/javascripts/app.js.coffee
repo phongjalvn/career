@@ -33,15 +33,12 @@ $(document).ready ->
 
  
   
-  $(document).on 'click', '.xbutton', (e) ->
-    holder = $('.multiSelectOptions:hidden')
-    if holder.length?
-      holder.hide()
-    e.preventDefault()
-    e.event.stopPropagation()
+  $(document).on 'click', '.selclose', (e) ->
+    holder = $(@).parents('.multiSelectOptions:visible')
+    holder.css('visibility': 'hidden')
 
-   $('.xbutton').click ->
-    $(document).trigger 'click'
+    e.preventDefault()
+    e.stopPropagation()
 
   $('#search .container').tabs()
 
@@ -51,7 +48,7 @@ $(document).ready ->
       $(@).parents('table').find('td input').attr('checked', true)
     else
       $(@).parents('table').find('td input').removeAttr('checked')
-      
+
   $('#doitac li').each (index, element) ->
     ele = $(element)
     img = $('img', ele)

@@ -527,13 +527,35 @@ a.multiSelect {
   &.active {
     background-image: url(../images/dropdown.blue.active.png); } }
 
+.xbutton {
+    position:absolute;
+    display:block;
+    text-align: right;
+    background-color:#333;
+    color:#fff;
+    bottom:0;
+    left:0;
+    right:0;
+    label.deSelectAll{
+      float:left;
+      text-align: left;
+    }
+}
 .multiSelectOptions {
   margin-top: -1px;
-  overflow-y: auto;
   height:100px;
-  overflow-x: hidden;
+  overflow: hidden;
   border: solid 1px #B2B2B2;
   background: #FFF;
+
+  .multiSelectHolder{
+    overflow-y: auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:20px;
+    position:absolute;
+  }
   label {
     padding: 0px 2px;
     display: block;
