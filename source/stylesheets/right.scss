@@ -1,4 +1,38 @@
 #right{
+  .luong {
+    width:100%;
+
+    span {
+    position:static;
+    padding:5px 0;
+
+    }
+    #divSalaryFrom {
+      @include float-left;
+      width:95px;
+      padding-left:2px;
+      input,select {
+        width:44px;
+        @include float-left;
+        padding:0;
+        height:17px;
+        margin-right:2px;
+      }
+    }
+    #divSalaryTo {
+      padding-left:0;
+      width:95px;
+      left:105px;
+      @include float-right;
+      input,select {
+        width:44px;
+        @include float-left;
+        padding:0;
+        height:17px;
+        margin-right:2px;
+      }
+    }
+  }
   @include float-right;
   width: 300px;
   margin-right: 6px;

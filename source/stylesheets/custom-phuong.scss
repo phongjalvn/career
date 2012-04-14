@@ -194,6 +194,22 @@ a {
       color: #fff;
       float: left;
       display: inline; } }
+    &:hover.nop {
+    background: url('../images/nopdon-button-hover.png') right center no-repeat;
+    padding-right: 10px;
+    line-height: 34px;
+    float: left;
+    display: inline;
+    span {
+      background: url('../images/nopdon-button-hover.png') left center no-repeat;
+      padding-left: 10px;
+      line-height: 34px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      float: left;
+      display: inline; } }
+
   &.luuviec, &.mailbanbe {
     line-height: 34px;
     text-decoration: underline;
@@ -333,19 +349,6 @@ body #loginform {
 .details #right .list-search.list-mota {
   padding-bottom: 60px; }
 
-.list-search li {
-  input, select {
-    width: 192px;
-    border: 1px solid $borderinput;
-    background-color: #fff;
-    padding: 3px 5px; } }
-
-.details #right .list-search li.editsearch {
-  background-image: none;
-  margin-top: 10px;
-  a {
-    margin-left: 0; } }
-
 li {
   &.luuviec {
     background: url('../images/luuvieclam.png') right center no-repeat;
@@ -443,9 +446,9 @@ span {
   .ntd-chitietvieclam {
     float: right;
     display: inline;
-    width: 520px;
+    width: 540px;
     table {
-      width: 520px; } } }
+      width: 540px; } } }
 
 /* ================= */
 /* = Trang profile = */

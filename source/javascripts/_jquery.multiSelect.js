@@ -422,7 +422,7 @@ if(jQuery) (function($){
       if( o.deSelectAll == undefined ) o.deSelectAll = true;
 			if( o.selectAllText == undefined ) o.selectAllText = "Select All";
       if( o.deSelectAllText == undefined ) o.deSelectAllText = "Unselect All";
-      if( o.xbuton == undefined ) o.xbutton = "close";
+      if( o.xbuton == undefined ) o.xbutton = "[X]";
 			if( o.noneSelected == undefined ) o.noneSelected = 'Select options';
 			if( o.oneOrMoreSelected == undefined ) o.oneOrMoreSelected = '% selected';
 			if( o.optGroupSelectable == undefined ) o.optGroupSelectable = false;

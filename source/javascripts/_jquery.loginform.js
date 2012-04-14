@@ -1,24 +1,27 @@
 $(document).ready(function() {
+	
+	window.onload = loadSalary;
+
 	$('.moresearch').toggle(function(){
-	    $('a',(this)).text("- R√∫t g·ªçn ti√™u ch√≠ t√¨m ki·∫øm").addClass('showless');
+	    $('a',(this)).text("- R˙t g?n tiÍu chÌ tÏm ki?m").addClass('showless');
 	    $('#right-more').show();
 	    $('#right-more').animate({ 'height': $('#right-more').data('maxheight') });
   	}, function(){
-	    $('a',(this)).text("+ M·ªü r√¥ng ti√™u ch√≠ t√¨m ki·∫øm").removeClass('showless');
+	    $('a',(this)).text("+ M? rÙng tiÍu chÌ tÏm ki?m").removeClass('showless');
 	    $('#right-more').hide();
 	    $('#right-more').animate({ 'height': $('#right-more').data('height') });
   	});
   	
   	$('.morongtimkiem').toggle(function(){
-	    $(this).text("- R√∫t g·ªçn ti√™u ch√≠ t√¨m vi·ªác l√†m tuy·ªÉn d·ª•ng").addClass('showless');
+	    $(this).text("- R˙t g?n tiÍu chÌ tÏm vi?c l‡m tuy?n d?ng").addClass('showless');
 	    $('#search-more').show();
 	    $('#search-more').animate({ 'height': $('#search-more').data('maxheight') });
   	}, function(){
-	    $(this).text("+ M·ªü r√¥ng ti√™u ch√≠ t√¨m vi·ªác l√†m tuy·ªÉn d·ª•ng").removeClass('showless');
+	    $(this).text("+ M? rÙng tiÍu chÌ tÏm vi?c l‡m tuy?n d?ng").removeClass('showless');
 	    $('#search-more').hide();
 	    $('#search-more').animate({ 'height': $('#search-more').data('height') });
   	});
-	$(".multi-checklist").multiSelect({ selectAllText: 'Check all!' });
+	$(".multi-checklist").multiSelect({ oneOrMoreSelected: '*' });
 	$('.multiselect').multiselect2side({
 		selectedPosition: 'right',
 		moveOptions: false,
@@ -61,3 +64,30 @@ $(document).ready(function() {
 	return false;
 	});
 });
+function changeSalary(target)
+		{
+		var Salary = target.value.toLowerCase();
+		switch(Salary)
+		{
+		case "normal":
+		document.getElementById("divSalaryFrom").style.display = "";
+		document.getElementById("divSalaryTo").style.display = "";
+		break;
+		case "morethan":
+		document.getElementById("divSalaryFrom").style.display = "";
+		document.getElementById("divSalaryTo").style.display = "none";
+		break;
+		case "negotiable":
+		document.getElementById("divSalaryFrom").style.display = "none";
+		document.getElementById("divSalaryTo").style.display = "none";
+		break;
+		case "competitive":
+		document.getElementById("divSalaryFrom").style.display = "none";
+		document.getElementById("divSalaryTo").style.display = "none";
+		break;
+		}
+		}
+		function loadSalary()
+		{
+		changeSalary(document.getElementById("cbSalary"));
+		}

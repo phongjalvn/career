@@ -34,8 +34,14 @@ a{
   @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
   @include hover-link();
   outline:0;
+  cursor: pointer;
+  span {
+    cursor: pointer;
+  }
 }
-
+a:hover {
+  text-decoration: underline;
+}
 .container{
   @include clearfix;
   width: $main-widht;
@@ -43,7 +49,7 @@ a{
 }
 
 #topbar{
-  height: 25px;
+  height: 20px;
 
   a{
     @include link-colors(#fff);
@@ -89,6 +95,7 @@ a{
         background-color:#C4E2F4;
         border:none;
         border-bottom:1px solide #c2e1f4;
+        cursor: pointer;
       }
       span{
         width: 90px;
@@ -111,16 +118,19 @@ a{
   }
 }
 #menu{
-  height: 82px;
-  padding-top:17px;
+  height: 87px;
+  padding-top:22px;
   font-weight: 700;
   #logo{
     position: absolute;
-    top:4px;
+    top:10px;
   }
   a{
-    text-decoration: none;
+  &:hover {
+  text-decoration: underline;
   }
+  }
+  
   *{
     position: static;
   }
@@ -173,10 +183,13 @@ a{
           padding-left: 30px;
           padding-right: 0;
           background: url(../images/nav-a-sub.png) 15px 10px no-repeat;
+          &:first-child, .first  {
+          background-image:none;
         }
         &:first-child, .first  {
           background-image:none;
         }
+        
         a{
           @include link-colors(#fff);
           background-image: none;
@@ -297,7 +310,7 @@ div.dialog-titlebar {
 #breadcrumb{
   @extend .container;
   padding: 7px 0 10px 10px;
-  margin-top:-20px;
+  
   ul{
     @include horizontal-list(10px);
 
@@ -308,6 +321,9 @@ div.dialog-titlebar {
         a{
           color: #555;
         }
+      }
+      a {
+        color: #005196;
       }
       &:first-child{
         padding-left: 20px;
@@ -499,9 +515,7 @@ input:-webkit-autofill {
 /* ================ */
 /* = Vua them vao = */
 
-a.multiSelect {
-  background: white url(../images/dropdown.blue.png) right center no-repeat;
-  border: solid 1px #BBB;
+.ie7 {
   
   width:200px;
   position: relative;
@@ -587,6 +601,9 @@ a.multiSelect {
     }
   }
 }
+
+
+
 /* ================ */
 /*@import "debug.sass";*/
 @import "custom.css";

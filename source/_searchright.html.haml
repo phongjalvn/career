@@ -8,13 +8,13 @@
       %ul
         %li
           %label
-            %input{:name => "ntk", :placeholder => "Nhap tu khoa tim kiem...", :type => "text"}/
+            %input.w{:name => "ntk", :placeholder => "Nhap tu khoa tim kiem...", :type => "text"}/
         %li
           %label
-            %select#nganhnghe{:name => "nganhnghe"}
+            %select#nganhnghe.multi-checklist{:name => "nganhnghe"}
               %option{:value => "IT-phan mem"} IT - Phần mềm
               %option{:value => "IT-phan cmem"} IT - Phần mềm 
-              %option{:value => "IT-phan msem"} Biên phiên dịch tiếng Nhật
+              %option{:value => "IT-phan msem"} Biên dịch phiên dịch
               %option{:value => "IT-phan meem"} IT - Phần mềm
               %option{:value => "IT-phan mtrem"} IT - Phần mềm
               %option{:value => "IT-phertan mem"} IT - Phần mềm
@@ -22,7 +22,7 @@
               %option{:value => "IT-phan saemem"} IT - Phần mềm
         %li
           %label
-            %select#thanhpho{:name => "thanhpho"}
+            %select#thanhpho.multi-checklist{:name => "thanhpho"}
               %option{:value => "tp hcm"} TP Hồ Chí Minh
               %option{:value => "tp hcaasm"} TP Hồ Chí Minh
               %option{:value => "tp hwercm"} TP Hồ Chí Minh
@@ -36,7 +36,7 @@
         #right-more
           %li
             %label
-              %select#cbEducatiodnLevel.TEXTBOX{:name => "cbEducationLevel", :title => "Chon trinh do hoc van"}
+              %select#cbEducatiodnLevel.TEXTBOX.multi-checklist{ :name => "cbEducationLevel", :title => "Chon trinh do hoc van"}
                 %option{:selected => "", :value => ""} Chọn trình độ học vấn
                 %option{:value => "JHS"} PTCS
                 %option{:value => "HSC"} Trung học
@@ -58,7 +58,7 @@
                 %option{:value => "OTH"} Khác
           %li
             %label
-              %select#cbPositasisonType.TEXTBOX{:name => "cbPositidsonType", :title => "Chon loai cong viec"}
+              %select#cbPositasisonType.TEXTBOX.multi-checklist{ :name => "cbPositidsonType", :title => "Chon loai cong viec"}
                 %option{:selected => "", :value => ""} Chọn loại công việc
                 %option{:value => "Full-time Pernament"} Toàn thời gian cố định
                 %option{:value => "Full-time Temporary"} Toàn thời gian tạm thời
@@ -68,40 +68,37 @@
                 %option{:value => "Other"} Khác
           %li
             %label
-              %select#cbCarseerLevel.normal.TEXTBOX{:name => "cbCasdreerLevel"}
-                %option{:selected => "", :value => ""} Chọn cấp bậc
-                %option{:value => "New Entry"} Mới đi làm
-                %option{:value => "Labor"} Nhân viên
-                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
-                %option{:value => "Professional"} Chuyên viên
-                %option{:value => "Executive"} Điều hành
-          %li
-            %label
-              %select#cbCareearLevel.normal.TEXTBOX{:name => "cbCarsdaseerLevel"}
-                %option{:selected => "", :value => ""} Chọn cấp bậc
-                %option{:value => "New Entry"} Mới đi làm
-                %option{:value => "Labor"} Nhân viên
-                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
-                %option{:value => "Professional"} Chuyên viên
-                %option{:value => "Executive"} Điều hành
-          %li
-            %label
-              %select#cbCareerLrevel.normal.TEXTBOX{:name => "cbCarrgeerLevel"}
-                %option{:selected => "", :value => ""} Chọn cấp bậc
-                %option{:value => "New Entry"} Mới đi làm
-                %option{:value => "Labor"} Nhân viên
-                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
-                %option{:value => "Professional"} Chuyên viên
-                %option{:value => "Executive"} Điều hành
+              %select#cbCarseerLevel.normal.TEXTBOX.multi-checklist{:name => "cbCasdreserLevel"}
+                %option{:selected => "", :value => ""} 1 nam
+                %option{:value => "New Entry"} 2 nam
+                %option{:value => "Labor"} 3 nam
+                %option{:value => "Technical/Engineer"} 4 nam
+                %option{:value => "Executive"} 5 nam
+          %li.clearfix
+            %span.select.luong.clearfix
+              %select#cbSalary.TEXTBOX{:name => "cbSalary", :onchange => "changeSalary(this);"}
+                %option{:value => "Negotiable"} Thương lượng
+                %option{:value => "Normal"} Nhập
+                %option{:value => "MoreThan"} Hơn                
+                %option{:value => "Competitive"} Cạnh tranh
+              %span#divSalaryFrom{:style => "display: none;"}
+                %input#txtSalaryFrom.TEXTBOX{:name => "txtSalaryFrom", :size => "6", :type => "text", :value => "0"}
+                  %select#cbMoneyRateIDFrom.TEXTBOX{:name => "cbMoneyRateIDFrom", :onchange => "changeSalary(this);"}
+                    %option{:value => "2"} VND
+                    %option{:value => "1"} USD
+              %span#divSalaryTo{:style => "display: none;"}                
+                %input#txtSalaryTo.TEXTBOX{:name => "txtSalaryTo", :size => "6", :type => "text", :value => "0"}
+                  %select#cbMoneyRateIDTo.TEXTBOX{:name => "cbMoneyRateIDTo", :onchange => "changeSalary(this);"}
+                    %option{:value => "2"} VND
+                    %option{:value => "1"} USD
           %li
             %label
               %select#cbCareedrrLevel.normal.TEXTBOX{:name => "cbCareyterLevel"}
-                %option{:selected => "", :value => ""} Chọn cấp bậc
-                %option{:value => "New Entry"} Mới đi làm
-                %option{:value => "Labor"} Nhân viên
-                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
-                %option{:value => "Professional"} Chuyên viên
-                %option{:value => "Executive"} Điều hành
+                %option{:selected => "", :value => ""} 1 ngay
+                %option{:value => "New Entry"} 2 ngay
+                %option{:value => "Technical/Engineer"} 3 ngay
+                %option{:value => "Professional"} 4 ngay
+                %option{:value => "Executive"} 5 ngay
         %li.moresearch.clearfix
           %a{:href => "#"}
             %span Mở rộng tiêu chí tìm kiếm

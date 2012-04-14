@@ -1,3 +1,6 @@
+#search-center {
+	padding-top:0;
+}
 #search-center.advance-search .contents{
 	.nut {
 	  margin-left:268px;
@@ -43,7 +46,215 @@
 		}
 	}
 }
+#right-more {
+	label a {
+	span {
+		width:100% !important;
+	}
+	}
+}
+.details #right .list-mota li {
+	input.w, #cbSalary, #cbCareedrrLevel{
+			    	width:192px;
+			    	border:1px solid #BBBBBB;
+			    	padding:3px;
+			    }
+}
+.list-mota {
+	li.editsearch {
+		background-image:none !important;
+	}
+	.multiSelectOptions {
+		background: none repeat scroll 0 0 #FFFFFF;
+	    border: 1px solid #B2B2B2;
+	    height: 300px;
+	    margin-top: 11px;
+	    overflow: hidden;
+
+	    	.multiSelectHolder {
+	    		bottom: 20px;
+		    left: 0;
+		    overflow-y: auto;
+		    position: absolute;
+		    right: 0;
+		    top: 0px;
+		    .selectAll {
+		    	input {
+		    	display:none;
+		    	}
+		    }
+		    label {
+			   cursor: pointer;
+		    display: block;
+   			 width: 100%;
+   			 font-weight:100;
+   			 line-height:24px;
+   			 input {
+   			 vertical-align:middle;
+   			 }
+		    }
+	    	}
+	    	.xbutton {
+	    		line-height:24px;
+	    		.deSelectAll {
+	    		input {
+	    			display:none;
+	    		}
+	    			display: inline;
+			    float: left;
+			    padding-left:5px;
+	    		}
+	    		span {
+	    			background-image: none;
+				    background-position: right center;
+				    padding-right: 10px;
+				   
+	    		}
+	    		background-color: #333333;
+		    bottom: 0;
+		    color: #FFFFFF;
+		    display: block;
+		    left: 0;
+		    position: absolute;
+		    right: 0;
+		    text-align: right;
+	    	}
+	}
+	a.multiSelect {
+		background: white url(../images/selectarrrow.png) right center no-repeat;
+	  border: solid 1px #BBB;
+	  padding:3px;
+	  width:192px;
+	  display: block;
+	  height:26px;
+	  color:#222;
+
+	  span {
+	  	display: block;
+	  line-height:19px;
+	  }
+	}
+	
+}
+.searchfooter form #search-more span {
+	@include ellipsis;
+	width:172px !important;
+}
+.searchfooter{
+	a.multiSelect {
+	  background: white url(../images/dropdown.blue.png) right center no-repeat;
+	  border: solid 1px #BBB;
+	  padding:3px;
+	  height:26px;
+	  width:200px;
+	  position: relative;
+	  padding-right:10px;
+
+	  cursor: default;
+	  text-decoration: none;
+	  color: black;
+	  display: -moz-inline-stack;
+	  display: inline-block;
+	  vertical-align: top;
+	  &:link, &:visited, &:hover, &:active {
+	    color: black;
+	    text-decoration: none; }
+	  span {
+	    margin: 1px 0px 1px 3px;
+	    @include ellipsis;
+	    display: -moz-inline-stack;
+	    display: block;
+	    white-space: nowrap; }
+	  &.hover {
+	    background-image: url(../images/dropdown.blue.hover.png); }
+	  &.active, &.focus {
+	    border: inset 1px #000; }
+	  &.active {
+	    background-image: url(../images/dropdown.blue.active.png); } }
+
+	.xbutton {
+	    position:absolute;
+	    display:block;
+	    text-align: right;
+	    background-color:#333;
+	    color:#fff;
+	    bottom:0;
+	    left:0;
+	    right:0;
+	    label.deSelectAll{
+	      float:left;
+	      text-align: left;
+	    }
+	}
+	.multiSelectOptions {
+	  margin-top: -1px;
+	  height:200px;
+	  overflow: hidden;
+	  border: solid 1px #B2B2B2;
+	  background: #FFF;
+	  width:300px;
+	  .multiSelectHolder{
+	    overflow-y: auto;
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:20px;
+	    position:absolute;
+	  }
+	  label {
+	     cursor: pointer;
+	    padding: 0px 2px;
+	    display: block;
+	    white-space: nowrap;
+	    &.optGroup {
+	      font-weight: bold; } }
+	  .optGroupContainer label {
+	    padding-left: 10px; }
+	  &.optGroupHasCheckboxes .optGroupContainer label {
+	    padding-left: 18px; }
+	  input {
+	    vertical-align: middle; }
+	  label {
+	    clear: both;
+	    &.checked {
+	   }
+	    &.selectAll, &.deSelectAll {
+	      
+	      border-bottom: dotted 1px #CCC;
+	      padding-left: 10px;
+	      clear:none;
+	      input{
+	        display: none;
+	      }
+	    }
+	    &.deSelectAll  {
+	      @include float-left;
+	      width: 49%;
+	    }
+	    &.selectAll {
+	      width:100%;
+	      display:block;
+	    }
+	    &.hover {
+	      text-decoration:underline;
+	    }
+	  }
+	}
+}
 .searchfooter {
+	
+	
+	.searchfooter form #search-more .selclose {
+	    padding-right:5px;
+	}
+	#divSalaryFrom, #divSalaryTo {
+		input, select {
+			float:left;
+			display:inline;
+			opacity:1 !important;
+			padding:3px;
+		}
+	}
 	background-color:#6DB3E2;
 	.searchbutton {
 		@include  buttonB02;
@@ -62,6 +273,39 @@
 		 	 	
 		 	 }
 		}
+		p.luong {
+			position:relative;
+			#cbSalary {
+				padding:3px;
+				border: 1px solid #BBBBBB;
+				opacity:1 !important;
+				position:relative;
+			}
+			#divSalaryFrom {
+				input {
+					width:60%;
+				}
+				>span {
+					display:none;
+				}
+					position:absolute;
+					top:-7px;
+					left:114px;
+					width:300px !important;
+			}
+			#divSalaryTo  {
+				left:350px;
+				position:absolute;
+				width:300px !important;
+					top:-7px;
+				input {
+					width:60%;
+				}
+				>span {
+				display:none;
+				}
+			}
+		}
 		p.nornal {
 			.ml {
 				margin-left:15px;
@@ -73,27 +317,27 @@
 			    float: left;
 			    
 			    font-weight: normal;
-			    height: 22px;
-			    line-height: 22px;
-			    margin: 18px 0 16px 20px;
+			    height: 26px;
+			    line-height: 26px;
+			    margin: 17px 0 16px 20px;
 			    padding: 0 0 0 10px;
 			    width:300px;
 			}
 			#nganhnghe,#thanhpho {
 				vertical-align:bottom;
-				
+				padding:3px;
 				width:255px;
-				padding:1px;
+				
 			}
 		    button{
 		      @include hide-text;
-		      background: url(../images/search-button.png) -1px -3px;
+		      background: url(../images/search-button.png) -1px -2px;
 		      margin-top: 18px;
 		      border: none;
 		      cursor: pointer;
 		      margin-left: 10px;
 		      width: 48px;
-		      line-height:20px;
+		      line-height:23px;
 		      padding: 0;
 		    }
 		    
@@ -101,3 +345,10 @@
 	}
 }
 
+span.selclose {
+	 cursor: pointer;
+	 &:hover {
+	 text-decoration: underline;
+	 }
+				    
+}

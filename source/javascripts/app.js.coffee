@@ -74,7 +74,7 @@ $(document).ready ->
     currentPos = step * current
     filler.width(currentPos)
 
-  $('.contents input').tipsy
+  $('.contents input.formtip').tipsy
     fade: true
     gravity: 's'
     html: false

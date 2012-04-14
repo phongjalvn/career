@@ -1,5 +1,4 @@
 .details{
-  padding: 20px 0;
   background: url(../images/bg.gif) top left repeat;
 
   #breadcrumb{
@@ -37,6 +36,7 @@
       line-height: 35px;
       li {
         background: url('../images/line-right-chitiet.png') bottom center repeat-x;
+        margin:5px 0;
         ul {
           padding-left: 10px;
           li {
@@ -44,6 +44,7 @@
             padding-left: 18px;
             line-height: 30px;
           }
+
         }
       }
       a {
