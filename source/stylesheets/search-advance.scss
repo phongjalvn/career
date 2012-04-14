@@ -64,53 +64,58 @@
 	li.editsearch {
 		background-image:none !important;
 	}
+	.search-text {
+		width: 192px;
+		border:1px solid $borderinput;
+	}
 	.multiSelectOptions {
 		background: none repeat scroll 0 0 #FFFFFF;
 	    border: 1px solid #B2B2B2;
 	    height: 300px;
-	    margin-top: 11px;
+	   
 	    overflow: hidden;
 
-	    	.multiSelectHolder {
-	    		bottom: 20px;
+		.multiSelectHolder {
+			bottom: 20px;
 		    left: 0;
 		    overflow-y: auto;
 		    position: absolute;
 		    right: 0;
 		    top: 0px;
 		    .selectAll {
-		    	input {
-		    	display:none;
-		    	}
+			input {
+			display:none;
+			}
 		    }
 		    label {
 			   cursor: pointer;
 		    display: block;
-   			 width: 100%;
-   			 font-weight:100;
-   			 line-height:24px;
-   			 input {
-   			 vertical-align:middle;
-   			 }
+			 width: 100%;
+			 font-weight:100;
+			 line-height:24px;
+
+			 input {
+			 vertical-align:middle;
+			 }
 		    }
-	    	}
-	    	.xbutton {
-	    		line-height:24px;
-	    		.deSelectAll {
-	    		input {
-	    			display:none;
-	    		}
-	    			display: inline;
+		}
+		.xbutton {
+			line-height:24px;
+			.deSelectAll {
+			input {
+				display:none;
+			}
+				display: inline;
 			    float: left;
 			    padding-left:5px;
-	    		}
-	    		span {
-	    			background-image: none;
+			}
+			span {
+				background-image: none;
 				    background-position: right center;
 				    padding-right: 10px;
 				   
-	    		}
-	    		background-color: #333333;
+			}
+			background-color: #333333;
 		    bottom: 0;
 		    color: #FFFFFF;
 		    display: block;
@@ -118,7 +123,7 @@
 		    position: absolute;
 		    right: 0;
 		    text-align: right;
-	    	}
+		}
 	}
 	a.multiSelect {
 		background: white url(../images/selectarrrow.png) right center no-repeat;
@@ -188,7 +193,7 @@
 	}
 	.multiSelectOptions {
 	  margin-top: -1px;
-	  height:200px;
+	  height:230px !important;
 	  overflow: hidden;
 	  border: solid 1px #B2B2B2;
 	  background: #FFF;
