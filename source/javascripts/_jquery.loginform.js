@@ -6,22 +6,26 @@ $(document).ready(function() {
 	    $('a',(this)).text("- Rút g?n tiêu chí tìm ki?m").addClass('showless');
 	    $('#right-more').show();
 	    $('#right-more').animate({ 'height': $('#right-more').data('maxheight') });
-  	}, function(){
+	}, function(){
 	    $('a',(this)).text("+ M? rông tiêu chí tìm ki?m").removeClass('showless');
 	    $('#right-more').hide();
 	    $('#right-more').animate({ 'height': $('#right-more').data('height') });
-  	});
-  	
-  	$('.morongtimkiem').toggle(function(){
+	});
+	
+	$('.morongtimkiem').toggle(function(){
 	    $(this).text("- Rút g?n tiêu chí tìm vi?c làm tuy?n d?ng").addClass('showless');
 	    $('#search-more').show();
 	    $('#search-more').animate({ 'height': $('#search-more').data('maxheight') });
-  	}, function(){
+	}, function(){
 	    $(this).text("+ M? rông tiêu chí tìm vi?c làm tuy?n d?ng").removeClass('showless');
 	    $('#search-more').hide();
 	    $('#search-more').animate({ 'height': $('#search-more').data('height') });
-  	});
-	$(".multi-checklist").multiSelect({ oneOrMoreSelected: '*' });
+	});
+	$(".multi-checklist").multiSelect({ oneOrMoreSelected: '' }, function (ele) {
+		var dataHolder = $('.multiSelect.active')
+		dataHolder.text($('input:checked').parent().text()).data('config').oneOrMoreSelected = '';
+		false
+	});
 	$('.multiselect').multiselect2side({
 		selectedPosition: 'right',
 		moveOptions: false,
