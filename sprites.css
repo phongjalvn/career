@@ -1,0 +1,1077 @@
+.addone {
+  background: url(sprites.png) -1821px -579px no-repeat;
+  display: block;
+  width: 38px;
+  height: 20px;
+}
+
+.arrow-cam {
+  background: url(sprites.png) -1873px -236px no-repeat;
+  display: block;
+  width: 9px;
+  height: 7px;
+}
+
+.arrow-ntd {
+  background: url(sprites.png) -1888px -214px no-repeat;
+  display: block;
+  width: 4px;
+  height: 8px;
+}
+
+.arrow-xam {
+  background: url(sprites.png) -1884px -236px no-repeat;
+  display: block;
+  width: 9px;
+  height: 7px;
+}
+
+.arrow-xanh {
+  background: url(sprites.png) -1858px -246px no-repeat;
+  display: block;
+  width: 9px;
+  height: 7px;
+}
+
+.arrow-xanhdam {
+  background: url(sprites.png) -1869px -246px no-repeat;
+  display: block;
+  width: 9px;
+  height: 7px;
+}
+
+.b-end {
+  background: url(sprites.png) -1858px -214px no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+}
+
+.b-start {
+  background: url(sprites.png) -1858px -256px no-repeat;
+  display: block;
+  width: 25px;
+  height: 20px;
+}
+
+.bg {
+  background: url(sprites.png) -1885px -227px repeat;
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+.bg-btn-blue {
+  background: url(sprites.png) -850px -1054px repeat-x;
+  display: block;
+  width: 10px;
+  height: 36px;
+}
+
+.bg-des {
+  background: url(sprites.png) -1888px -224px repeat-x;
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.bg-hsvl-info {
+  background: url(sprites.png) -459px -960px repeat-x;
+  display: block;
+  width: 1px;
+  height: 166px;
+}
+
+.bg-overlay {
+  background: url(sprites.png) -1891px -224px repeat-x;
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.bg-propressbar {
+  background: url(sprites.png) -1858px -278px repeat-x;
+  display: block;
+  width: 3px;
+  height: 3px;
+}
+
+.bg-slider {
+  background: url(sprites.png) -952px -540px no-repeat;
+  display: block;
+  width: 475px;
+  height: 37px;
+}
+
+.bg-slider-filler {
+  background: url(sprites.png) -952px -501px no-repeat;
+  display: block;
+  width: 475px;
+  height: 37px;
+}
+
+.bg-slider-filler1 {
+  background: url(sprites.png) -1891px -285px repeat-x;
+  display: block;
+  width: 1px;
+  height: 8px;
+}
+
+.bg-slider1 {
+  background: url(sprites.png) -1879px -300px repeat-x;
+  display: block;
+  width: 1px;
+  height: 8px;
+}
+
+.bg-title {
+  background: url(sprites.png) -1892px -231px repeat-x;
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.breadcrum-bg {
+  background: url(sprites.png) -1882px -300px repeat-x;
+  display: block;
+  width: 4px;
+  height: 8px;
+}
+
+.bullet {
+  background: url(sprites.png) -1885px -256px no-repeat;
+  display: block;
+  width: 6px;
+  height: 9px;
+}
+
+.bullet2 {
+  background: url(sprites.png) -1852px -352px no-repeat;
+  display: block;
+  width: 11px;
+  height: 9px;
+}
+
+.bulletntd {
+  background: url(sprites.png) -1885px -267px no-repeat;
+  display: block;
+  width: 6px;
+  height: 9px;
+}
+
+.camnang-bottom {
+  background: url(sprites.png) -952px -315px no-repeat;
+  display: block;
+  width: 721px;
+  height: 14px;
+}
+
+.camnang-img-bg {
+  background: url(sprites.png) -300px -1183px no-repeat;
+  display: block;
+  width: 71px;
+  height: 65px;
+}
+
+.camnang-loop {
+  background: url(sprites.png) -952px -331px no-repeat;
+  display: block;
+  width: 721px;
+  height: 1px;
+}
+
+.camnang-top {
+  background: url(sprites.png) 0px 0px no-repeat;
+  display: block;
+  width: 950px;
+  height: 20px;
+}
+
+.close_pop {
+  background: url(sprites.png) -1234px -736px no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.danghinh {
+  background: url(sprites.png) -952px -736px no-repeat;
+  display: block;
+  width: 196px;
+  height: 22px;
+}
+
+.doitac-bg {
+  background: url(sprites.png) -1880px -246px no-repeat;
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+.doitac-large-bg {
+  background: url(sprites.png) -614px -960px no-repeat;
+  display: block;
+  width: 138px;
+  height: 88px;
+}
+
+.dotted {
+  background: url(sprites.png) -1863px -278px no-repeat;
+  display: block;
+  width: 2px;
+  height: 2px;
+}
+
+.dropdown {
+  background: url(sprites.png) -1858px -236px no-repeat;
+  display: block;
+  width: 13px;
+  height: 8px;
+}
+
+.dropdown.blue {
+  background: url(sprites.png) -1581px -761px no-repeat;
+  display: block;
+  width: 16px;
+  height: 19px;
+}
+
+.dropdown.blue.active {
+  background: url(sprites.png) -1861px -579px no-repeat;
+  display: block;
+  width: 16px;
+  height: 19px;
+}
+
+.dropdown.blue.hover {
+  background: url(sprites.png) -1876px -689px no-repeat;
+  display: block;
+  width: 16px;
+  height: 19px;
+}
+
+.edit {
+  background: url(sprites.png) -698px -1054px no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.email-icon {
+  background: url(sprites.png) -648px -1054px no-repeat;
+  display: block;
+  width: 48px;
+  height: 40px;
+}
+
+.email-input {
+  background: url(sprites.png) -1506px -652px no-repeat;
+  display: block;
+  width: 204px;
+  height: 29px;
+}
+
+.facebook {
+  background: url(sprites.png) -862px -1054px no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.faq {
+  background: url(sprites.png) -740px -1054px no-repeat;
+  display: block;
+  width: 28px;
+  height: 40px;
+}
+
+.footer {
+  background: url(sprites.png) -453px -960px no-repeat;
+  display: block;
+  width: 1px;
+  height: 207px;
+}
+
+.footer-ntd {
+  background: url(sprites.png) -450px -960px no-repeat;
+  display: block;
+  width: 1px;
+  height: 207px;
+}
+
+.forjobseeker {
+  background: url(sprites.png) -952px -616px no-repeat;
+  display: block;
+  width: 300px;
+  height: 118px;
+}
+
+.guibanbe {
+  background: url(sprites.png) -1674px -689px no-repeat;
+  display: block;
+  width: 200px;
+  height: 30px;
+}
+
+.guibanbentd {
+  background: url(sprites.png) -1584px -441px no-repeat;
+  display: block;
+  width: 300px;
+  height: 27px;
+}
+
+.header {
+  background: url(sprites.png) -949px -413px no-repeat;
+  display: block;
+  width: 1px;
+  height: 291px;
+}
+
+.header-ntd {
+  background: url(sprites.png) -309px -1263px no-repeat;
+  display: block;
+  width: 1px;
+  height: 107px;
+}
+
+.header-tungbuoc {
+  background: url(sprites.png) -952px -214px no-repeat;
+  display: block;
+  width: 904px;
+  height: 30px;
+}
+
+.hoanthanh {
+  background: url(sprites.png) -1646px -334px no-repeat;
+  display: block;
+  width: 206px;
+  height: 8px;
+}
+
+.hoanthanhbar {
+  background: url(sprites.png) -1646px -352px no-repeat;
+  display: block;
+  width: 204px;
+  height: 9px;
+}
+
+.hoanthanhbg {
+  background: url(sprites.png) -695px -761px no-repeat;
+  display: block;
+  width: 231px;
+  height: 105px;
+}
+
+.home-icon {
+  background: url(sprites.png) -1252px -736px no-repeat;
+  display: block;
+  width: 15px;
+  height: 13px;
+}
+
+.home-ntd {
+  background: url(sprites.png) -1269px -736px no-repeat;
+  display: block;
+  width: 15px;
+  height: 13px;
+}
+
+.hoso-icon {
+  background: url(sprites.png) -1599px -761px no-repeat;
+  display: block;
+  width: 16px;
+  height: 19px;
+}
+
+.hsvl-bot {
+  background: url(sprites.png) 0px -22px no-repeat;
+  display: block;
+  width: 950px;
+  height: 8px;
+}
+
+.hsvl-loop {
+  background: url(sprites.png) 0px -32px no-repeat;
+  display: block;
+  width: 950px;
+  height: 1px;
+}
+
+.hsvl-top {
+  background: url(sprites.png) 0px -35px no-repeat;
+  display: block;
+  width: 950px;
+  height: 25px;
+}
+
+.kwick1 {
+  background: url(sprites.png) -695px -868px no-repeat;
+  display: block;
+  width: 179px;
+  height: 73px;
+}
+
+.kwick2 {
+  background: url(sprites.png) -876px -868px no-repeat;
+  display: block;
+  width: 179px;
+  height: 73px;
+}
+
+.kwick3 {
+  background: url(sprites.png) -1057px -868px no-repeat;
+  display: block;
+  width: 179px;
+  height: 73px;
+}
+
+.kwick4 {
+  background: url(sprites.png) -1238px -868px no-repeat;
+  display: block;
+  width: 179px;
+  height: 73px;
+}
+
+.la {
+  background: url(sprites.png) -1802px -501px no-repeat;
+  display: block;
+  width: 82px;
+  height: 16px;
+}
+
+.language-select {
+  background: url(sprites.png) -1802px -519px no-repeat;
+  display: block;
+  width: 82px;
+  height: 16px;
+}
+
+.language-selectntd {
+  background: url(sprites.png) -1150px -736px no-repeat;
+  display: block;
+  width: 82px;
+  height: 16px;
+}
+
+.left-side-home-bottom {
+  background: url(sprites.png) -952px -490px no-repeat;
+  display: block;
+  width: 627px;
+  height: 9px;
+}
+
+.lin {
+  background: url(sprites.png) -896px -1054px no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.line-right-chitiet {
+  background: url(sprites.png) -1892px -227px no-repeat;
+  display: block;
+  width: 1px;
+  height: 2px;
+}
+
+.line-right-chitietntd {
+  background: url(sprites.png) -1867px -278px no-repeat;
+  display: block;
+  width: 1px;
+  height: 2px;
+}
+
+.line-trangthaicuathoi {
+  background: url(sprites.png) -1675px -324px no-repeat;
+  display: block;
+  width: 202px;
+  height: 2px;
+}
+
+.log138 {
+  background: url(sprites.png) -462px -1054px no-repeat;
+  display: block;
+  width: 91px;
+  height: 56px;
+}
+
+.login-bg {
+  background: url(sprites.png) -1254px -689px no-repeat;
+  display: block;
+  width: 208px;
+  height: 41px;
+}
+
+.loginntd-bg {
+  background: url(sprites.png) -1464px -689px no-repeat;
+  display: block;
+  width: 208px;
+  height: 41px;
+}
+
+.logo {
+  background: url(sprites.png) -886px -960px no-repeat;
+  display: block;
+  width: 130px;
+  height: 55px;
+}
+
+.logo {
+  background: url(sprites.png) -1600px -868px no-repeat;
+  display: block;
+  width: 100px;
+  height: 43px;
+}
+
+.logo-c {
+  background: url(sprites.png) -462px -960px no-repeat;
+  display: block;
+  width: 150px;
+  height: 92px;
+}
+
+.logo-chitiet-demo {
+  background: url(sprites.png) -754px -960px no-repeat;
+  display: block;
+  width: 130px;
+  height: 80px;
+}
+
+.logo-congty-demo {
+  background: url(sprites.png) -555px -1054px no-repeat;
+  display: block;
+  width: 91px;
+  height: 56px;
+}
+
+.logo-ntd {
+  background: url(sprites.png) -1702px -868px no-repeat;
+  display: block;
+  width: 86px;
+  height: 43px;
+}
+
+.logo-small {
+  background: url(sprites.png) -1790px -868px no-repeat;
+  display: block;
+  width: 71px;
+  height: 33px;
+}
+
+.luubuoc1-ttbuoc2 {
+  background: url(sprites.png) -1563px -579px no-repeat;
+  display: block;
+  width: 256px;
+  height: 27px;
+}
+
+.luuntd {
+  background: url(sprites.png) -1733px -616px no-repeat;
+  display: block;
+  width: 150px;
+  height: 27px;
+}
+
+.luutam {
+  background: url(sprites.png) -1387px -789px no-repeat;
+  display: block;
+  width: 110px;
+  height: 27px;
+}
+
+.luuvieclam {
+  background: url(sprites.png) -1161px -827px no-repeat;
+  display: block;
+  width: 100px;
+  height: 30px;
+}
+
+.mail {
+  background: url(sprites.png) -930px -1054px no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.main-bottom {
+  background: url(sprites.png) 0px -243px no-repeat;
+  display: block;
+  width: 946px;
+  height: 12px;
+}
+
+.main-loop {
+  background: url(sprites.png) 0px -257px no-repeat;
+  display: block;
+  width: 946px;
+  height: 1px;
+}
+
+.main-top {
+  background: url(sprites.png) 0px -260px no-repeat;
+  display: block;
+  width: 946px;
+  height: 12px;
+}
+
+.menuser {
+  background: url(sprites.png) -1885px -214px no-repeat;
+  display: block;
+  width: 1px;
+  height: 11px;
+}
+
+.mycl-left-bottom {
+  background: url(sprites.png) -952px -334px no-repeat;
+  display: block;
+  width: 692px;
+  height: 13px;
+}
+
+.mycl-left-loop {
+  background: url(sprites.png) -952px -349px no-repeat;
+  display: block;
+  width: 692px;
+  height: 1px;
+}
+
+.mycl-left-top {
+  background: url(sprites.png) -952px -352px no-repeat;
+  display: block;
+  width: 692px;
+  height: 13px;
+}
+
+.mycl-right-bottom {
+  background: url(sprites.png) -1584px -470px no-repeat;
+  display: block;
+  width: 252px;
+  height: 7px;
+}
+
+.mycl-right-loop {
+  background: url(sprites.png) -1592px -404px no-repeat;
+  display: block;
+  width: 252px;
+  height: 1px;
+}
+
+.mycl-right-top {
+  background: url(sprites.png) -1429px -562px no-repeat;
+  display: block;
+  width: 252px;
+  height: 11px;
+}
+
+.nav-a {
+  background: url(sprites.png) -952px -579px no-repeat;
+  display: block;
+  width: 323px;
+  height: 35px;
+}
+
+.nav-a-active {
+  background: url(sprites.png) -1277px -579px no-repeat;
+  display: block;
+  width: 284px;
+  height: 34px;
+}
+
+.nav-a-sub {
+  background: url(sprites.png) -1887px -246px no-repeat;
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+.navntd-a {
+  background: url(sprites.png) -1254px -652px no-repeat;
+  display: block;
+  width: 250px;
+  height: 35px;
+}
+
+.navntd-a-active {
+  background: url(sprites.png) -1254px -616px no-repeat;
+  display: block;
+  width: 250px;
+  height: 34px;
+}
+
+.newsletter {
+  background: url(sprites.png) -952px -407px no-repeat;
+  display: block;
+  width: 630px;
+  height: 81px;
+}
+
+.ngtimviec-bg {
+  background: url(sprites.png) -232px -1263px no-repeat;
+  display: block;
+  width: 75px;
+  height: 117px;
+}
+
+.nopdon-bottom {
+  background: url(sprites.png) -946px -342px no-repeat;
+  display: block;
+  width: 3px;
+  height: 60px;
+}
+
+.nopdon-button {
+  background: url(sprites.png) -1584px -407px no-repeat;
+  display: block;
+  width: 301px;
+  height: 32px;
+}
+
+.nopdon-button-hover {
+  background: url(sprites.png) -1592px -367px no-repeat;
+  display: block;
+  width: 301px;
+  height: 32px;
+}
+
+.ntd {
+  background: url(sprites.png) -1419px -868px no-repeat;
+  display: block;
+  width: 179px;
+  height: 46px;
+}
+
+.ntd-bg {
+  background: url(sprites.png) 0px -1263px no-repeat;
+  display: block;
+  width: 230px;
+  height: 230px;
+}
+
+.profile-bottom {
+  background: url(sprites.png) 0px -62px no-repeat;
+  display: block;
+  width: 950px;
+  height: 8px;
+}
+
+.profile-infomation {
+  background: url(sprites.png) -456px -960px no-repeat;
+  display: block;
+  width: 1px;
+  height: 190px;
+}
+
+.profile-loop {
+  background: url(sprites.png) 0px -72px no-repeat;
+  display: block;
+  width: 950px;
+  height: 1px;
+}
+
+.profile-top {
+  background: url(sprites.png) 0px -75px no-repeat;
+  display: block;
+  width: 950px;
+  height: 20px;
+}
+
+.propress-right {
+  background: url(sprites.png) -928px -761px no-repeat;
+  display: block;
+  width: 231px;
+  height: 105px;
+}
+
+.removeone {
+  background: url(sprites.png) -1850px -652px no-repeat;
+  display: block;
+  width: 38px;
+  height: 20px;
+}
+
+.right-bg-chitiet {
+  background: url(sprites.png) -225px -761px no-repeat;
+  display: block;
+  width: 223px;
+  height: 420px;
+}
+
+.right-bg-chitietntd {
+  background: url(sprites.png) 0px -761px no-repeat;
+  display: block;
+  width: 223px;
+  height: 500px;
+}
+
+.right-side-bg-loop {
+  background: url(sprites.png) -946px -413px no-repeat;
+  display: block;
+  width: 1px;
+  height: 299px;
+}
+
+.right-side-home-bg {
+  background: url(sprites.png) -1592px -401px no-repeat;
+  display: block;
+  width: 300px;
+  height: 1px;
+}
+
+.rss {
+  background: url(sprites.png) -964px -1054px no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.search {
+  background: url(sprites.png) 0px -342px no-repeat;
+  display: block;
+  width: 944px;
+  height: 66px;
+}
+
+.search-all-all {
+  background: url(sprites.png) 0px -274px no-repeat;
+  display: block;
+  width: 944px;
+  height: 66px;
+}
+
+.search-bottom {
+  background: url(sprites.png) 0px -97px no-repeat;
+  display: block;
+  width: 950px;
+  height: 32px;
+}
+
+.search-button {
+  background: url(sprites.png) -1018px -960px no-repeat;
+  display: block;
+  width: 50px;
+  height: 29px;
+}
+
+.search-loop {
+  background: url(sprites.png) 0px -131px no-repeat;
+  display: block;
+  width: 950px;
+  height: 1px;
+}
+
+.search-right {
+  background: url(sprites.png) -1387px -761px no-repeat;
+  display: block;
+  width: 192px;
+  height: 26px;
+}
+
+.search-top {
+  background: url(sprites.png) 0px -134px no-repeat;
+  display: block;
+  width: 950px;
+  height: 32px;
+}
+
+.searchbg2 {
+  background: url(sprites.png) 0px -410px no-repeat;
+  display: block;
+  width: 944px;
+  height: 1px;
+}
+
+.searchbginner {
+  background: url(sprites.png) -946px -274px no-repeat;
+  display: block;
+  width: 1px;
+  height: 61px;
+}
+
+.searchntd-bot {
+  background: url(sprites.png) 0px -168px no-repeat;
+  display: block;
+  width: 950px;
+  height: 34px;
+}
+
+.searchntd-loop {
+  background: url(sprites.png) 0px -204px no-repeat;
+  display: block;
+  width: 950px;
+  height: 1px;
+}
+
+.searchntd-top {
+  background: url(sprites.png) 0px -207px no-repeat;
+  display: block;
+  width: 950px;
+  height: 34px;
+}
+
+.selectarrrow {
+  background: url(sprites.png) -1858px -285px no-repeat;
+  display: block;
+  width: 19px;
+  height: 23px;
+}
+
+.shadow {
+  background: url(sprites.png) -1675px -315px no-repeat;
+  display: block;
+  width: 217px;
+  height: 7px;
+}
+
+.slider {
+  background: url(sprites.png) -1879px -285px no-repeat;
+  display: block;
+  width: 10px;
+  height: 13px;
+}
+
+.slider-bg {
+  background: url(sprites.png) -952px -246px no-repeat;
+  display: block;
+  width: 904px;
+  height: 8px;
+}
+
+.slider-fill {
+  background: url(sprites.png) -1584px -479px no-repeat;
+  display: block;
+  width: 155px;
+  height: 6px;
+}
+
+.social {
+  background: url(sprites.png) -1429px -540px no-repeat;
+  display: block;
+  width: 350px;
+  height: 20px;
+}
+
+.social-bottom {
+  background: url(sprites.png) -1161px -761px no-repeat;
+  display: block;
+  width: 224px;
+  height: 64px;
+}
+
+.social2 {
+  background: url(sprites.png) -1781px -540px no-repeat;
+  display: block;
+  width: 111px;
+  height: 18px;
+}
+
+.square {
+  background: url(sprites.png) -1865px -352px no-repeat;
+  display: block;
+  width: 6px;
+  height: 9px;
+}
+
+.tab-active {
+  background: url(sprites.png) -1429px -501px no-repeat;
+  display: block;
+  width: 371px;
+  height: 34px;
+}
+
+.tab-bg {
+  background: url(sprites.png) 0px -413px no-repeat;
+  display: block;
+  width: 944px;
+  height: 346px;
+}
+
+.taohoso {
+  background: url(sprites.png) -1506px -616px no-repeat;
+  display: block;
+  width: 225px;
+  height: 27px;
+}
+
+.taohstungbuoc {
+  background: url(sprites.png) -1263px -827px no-repeat;
+  display: block;
+  width: 67px;
+  height: 28px;
+}
+
+.thongbao-moi {
+  background: url(sprites.png) -1712px -652px no-repeat;
+  display: block;
+  width: 136px;
+  height: 27px;
+}
+
+.tinkhac-bg {
+  background: url(sprites.png) -946px -714px no-repeat;
+  display: block;
+  width: 4px;
+  height: 35px;
+}
+
+.title-bg-home {
+  background: url(sprites.png) -952px -367px no-repeat;
+  display: block;
+  width: 638px;
+  height: 38px;
+}
+
+.title-dhs {
+  background: url(sprites.png) -952px -256px no-repeat;
+  display: block;
+  width: 904px;
+  height: 27px;
+}
+
+.title-hosotungbuoc {
+  background: url(sprites.png) -952px -285px no-repeat;
+  display: block;
+  width: 904px;
+  height: 28px;
+}
+
+.top {
+  background: url(sprites.png) -770px -1054px no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.ttdn-bg {
+  background: url(sprites.png) -450px -761px no-repeat;
+  display: block;
+  width: 243px;
+  height: 197px;
+}
+
+.twitter {
+  background: url(sprites.png) -998px -1054px no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.user {
+  background: url(sprites.png) -812px -1054px no-repeat;
+  display: block;
+  width: 36px;
+  height: 40px;
+}
+
+.user-demo {
+  background: url(sprites.png) -225px -1183px no-repeat;
+  display: block;
+  width: 73px;
+  height: 73px;
+}
+
+.vieclamcungcty {
+  background: url(sprites.png) -952px 0px no-repeat;
+  display: block;
+  width: 941px;
+  height: 212px;
+}
