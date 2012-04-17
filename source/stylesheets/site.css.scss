@@ -577,6 +577,7 @@ input:-webkit-autofill {
 .details #right .list-search2.list-mota {
   line-height:25px;
 }
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 /* ================ */
 /*@import "debug.sass";*/
 @import "custom.css";
@@ -584,4 +585,4 @@ input:-webkit-autofill {
 @import "search-advance.scss";
 @import "create-resume.scss";
 @import "nhatuyendung.scss";
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
