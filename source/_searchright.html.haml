@@ -153,7 +153,7 @@
                 %option{:value => "MAP"} Thạc sĩ Dược phẩm
                 %option{:value => "PHD"} Tiến sĩ
                 %option{:value => "OTH"} Khác
-          %p.clearfix
+          %p.linefn.clearfix
             %span.notimg Loại công việc
             %label
               %select#cbPositasisonType.multi-checklist.TEXTBOX{:multiple => "multiple", :name => "cbPositidsonType", :title => "Chon loai cong viec"}
@@ -164,7 +164,7 @@
                 %option{:value => "Part-time Temporary"} Bán thời gian tạm thời
                 %option{:value => "Contract"} Hợp đồng
                 %option{:value => "Other"} Khác
-          %p.clearfix
+          %p.linef.clearfix
             %span.notimg Cấp bậc
             %label
               %select#cbCarseerLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCasdreerLevel"}
@@ -174,7 +174,7 @@
                 %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
                 %option{:value => "Professional"} Chuyên viên
                 %option{:value => "Executive"} Điều hành
-          %p.clearfix
+          %p.linef.clearfix
             %span.notimg Mức kinh nghiệm
             %label
               %select#cbCareearLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCarsdaseerLevel"}
@@ -193,20 +193,23 @@
                 %option{:value => "MoreThan"} Hơn
                 
                 %option{:value => "Competitive"} Cạnh tranh
-              %span#divSalaryFrom{:style => "display: none;"}
+              %span#divSalaryFrom.clearfix{:style => "display: none;"}
+                %span.ser Từ:
                 %input#txtSalaryFrom.TEXTBOX{:name => "txtSalaryFrom", :size => "6", :type => "text", :value => "0"}
                   %select#cbMoneyRateIDFrom.TEXTBOX{:name => "cbMoneyRateIDFrom", :onchange => "changeSalary(this);"}
                     %option{:value => "2"} VND
                     %option{:value => "1"} USD
-              %span#divSalaryTo{:style => "display: none;"}                
+                
+              %span#divSalaryTo.clearfix{:style => "display: none;"}                
+                %span.ser Đến:
                 %input#txtSalaryTo.TEXTBOX{:name => "txtSalaryTo", :size => "6", :type => "text", :value => "0"}
                   %select#cbMoneyRateIDTo.TEXTBOX{:name => "cbMoneyRateIDTo", :onchange => "changeSalary(this);"}
                     %option{:value => "2"} VND
                     %option{:value => "1"} USD
-          %p.clearfix
+          %p.date-job.clearfix
             %span.notimg Công việc trong vòng
             %label
-              %select#cbCareedrrLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCareyterLevel"}
+              %select#cbCareedrrLevel.normal.TEXTBOX{:name => "cbCareyterLevel"}
                 %option{:value => "1"} 1
                 %option{:value => "2"} 2
                 %option{:value => "3"} 3
@@ -237,6 +240,7 @@
                 %option{:value => "28"} 28
                 %option{:value => "29"} 29
                 %option{:value => "30"} 30
+              %span ngày
         %li.moresearch.clearfix
           %a{:href => "#"}
             %span Mở rộng tiêu chí tìm kiếm
@@ -246,7 +250,7 @@
   .mota
     %h3 Mục tìm kiếm liên quan
     / .list-mota
-    .list-search.list-mota
+    .list-search2.list-mota
       %ul
         %li
           %a{:href => "#"} IT - Phần cứng

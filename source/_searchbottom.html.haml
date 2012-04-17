@@ -147,7 +147,7 @@
                   %option{:value => "MAP"} Thạc sĩ Dược phẩm
                   %option{:value => "PHD"} Tiến sĩ
                   %option{:value => "OTH"} Khác
-            %p.clearfix
+            %p.linefn.clearfix
               %span.notimg Loại công việc
               %label
                 %select#cbPositasisonType.multi-checklist.TEXTBOX{:multiple => "multiple", :name => "cbPositidsonType", :title => "Chon loai cong viec"}
@@ -158,7 +158,7 @@
                   %option{:value => "Part-time Temporary"} Bán thời gian tạm thời
                   %option{:value => "Contract"} Hợp đồng
                   %option{:value => "Other"} Khác
-            %p.clearfix
+            %p.linef.clearfix
               %span.notimg Cấp bậc
               %label
                 %select#cbCarseerLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCasdreerLevel"}
@@ -168,7 +168,7 @@
                   %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
                   %option{:value => "Professional"} Chuyên viên
                   %option{:value => "Executive"} Điều hành
-            %p.clearfix
+            %p.linef.clearfix
               %span.notimg Mức kinh nghiệm
               %label
                 %select#cbCareearLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCarsdaseerLevel"}
@@ -189,12 +189,12 @@
                   %option{:value => "Competitive"} Cạnh tranh
                 %span#divSalaryFrom{:style => "display: none;"}
                   %input#txtSalaryFrom.TEXTBOX{:name => "txtSalaryFrom", :size => "6", :type => "text", :value => "0"}
-                    %select#cbMoneyRateIDFrom.TEXTBOX{:name => "cbMoneyRateIDFrom", :onchange => "changeSalary(this);"}
+                    %select#cbMoneyRateIDFrom.TEXTBOX.moneyrate{:name => "cbMoneyRateIDFrom", :onchange => "changeMoney(this);"}
                       %option{:value => "2"} VND
                       %option{:value => "1"} USD
                 %span#divSalaryTo{:style => "display: none;"}                
                   %input#txtSalaryTo.TEXTBOX{:name => "txtSalaryTo", :size => "6", :type => "text", :value => "0"}
-                    %select#cbMoneyRateIDTo.TEXTBOX{:name => "cbMoneyRateIDTo", :onchange => "changeSalary(this);"}
+                    %select#cbMoneyRateIDTo.TEXTBOX.moneyrate{:name => "cbMoneyRateIDTo", :onchange => "changeMoney(this);"}
                       %option{:value => "2"} VND
                       %option{:value => "1"} USD
             %p.clearfix

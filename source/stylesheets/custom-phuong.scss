@@ -215,7 +215,18 @@ a {
     text-decoration: underline;
     margin-left: 10px;
     color: #034ca3; } }
-
+li:hover.luuviec {
+  background: url("../images/luuvieclam-hover.png") right center no-repeat;
+}
+li:hover.luuviec a {
+  background: url("../images/luuvieclam-hover.png") left center no-repeat ;
+}
+li:hover.guibanbe {
+  background: url("../images/guibanbe-hover.png") right center no-repeat;
+}
+li:hover.guibanbe a {
+  background: url("../images/guibanbe-hover.png") left center no-repeat;
+}
 #tag {
   color: #333;
   font-weight: bold;

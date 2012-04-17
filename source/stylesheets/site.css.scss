@@ -3,6 +3,7 @@
 @import "compass/support";
 $legacy-support-for-ie7: true;
 @import "mixin.sass";
+@import "compass/css3/pie";
 
 @mixin debug(){
   /*background-image: url(../images/screen/1.1.1.Trangchu.png);*/
@@ -123,7 +124,7 @@ a:hover {
   font-weight: 700;
   #logo{
     position: absolute;
-    top:10px;
+    top:3px;
   }
   a{
   &:hover {
@@ -186,8 +187,6 @@ a:hover {
           &:first-child, .first  {
           background-image:none;
         }
-        &:first-child, .first  {
-          background-image:none;
         }
         
         a{
@@ -516,94 +515,69 @@ input:-webkit-autofill {
 /* = Vua them vao = */
 
 .ie7 {
-  
-  width:200px;
-  position: relative;
-  cursor: default;
-  text-decoration: none;
-  color: black;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  &:link, &:visited, &:hover, &:active {
-    color: black;
-    text-decoration: none; }
-  span {
-    margin: 1px 0px 1px 3px;
-    
-    display: -moz-inline-stack;
-    display: inline-block;
-    white-space: nowrap; }
-  &.hover {
-    background-image: url(../images/dropdown.blue.hover.png); }
-  &.active, &.focus {
-    border: inset 1px #000; }
-  &.active {
-    background-image: url(../images/dropdown.blue.active.png); } }
-
-.xbutton {
-    position:absolute;
-    display:block;
-    text-align: right;
-    background-color:#333;
-    color:#fff;
-    bottom:0;
-    left:0;
-    right:0;
-    label.deSelectAll{
-      float:left;
-      text-align: left;
-    }
-}
-.multiSelectOptions {
-  margin-top: -1px;
-  height:100px;
-  overflow: hidden;
-  border: solid 1px #B2B2B2;
-  background: #FFF;
-
-  .multiSelectHolder{
-    overflow-y: auto;
-    top:0;
-    left:0;
-    right:0;
-    bottom:20px;
-    position:absolute;
+  #menu .menu ul a:hover, #menu .menu ul a:hover span, #menu .menu ul a.active, #menu .menu ul a.active span {
+    margin-top:0px;
   }
-  label {
-    padding: 0px 2px;
-    display: block;
-    white-space: nowrap;
-    &.optGroup {
-      font-weight: bold; } }
-  .optGroupContainer label {
-    padding-left: 10px; }
-  &.optGroupHasCheckboxes .optGroupContainer label {
-    padding-left: 18px; }
-  input {
-    vertical-align: middle; }
-  label {
-    clear: both;
-    &.checked {
-   }
-    &.selectAll, &.deSelectAll {
-      @include float-left;
-      width: 49%;
-      border-bottom: dotted 1px #CCC;
-      padding-left: 10px;
-      clear:none;
-      input{
-        display: none;
-      }
-    }
-    &.hover {
-      text-decoration:underline;
-    }
+  #menu {
+    height: 65px;
+  }
+  .search-top li {
+    zoom:1;
+    float:none;
+  }
+  .search-top label select#nganhnghe {
+    width: 263px;
+  }
+  .search-top label select#thanhpho {
+    width: 225px;
+  }
+  #doitac .container ul {
+    height: 42px;
+  }
+  #bottombox .box {
+    width: 30%;
+  }
+  #bottombox .col-3 {
+    #socialbottom {
+      height: 32px;
+    }    
+  }
+  #socialbottom #zing a {
+    background-position:-192px -32px;
+  }
+  #socialbottom #zing a:hover{
+    background-position:-192px 0;
+  };
+  .listemployeer ul li img {
+    border-left: none;
   }
 }
-
-
-
+// Fix 17/4
+.list-mota #cbCareedrrLevel{
+    margin-right: 5px;
+}
+.details .list-search .editsearch a:hover {
+    background: url("../images/timkiem-bg-hover.png") repeat-x;
+    border-color: #3D6DC3;
+    text-shadow: 0 1px #4876C9;
+}
+.details table.view-rutgon span.job-title a:hover {
+  color: #387fd3;
+}
+.listjob ul li a:hover {
+  color: #777;
+}
+.listjob ul li span:hover {
+  color: #999;
+  cursor:pointer;
+}
+.search-top button:hover {
+  background-image: url("../images/search-button-hover.png");
+}
+.details #right .list-search2.list-mota {
+  line-height:25px;
+}
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 /* ================ */
 /*@import "debug.sass";*/
 @import "custom.css";
@@ -611,4 +585,4 @@ input:-webkit-autofill {
 @import "search-advance.scss";
 @import "create-resume.scss";
 @import "nhatuyendung.scss";
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+

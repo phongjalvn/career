@@ -76,11 +76,10 @@ $(document).ready ->
 
   $('.contents input.formtip').tipsy
     fade: true
-    gravity: 's'
+    gravity: 'w'
     html: false
     live: true
     offset: 5
-    title: 'placeholder'
     trigger: 'focus'
     opacity: 1
 
