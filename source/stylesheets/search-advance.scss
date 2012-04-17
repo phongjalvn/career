@@ -54,25 +54,51 @@
 	}
 }
 .details #right .list-mota li {
+	.luong {
+		.notimg {
+				padding: 0;
+		}
+	}
 	input.w, #cbSalary, #cbCareedrrLevel{
-			    	width:192px;
-			    	border:1px solid #BBBBBB;
-			    	padding:3px;
+				width:192px;
+				border:1px solid #BBBBBB;
+				padding:3px;
 			    }
 }
+#right .luong span.notimg {
+	padding: 8px 0 0 0;
+	line-height:16px;
+}
+#right .luong #cbSalary {
+	display:block;
+	margin-top: 3px;
+}
+#right .date-job label {
+	display:block;
+	margin-top: -14px;
+}
+.list-mota .multiSelectOptions .xbutton .deSelectAll:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}
+
 .list-mota {
-	li.editsearch {
-		background-image:none !important;
+	span.notimg {
+		padding: 0;
+		display:block;
 	}
 	.search-text {
 		width: 192px;
-		border:1px solid $borderinput;
+		padding: 3px 0;
+	}
+	li.editsearch {
+		background-image:none !important;
 	}
 	.multiSelectOptions {
 		background: none repeat scroll 0 0 #FFFFFF;
 	    border: 1px solid #B2B2B2;
-	    height: 300px;
-	   
+	    height: 290px !important;
+	    width: 222px !important;
 	    overflow: hidden;
 
 		.multiSelectHolder {
@@ -82,6 +108,7 @@
 		    position: absolute;
 		    right: 0;
 		    top: 0px;
+		   
 		    .selectAll {
 			input {
 			display:none;
@@ -89,19 +116,27 @@
 		    }
 		    label {
 			   cursor: pointer;
-		    display: block;
-			 width: 100%;
-			 font-weight:100;
-			 line-height:24px;
 
-			 input {
-			 vertical-align:middle;
-			 }
+		    display: block;
+				 width: 100%;
+				 font-weight:100;
+				 line-height:24px;
+				 input {
+				 vertical-align:middle;
+				 }
+				&:hover {
+					text-decoration:underline;
+				};
 		    }
 		}
 		.xbutton {
+			label {
+				font-weight:700;
+			}
 			line-height:24px;
+			
 			.deSelectAll {
+				font-weight:700;
 			input {
 				display:none;
 			}
@@ -125,18 +160,22 @@
 		    text-align: right;
 		}
 	}
+	
 	a.multiSelect {
 		background: white url(../images/selectarrrow.png) right center no-repeat;
 	  border: solid 1px #BBB;
-	  padding:3px;
+	  padding:0;
 	  width:192px;
 	  display: block;
-	  height:26px;
+	  height:19px;
 	  color:#222;
+	  margin-top: -6px;
+	  @include ellipsis;
 
 	  span {
-	  	display: block;
-	  line-height:19px;
+		display: block;
+		width: 192px !important;
+		line-height:17px;
 	  }
 	}
 	
@@ -144,13 +183,27 @@
 .searchfooter form #search-more span {
 	@include ellipsis;
 	width:172px !important;
+
+}
+.searchfooter form #search-more span.selclose {
+	font-weight:700;
+}
+#right-more {
+	.multiSelectOptions  {
+		margin-top:11px;
+	}
+	.notimg {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
 }
 .searchfooter{
 	a.multiSelect {
 	  background: white url(../images/dropdown.blue.png) right center no-repeat;
 	  border: solid 1px #BBB;
-	  padding:3px;
-	  height:26px;
+	  padding:1px;
+	  height:20px;
 	  width:200px;
 	  position: relative;
 	  padding-right:10px;
@@ -189,15 +242,16 @@
 	    label.deSelectAll{
 	      float:left;
 	      text-align: left;
+	      font-weight:bold;
 	    }
 	}
 	.multiSelectOptions {
 	  margin-top: -1px;
-	  height:230px !important;
+	  height:232px !important;
 	  overflow: hidden;
 	  border: solid 1px #B2B2B2;
 	  background: #FFF;
-	  width:300px;
+	  width:200px !important;
 	  .multiSelectHolder{
 	    overflow-y: auto;
 	    top:0;
@@ -208,9 +262,10 @@
 	  }
 	  label {
 	     cursor: pointer;
-	    padding: 0px 2px;
-	    display: block;
-	    white-space: nowrap;
+	     
+		    padding: 0px 2px;
+		    display: block;
+		    white-space: nowrap;
 	    &.optGroup {
 	      font-weight: bold; } }
 	  .optGroupContainer label {
@@ -251,6 +306,7 @@
 	
 	.searchfooter form #search-more .selclose {
 	    padding-right:5px;
+	    font-weight:700;
 	}
 	#divSalaryFrom, #divSalaryTo {
 		input, select {
@@ -263,7 +319,7 @@
 	background-color:#6DB3E2;
 	.searchbutton {
 		@include  buttonB02;
-		margin-left:220px;
+		margin-left:166px;
 	}
 	border:1px solid #E7F5FF ;
 	form {
@@ -273,12 +329,13 @@
 		      background-position:center right;
 		      padding-right:10px;
 
-		 	 }
-		 	 .selectAll {
-		 	 	
-		 	 }
+			 }
+			 .selectAll {
+				
+			 }
 		}
 		p.luong {
+
 			position:relative;
 			#cbSalary {
 				padding:3px;
@@ -322,34 +379,55 @@
 			    float: left;
 			    
 			    font-weight: normal;
-			    height: 26px;
-			    line-height: 26px;
-			    margin: 17px 0 16px 20px;
+			    height: 20px;
+			    line-height: 20px;
+			    margin: 17px 0 17px 20px;
 			    padding: 0 0 0 10px;
 			    width:300px;
 			}
 			#nganhnghe,#thanhpho {
 				vertical-align:bottom;
-				padding:3px;
+				padding:1px;
 				width:255px;
 				
 			}
 		    button{
 		      @include hide-text;
-		      background: url(../images/search-button.png) -1px -2px;
+		      background: url(../images/search-button.png) -1px -4px;
 		      margin-top: 18px;
 		      border: none;
 		      cursor: pointer;
 		      margin-left: 10px;
 		      width: 48px;
-		      line-height:23px;
+		      line-height:18px;
 		      padding: 0;
 		    }
 		    
 		}
 	}
 }
+.searchfooter .linef .multiSelectOptions{
+	height: 137px !important;
+}
+.list-mota .linef .multiSelectOptions {
+	height: 175px !important;
+}
+.searchfooter .linefn .multiSelectOptions{
+	height: 155px !important;
+}
+.list-mota .linefn .multiSelectOptions {
+	height: 195px !important;
+}
 
+.searchfooter form p.nornal .ml .multiSelectOptions {
+	width: 253px !important;
+}
+.searchfooter form p.luong span.select>span {
+	
+}
+.timkiemnangcao .input {
+	width: 300px;
+}
 span.selclose {
 	 cursor: pointer;
 	 &:hover {

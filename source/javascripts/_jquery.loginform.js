@@ -1,31 +1,26 @@
 $(document).ready(function() {
-	
+	$('#banner li.active.banner-timviec .banner-header').css({'display':'none'})
 	window.onload = loadSalary;
-
 	$('.moresearch').toggle(function(){
-	    $('a',(this)).text("- R˙t g?n tiÍu chÌ tÏm ki?m").addClass('showless');
+	    $('a',(this)).text("- R√∫t g·ªçn ti√™u ch√≠ t√¨m ki·∫øm").addClass('showless');
 	    $('#right-more').show();
 	    $('#right-more').animate({ 'height': $('#right-more').data('maxheight') });
 	}, function(){
-	    $('a',(this)).text("+ M? rÙng tiÍu chÌ tÏm ki?m").removeClass('showless');
+	    $('a',(this)).text("+ M·ªü r√¥ng ti√™u ch√≠ t√¨m ki·∫øm").removeClass('showless');
 	    $('#right-more').hide();
 	    $('#right-more').animate({ 'height': $('#right-more').data('height') });
 	});
 	
 	$('.morongtimkiem').toggle(function(){
-	    $(this).text("- R˙t g?n tiÍu chÌ tÏm vi?c l‡m tuy?n d?ng").addClass('showless');
+	    $(this).text("- R√∫t g·ªçn ti√™u ch√≠ t√¨m vi·ªác l√†m tuy·ªÉn d·ª•ng").addClass('showless');
 	    $('#search-more').show();
 	    $('#search-more').animate({ 'height': $('#search-more').data('maxheight') });
 	}, function(){
-	    $(this).text("+ M? rÙng tiÍu chÌ tÏm vi?c l‡m tuy?n d?ng").removeClass('showless');
+	    $(this).text("+ M·ªü r√¥ng ti√™u ch√≠ t√¨m vi·ªác l√†m tuy·ªÉn d·ª•ng").removeClass('showless');
 	    $('#search-more').hide();
 	    $('#search-more').animate({ 'height': $('#search-more').data('height') });
 	});
-	$(".multi-checklist").multiSelect({ oneOrMoreSelected: '' }, function (ele) {
-		var dataHolder = $('.multiSelect.active')
-		dataHolder.text($('input:checked').parent().text()).data('config').oneOrMoreSelected = '';
-		false
-	});
+	$(".multi-checklist").multiSelect({ oneOrMoreSelected: '*' });
 	$('.multiselect').multiselect2side({
 		selectedPosition: 'right',
 		moveOptions: false,
@@ -95,3 +90,9 @@ function changeSalary(target)
 		{
 		changeSalary(document.getElementById("cbSalary"));
 		}
+function changeMoney(target) {
+			$('.moneyrate').val($(target).val());
+} 
+
+	
+

@@ -8,28 +8,51 @@
 
     }
     #divSalaryFrom {
+      span.ser {
+        font-weight: bold;
+        line-height:10px;
+        margin-right:5px;
+        @include float-left;
+        text-align: left;
+    width: 25px;
+      }
       @include float-left;
-      width:95px;
-      padding-left:2px;
+      width:100%;
+      
       input,select {
-        width:44px;
+        width:40%;
         @include float-left;
         padding:0;
         height:17px;
         margin-right:2px;
       }
+      select {
+          width: 52px;
+      }
     }
     #divSalaryTo {
+      span.ser {
+        font-weight: bold;
+        line-height:10px;
+        margin-right:5px;
+        @include float-left;
+        text-align: left;
+    width: 25px;
+      }
       padding-left:0;
-      width:95px;
-      left:105px;
-      @include float-right;
+     
+      width:100%;
+      left:50px;
+      @include float-left;
       input,select {
-        width:44px;
+        width:76px;
         @include float-left;
         padding:0;
         height:17px;
         margin-right:2px;
+      }
+      select {
+        width: 52px;
       }
     }
   }
