@@ -1,0 +1,608 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Sửa thông báo tìm kiếm hồ sơ"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.advance-search
+  .container
+    = partial(:breadcrumb)
+    %h2 Sửa thông báo tìm kiếm hồ sơ
+    .contents.clearfix
+      .bg.clearfix
+        %h3 Sửa thông báo tìm kiếm hồ sơ
+        %ul.timkiemnangcao.clearfix
+          %li
+            %label
+              %span Tên thông báo hồ sơ: 
+              %input.input.formtip{:type => "text",:placeholder => "Từ khóa!",:title => "Nhập từ khóa nào để tìm kiếm"}
+          %li
+            %label
+              %span Từ khóa: 
+              %input.input{:type => "text",:placeholder => "Từ khóa!",:title => "Nhập từ khóa nào để tìm kiếm"}
+          %li
+            %label
+              %span Điều kiện: 
+              %select
+                %option Tất cả từ khóa
+                %option Bất kỳ từ khóa nào
+          %li
+            %label
+              %span Ngành nghề yêu thích: 
+              %div.multi-two
+                %select#myselecttsms.multiselect{:multiple => "true", :name => "myselecttsms", :size => "6"}
+                  %option{:value => "31"} Bán hàng
+                  %option{:value => "24"} Báo chí/ Biên tập viên/ Xuất bản
+                  %option{:value => "17"} Bảo hiểm
+                  %option{:value => "29"} Bất động sản
+                  %option{:value => "18"} Biên phiên dịch/ Thông dịch viên
+                  %option{:value => "154"} Biên phiên dịch (tiếng Nhật)
+                  %option{:value => "14"} Chăm sóc sức khỏe/ Y tế
+                  %option{:value => "130"} CNTT - Phần cứng/ Mạng
+                  %option{:value => "19"} CNTT - Phần mềm
+                  %option{:value => "26"} Dầu khí/ Khoáng sản
+                  %option{:value => "33"} Dệt may/ Da giày
+                  %option{:value => "9"} Dịch vụ khách hàng
+                  %option{:value => "28"} Dược/ Sinh học
+                  %option{:value => "148"} Điện/ Điện tử
+                  %option{:value => "10"} Giáo dục/ Đào tạo/ Thư viện
+                  %option{:value => "127"} Hóa chất/ Sinh hóa/ Thực phẩm
+                  %option{:value => "1"} Kế toán/ Tài chính/ Kiểm toán
+                  %option{:value => "15"} Khách sạn/ Du lịch
+                  %option{:value => "139"} Kiến trúc
+                  %option{:value => "11"} Kỹ thuật ứng dụng/ Cơ khí
+                  %option{:value => "20"} Lao động phổ thông
+                  %option{:value => "142"} Môi trường/ Xử lý chất thải
+                  %option{:value => "118"} Mới tốt nghiệp/ Thực tập
+                  %option{:value => "5"} Ngân hàng/ Chứng khoán/ Đầu tư
+                  %option{:value => "4"} Nghệ thuật/ Thiết kế/ Giải trí
+                  %option{:value => "12"} Người nước ngoài
+                  %option{:value => "30"} Nhà hàng/ Dịch vụ ăn uống
+                  %option{:value => "16"} Nhân sự
+                  %option{:value => "3"} Nông nghiệp/ Lâm nghiệp
+                  %option{:value => "151"} Ô tô
+                  %option{:value => "21"} Pháp lý/ Luật
+                  %option{:value => "25"} Phi chính phủ/ Phi lợi nhuận
+                  %option{:value => "145"} Quản lý chất lượng (QA/ QC)
+                  %option{:value => "22"} Quản lý điều hành
+                  %option{:value => "2"} Quảng cáo/ Khuyến mãi/ Đối ngoại
+                  %option{:value => "23"} Sản xuất/ Vận hành sản xuất
+                  %option{:value => "6"} Thư ký/ Hành chánh
+                  %option{:value => "136"} Tiếp thị
+                  %option{:value => "7"} Tư vấn
+                  %option{:value => "34"} Vận chuyển/ Giao thông/ Kho bãi
+                  %option{:value => "27"} Vật tư/ Mua hàng
+                  %option{:value => "32"} Viễn Thông
+                  %option{:value => "8"} Xây dựng
+                  %option{:value => "13"} Xuất nhập khẩu/ Ngoại thương
+                  %option{:value => "35"} Khác
+          %li
+            %label
+              %span Nơi làm việc yêu thích: 
+              %div.multi-two
+                %select#myselecttsmss.multiselect{:multiple => "true", :name => "myselecttsmss", :size => "6"}
+                  %option{:value => "HCM"} Hồ Chí Minh
+                  %option{:value => "HN"} Hà Nội
+                  %option{:value => "DN"} Đà Nẵng
+                  %option{:value => "AG"} An Giang
+                  %option{:value => "BRVT"} Bà Rịa - Vũng Tàu
+                  %option{:value => "BK"} Bắc Cạn
+                  %option{:value => "BG"} Bắc Giang
+                  %option{:value => "BL"} Bạc Liêu
+                  %option{:value => "BN"} Bắc Ninh
+                  %option{:value => "BTE"} Bến Tre
+                  %option{:value => "BDH"} Bình Định
+                  %option{:value => "BD"} Bình Dương
+                  %option{:value => "BP"} Bình Phước
+                  %option{:value => "BT"} Bình Thuận
+                  %option{:value => "CM"} Cà Mau
+                  %option{:value => "CT"} Cần Thơ
+                  %option{:value => "CB"} Cao Bằng
+                  %option{:value => "DL"} Đắk Lắk
+                  %option{:value => "DNG"} Đăk Nông
+                  %option{:value => "DB"} Điện Biên
+                  %option{:value => "DNI"} Đồng Nai
+                  %option{:value => "DT"} Đồng Tháp
+                  %option{:value => "GL"} Gia Lai
+                  %option{:value => "HG"} Hà Giang
+                  %option{:value => "HNM"} Hà Nam
+                  %option{:value => "HT"} Hà Tây
+                  %option{:value => "HTH"} Hà Tĩnh
+                  %option{:value => "HD"} Hải Dương
+                  %option{:value => "HP"} Hải Phòng
+                  %option{:value => "HAG"} Hậu Giang
+                  %option{:value => "HB"} Hòa Bình
+                  %option{:value => "HY"} Hưng Yên
+                  %option{:value => "KG"} Kiên Giang
+                  %option{:value => "KH"} Khánh Hòa
+                  %option{:value => "KT"} Kon Tum
+                  %option{:value => "LC"} Lai Châu
+                  %option{:value => "LD"} Lâm Đồng
+                  %option{:value => "LS"} Lạng Sơn
+                  %option{:value => "LCI"} Lào Cai
+                  %option{:value => "LA"} Long An
+                  %option{:value => "ND"} Nam Định
+                  %option{:value => "NA"} Nghệ An
+                  %option{:value => "NB"} Ninh Bình
+                  %option{:value => "NT"} Ninh Thuận
+                  %option{:value => "PT"} Phú Thọ
+                  %option{:value => "PY"} Phú Yên
+                  %option{:value => "QB"} Quảng Bình
+                  %option{:value => "QN"} Quảng Nam
+                  %option{:value => "QNI"} Quảng Ngãi
+                  %option{:value => "QNH"} Quảng Ninh
+                  %option{:value => "QT"} Quảng Trị
+                  %option{:value => "ST"} Sóc Trăng
+                  %option{:value => "SL"} Sơn La
+                  %option{:value => "TN"} Tây Ninh
+                  %option{:value => "TB"} Thái Bình
+                  %option{:value => "TNN"} Thái Nguyên
+                  %option{:value => "THH"} Thanh Hóa
+                  %option{:value => "TTH"} Thừa Thiên - Huế
+                  %option{:value => "TG"} Tiền Giang
+                  %option{:value => "TV"} Trà Vinh
+                  %option{:value => "TQ"} Tuyên Quang
+                  %option{:value => "VL"} Vĩnh Long
+                  %option{:value => "VP"} Vĩnh Phúc
+                  %option{:value => "YB"} Yên Bái
+                  %option{:value => "OT"} Khác
+                  %option{:value => "NN"} Nước Ngoài
+          %li
+            %label
+              %span Hồ sơ đăng trong vòng: 
+              %select.agn-l{:name => "resumeAlert[postedWithIn]"}
+                %option{:value => ""} Chọn
+                %option{:value => "1"} 1
+                %option{:value => "2"} 2
+                %option{:value => "3"} 3
+                %option{:value => "4"} 4
+                %option{:value => "5"} 5
+                %option{:value => "6"} 6
+                %option{:value => "7"} 7
+                %option{:value => "8"} 8
+                %option{:value => "9"} 9
+                %option{:value => "10"} 10
+                %option{:value => "11"} 11
+                %option{:value => "12"} 12
+                %option{:value => "13"} 13
+                %option{:value => "14"} 14
+                %option{:value => "15"} 15
+                %option{:value => "16"} 16
+                %option{:value => "17"} 17
+                %option{:value => "18"} 18
+                %option{:value => "19"} 19
+                %option{:value => "20"} 20
+                %option{:value => "21"} 21
+                %option{:value => "22"} 22
+                %option{:value => "23"} 23
+                %option{:value => "24"} 24
+                %option{:value => "25"} 25
+                %option{:value => "26"} 26
+                %option{:value => "27"} 27
+                %option{:value => "28"} 28
+                %option{:value => "29"} 29
+                %option{:value => "30"} 30
+              %span.ngay ngày 
+          %li
+            %label
+              %span Giới tính: 
+              %select
+                %option{:selected => "", :value => ""} Nam
+                %option{:value => "Full-time Pernament"} Nữ
+          %li
+            %label
+              %span Tuổi: 
+              %select#resumeAlert_ageFrom.TEXTBOX{:name => "resumeAlert[ageFrom]", :onchange => "changeAge();"}
+                %option{:value => ""} Chọn
+                %option{:value => "O"} Trên
+                %option{:value => "U"} Dưới
+                %option{:value => "15"} 15
+                %option{:value => "16"} 16
+                %option{:value => "17"} 17
+                %option{:value => "18"} 18
+                %option{:value => "19"} 19
+                %option{:value => "20"} 20
+                %option{:value => "21"} 21
+                %option{:value => "22"} 22
+                %option{:value => "23"} 23
+                %option{:value => "24"} 24
+                %option{:value => "25"} 25
+                %option{:value => "26"} 26
+                %option{:value => "27"} 27
+                %option{:value => "28"} 28
+                %option{:value => "29"} 29
+                %option{:value => "30"} 30
+                %option{:value => "31"} 31
+                %option{:value => "32"} 32
+                %option{:value => "33"} 33
+                %option{:value => "34"} 34
+                %option{:value => "35"} 35
+                %option{:value => "36"} 36
+                %option{:value => "37"} 37
+                %option{:value => "38"} 38
+                %option{:value => "39"} 39
+                %option{:value => "40"} 40
+                %option{:value => "41"} 41
+                %option{:value => "42"} 42
+                %option{:value => "43"} 43
+                %option{:value => "44"} 44
+                %option{:value => "45"} 45
+                %option{:value => "46"} 46
+                %option{:value => "47"} 47
+                %option{:value => "48"} 48
+                %option{:value => "49"} 49
+                %option{:value => "50"} 50
+                %option{:value => "51"} 51
+                %option{:value => "52"} 52
+                %option{:value => "53"} 53
+                %option{:value => "54"} 54
+                %option{:value => "55"} 55
+                %option{:value => "56"} 56
+                %option{:value => "57"} 57
+                %option{:value => "58"} 58
+                %option{:value => "59"} 59
+                %option{:value => "60"} 60
+                %option{:value => "61"} 61
+                %option{:value => "62"} 62
+                %option{:value => "63"} 63
+                %option{:value => "64"} 64
+                %option{:value => "65"} 65
+                %option{:value => "66"} 66
+                %option{:value => "67"} 67
+                %option{:value => "68"} 68
+                %option{:value => "69"} 69
+                %option{:value => "70"} 70
+          %li
+            %label
+              %span Trình độ học vấn: 
+              %select#resumeAlert_educationLevel.TEXTBOX{:name => "resumeAlert[educationLevel]", :onchange => "changeEducationLevelLevel(this);"}
+                %option{:value => ""} Chọn trình độ học vấn
+                %option{:value => "1"} PTCS
+                %option{:value => "2"} Trung học
+                %option{:value => "3"} Chứng chỉ
+                %option{:value => "4"} Trung cấp
+                %option{:value => "5"} Cao đẳng
+                %option{:value => "6"} Cử nhân
+                %option{:value => "7"} Kỹ sư
+                %option{:value => "8"} Thạc sĩ
+                %option{:value => "9"} Thạc sĩ Nghệ thuật
+                %option{:value => "10"} Thạc sĩ Thương mại
+                %option{:value => "11"} Thạc sĩ Khoa học
+                %option{:value => "12"} Thạc sĩ Kiến trúc
+                %option{:value => "13"} Thạc sĩ QTKD
+                %option{:value => "14"} Thạc sĩ Kỹ thuật ứng dụng
+                %option{:value => "15"} Thạc sĩ Luật
+                %option{:value => "16"} Thạc sĩ Y học
+                %option{:value => "17"} Thạc sĩ Dược phẩm
+                %option{:value => "18"} Tiến sĩ
+                %option{:value => "19"} Khác
+          %li
+            %label
+              %span Trình độ ngoại ngữ: 
+              %select#resumeAlert_language.TEXTBOX{:name => "resumeAlert[language]", :onchange => "changeLanguage();"}
+                %option{:value => ""} Chọn ngôn ngữ
+                %option{:value => "31"} Tiếng Việt
+                %option{:value => "1"} Tiếng Ả Rập
+                %option{:value => "2"} Tiếng Myanma
+                %option{:value => "33"} Tiếng Trung Quốc (Quảng Đông)
+                %option{:value => "3"} Tiếng Trung Quốc (Quan Thoại)
+                %option{:value => "4"} Tiếng Đan Mạch
+                %option{:value => "5"} Tiếng Hà Lan
+                %option{:value => "8"} Tiếng Anh
+                %option{:value => "9"} Tiếng Pháp
+                %option{:value => "10"} Tiếng Đức
+                %option{:value => "11"} Tiếng Hy Lạp
+                %option{:value => "12"} Tiếng Hebrew
+                %option{:value => "6"} Tiếng Indonesia
+                %option{:value => "13"} Tiếng Ý
+                %option{:value => "14"} Tiếng Nhật
+                %option{:value => "15"} Tiếng Java
+                %option{:value => "16"} Tiếng Khmer
+                %option{:value => "17"} Tiếng Hàn
+                %option{:value => "18"} Tiếng Lào
+                %option{:value => "19"} Tiếng Mã Lai
+                %option{:value => "20"} Tiếng Na Uy
+                %option{:value => "21"} Tiếng Ba Lan
+                %option{:value => "22"} Tiếng Bồ Đào Nha
+                %option{:value => "23"} Tiếng Romana
+                %option{:value => "24"} Tiếng Nga
+                %option{:value => "25"} Tiếng Tây Ban Nha
+                %option{:value => "26"} Tiếng Thụy Điển
+                %option{:value => "27"} Tiếng Tagalog
+                %option{:value => "34"} Tiếng Đài Loan
+                %option{:value => "28"} Tiếng Tamil
+                %option{:value => "29"} Tiếng Thái
+                %option{:value => "30"} Tiếng Thổ Nhĩ Kỳ
+                %option{:value => "32"} Khắc
+          %li
+            %label
+              %span Cấp bậc: 
+              %select
+                %option{:selected => "", :value => ""} Chọn cấp bậc
+                %option{:value => "New Entry"} Mới đi làm
+                %option{:value => "Labor"} Nhân viên
+                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+                %option{:value => "Professional"} Chuyên viên
+                %option{:value => "Executive"} Điều hành
+          %li
+            %label
+              %span Loại công việc: 
+              %select#resumeAlert_positionType.TEXTBOX{:name => "resumeAlert[positionType]"}
+                %option{:value => ""} Chọn loại công việc
+                %option{:value => "A"} Toàn thời gian cố định
+                %option{:value => "B"} Toàn thời gian tạm thời
+                %option{:value => "C"} Bán thời gian
+                %option{:value => "D"} Bán thời gian tạm thời
+                %option{:value => "E"} Hợp đồng
+                %option{:value => "F"} Khác
+          %li
+            %label
+              %span Mức lương mong muốn: 
+              %select
+                %option Thương lượng
+                %option Cạnh tranh
+          %li
+            %label
+              %span Thông báo hồ sơ: 
+              %select#resumeAlert_alertSpan.TEXTBOX{:name => "resumeAlert[alertSpan]", :required => "required"}
+                %option{:selected => "selected", :value => "N"} Không thông báo hồ sơ
+                %option{:value => "B"} Hằng ngày
+                %option{:value => "C"} Hằng tuần
+                %option{:value => "D"} Hằng 2 tuần
+                %option{:value => "E"} Hằng tháng
+          %li
+            %label
+              %span Kiểu thông báo: 
+              %select
+                %option{:selected => "", :value => ""} Email
+          %li
+            %label
+              %span Email của bạn: 
+              %select
+                %option{:selected => "", :value => ""} career@careerlink.vn
+          %li.nut
+            %ul.clearfix
+              %li.search-enter
+                %a.current{:href=>"#"} Tìm kiếm
+              %li.reset
+                %a{:href=>"#"} Làm lại
+        %br
+        %h3 
+          Tìm thấy 13,608 hồ sở đáp ứng yêu cầu tìm kiếm của bạn
+        %div.clearfix
+          %ul.pagination
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+          %br
+          %table.view-rutgon
+            %tbody
+              %tr.header
+                %th{:width => "17%"}
+                  Vị trí mong muốn
+                %th.t-l{:width => "16%"} Tên
+                %th{:width => "15%"} Công việc gần nhất                  
+                %th{:width => "10%"} Học vấn
+                %th{:width => "10%"} Kinh nghiệm
+                %th{:width => "15%"} Mức lương
+                %th{:width => "10%"} Địa điểm
+                %th{:width => "8%"} Cập nhật
+                %th{:width => "3%"}
+                  %input.check_all{:type => "checkbox", :value => ""}/
+              %tr.odd
+                %td
+                  %a{:href => "#"}
+                    Nhân viên tuyển dụng
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Lê Thanh Ngọc
+                %td Nhân viên tư vấn
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td Hơn 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.even
+                %td
+                  %a{:href => "#"}
+                    Tuyển dụng viên
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Nguyễn Ngọc Anh
+                %td Tư vấn tuyển sinh
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.odd
+                %td
+                  %a{:href => "#"}
+                    Kinh doanh
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Lê Thanh Ngọc
+                %td Nhân viên tư vấn
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td Hơn 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.even
+                %td
+                  %a{:href => "#"}
+                    Tuyển dụng viên
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Nguyễn Ngọc Anh
+                %td Bán hàng
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.odd
+                %td
+                  %a{:href => "#"}
+                    Nhân viên tuyển dụng
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Lê Thanh Ngọc
+                %td Nhân viên tư vấn
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td Hơn 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.even
+                %td
+                  %a{:href => "#"}
+                    Tuyển dụng viên
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Nguyễn Ngọc Anh
+                %td Tư vấn tuyển sinh
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.odd
+                %td
+                  %a{:href => "#"}
+                    Kinh doanh
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Lê Thanh Ngọc
+                %td Nhân viên tư vấn
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td Hơn 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+              %tr.even
+                %td
+                  %a{:href => "#"}
+                    Tuyển dụng viên
+                %td.t-l
+                  %a.title{:href => "#"}
+                    Nguyễn Ngọc Anh
+                %td Bán hàng
+                %td
+                  %span
+                    Đại học                  
+                %td
+                  %span.lx
+                    3 năm
+                %td 5,000,000VNĐ
+                %td
+                  %span.kh
+                    %a{:href => "#"} Hồ Chí Minh
+                %td
+                  %span.tths
+                    21/05/2012
+                %td{:align => "center"}
+                  %input{:type => "checkbox"}
+          %ul.pagination.clearfix
+            %li
+              %a.first{:href => "#"} First
+            %li
+              %a.previous{:href => "#"} Previous
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a.current{:href => "#"} 3
+            %li
+              %a.next{:href => "#"} Next
+            %li
+              %a.last{:href => "#"} Last
+

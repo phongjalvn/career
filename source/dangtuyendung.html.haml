@@ -1,4 +1,5 @@
 ---
+logo: 'logo-ntd.png'
 trails:
   - links:
     title: "Careerlink"
@@ -19,13 +20,13 @@ trails:
         %div.tip.clearfix
           .jslider{:current => "1", :total => "3"}
             .filler
-          %p.instruction
+          %div.instruction
             Thông tin Miêu tả sơ lược công ty,Tên việc làm… 
             Bạn hãy chọn nút “Lưu Bước 1 để tiếp tục Bước 2“ để ttiếp tục
-            %br
-            Những mục có dấu sao
-            %span *
-            là bắt buộc.
+            %p.not-input
+              Những mục có dấu sao
+              %span *
+              là bắt buộc.
         / .danghoso
         .danghoso
           %form{:action => "#"}

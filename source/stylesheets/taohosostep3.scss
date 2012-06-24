@@ -1,0 +1,161 @@
+.details .kinhnghiem table {
+    width: 95%;
+    margin: 0 auto;
+}
+.details .kinhnghiem {
+  table {
+    table {
+      width: 100%;
+      border:none;
+      td {
+        border-top: 1px solid #87CEFA;
+        // background-color: #F0F8FF;
+        // color: #004477;
+      }
+    }
+    img {
+      margin-right: 5px;
+      vertical-align:middle;
+    }
+    tr {
+      a:link.tcty {
+        color:#004477;
+        &:hover {
+          text-decoration:underline;
+          cursor:pointer;
+        }
+      }
+      a:link.n {
+        color:#DC143C;
+        &:hover {
+          text-decoration:underline;
+          cursor:pointer;
+        }
+      }
+    }
+  border-collapse: collapse;
+  border-color: #87CEFA #F0F8FF;
+  border-left: 3px solid #F0F8FF;
+  border-right: 3px solid #F0F8FF;
+  border-style: double solid;
+  border-width: 5px 3px;
+  font: 100% / 150% Verdana, Arial, Helvetica, sans-serif; }
+
+th {
+  color: #004477;
+  font: small-caps bold 1.1em / 120% Verdana, Arial, Helvetica, sans-serif;
+  padding: 5px 10px;
+  text-align: left; }
+
+thead th {
+  background: none repeat scroll 0 0 #d3eaff;
+  border: 1px solid #87CEFA;
+  white-space: nowrap; }
+
+tbody {
+  td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    padding: 5px 10px; }
+  th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    padding: 5px 10px;
+    color: #004477;
+    font-size: 1em;
+    font-variant: normal;
+    font-weight: normal; }
+  tr.odd {
+    border: 1px solid #87CEFA;
+    td, th {
+      background: none repeat scroll 0 0 #F0F8FF; } } }
+
+tfoot {
+  td, th {
+    border: medium none;
+    padding-top: 10px; } }
+table {
+  a:link {
+    color: #DC143C; }
+  th a:link {
+    color: #004477;
+    text-decoration: none; }
+  a {
+    &:visited {
+      color: #003366;
+      text-decoration: line-through; }
+    &:hover {
+      color: #000000;
+      text-decoration: none; }
+    &:active {
+      color: #000000; } } }
+}
+.create-resume {
+  .instruction.no-content {
+    p {
+      bottom:0;
+      top:-10px;
+      right:10px;
+    }
+  }
+  .instruction {
+    color:#666;
+    margin: 10px auto;
+    width: 95%;
+    position:relative;
+    p {
+      position:absolute;
+      bottom:-42px;
+      right:0;
+      span {
+        color: red;
+        font-weight:700;
+      }
+    }
+  }
+}
+.dangtuyendung {
+  .create-resume {
+  .instruction {
+    color:#666;
+    display: inline;
+    float: right;
+    width: 410px;
+    p {
+      right:12px;
+      bottom:-60px;
+    }
+  }
+}
+}
+.danghoso {
+  form {
+    width: 904px;
+    margin: 0 auto;
+  }
+}
+.knr {
+  padding: 0 0 10px 0px;
+  border-bottom: 1px dotted #eee;
+  a {
+      @include float-right;
+      border: solid 1px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 6px 9px 6px 9px;
+    color: #4A76C6;
+    border-color: #8AAEEF;
+    background: #F7F9FE;
+    margin-right:302px;
+    font-weight:700;
+    font-family: tahoma;
+  }
+}
+.nncv {
+  label {
+    display:inline-block;
+    height: auto;
+  }
+  
+} 

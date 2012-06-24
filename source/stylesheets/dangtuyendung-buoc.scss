@@ -1,0 +1,71 @@
+.dangtuyendung-buoc2,
+.dangtuyendung-buoc3 {
+  #divExpireDate {
+    text-align:left;
+  }
+  .danghoso p.luong span {
+    width: auto;
+  }
+  .danghoso p.luong span.notimg {
+    display: inline-block;
+      font-weight: bold;
+      text-align: right;
+      vertical-align: top;
+      width: 200px;
+  }
+  .mutichon {
+    .multi-two {
+      display:inline-block;
+
+    }
+    span {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    width: 200px;
+    margin-right:5px;
+    }
+  }
+
+}
+.dangtuyendung-buoc4 {
+  .ntd-chitietvieclam table td {
+    background: transparent;
+  }
+  .ttc {
+    img {
+      background-color: #FFFFFF;
+      border: 1px solid #B2CBE8;
+      display: inline;
+      float: left;
+      margin: 10px;
+      vertical-align: top;
+    }
+  }
+  .ntd-chitietvieclam {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    width: 540px;
+  }
+  .details .lienhe.list span.titbold {
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+    margin-right: 5px;
+    text-align: right;
+    width: 31%;
+    color: #333;
+  }
+  .details .lienhe.list span {
+    float: right;
+    width: 68%;
+  }
+  ul.list.lienhe {
+    padding: 10px !important;
+  }
+  .details  .list li {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,212 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Nhà tuyển dụng đăng ký"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Nhà tuyển dụng đăng ký
+#search-center.details.create-resume.user-register
+  .container
+    = partial(:breadcrumb)
+    %h2 Nhà tuyển dụng đăng ký
+    .contents
+      .bg.clearfix
+        %br.clearfix/
+        %div.instruction
+          Vui lòng nhập đầy đủ các thông tin dưới đây
+          %p.not-input
+            Những mục có dấu sao
+            %span *
+            là bắt buộc.
+        .danghoso
+          %form{:action => "#"}
+            %h4.tit Thông tin đăng nhập
+            %p
+              %span Email
+              %label
+                %input{:type => "text",:title => "Email"}
+            %p
+              %span Mật khẩu
+              %label
+                %input{:type => "text",:title => "matkhau"}
+            %p
+              %span Nhập lại mật khẩu
+              %label
+                %input{:type => "text",:title => "nlmatkhau"}
+            %h4.tit Thông tin công ty
+            %p
+              %span Công ty
+              %label
+                %input{:type => "text",:title => "Tên công ty"}
+            %p
+              %span Sơ lược công ty
+              %label
+                %select#cbGender.TEXTBOX{:name => "cbGender"}
+                  %option{:value => ""} ...
+                  %option{:value => "Male"} Nam
+                  %option{:selected => "", :value => "Female"} Nữ
+            %p
+              %span Số nhân viên
+              %label
+                %select#cbBirthDay.TEXTBOX{:name => "cbBirthDay"}
+                  %option{:value => "1"} 1
+                  %option{:selected => "", :value => "2"} 2
+            %p
+              %span Ảnh của bạn
+              %input#filImage.TEXTBOX{:name => "filImage", :size => "30", :type => "file"}
+                %input.BUTTON.danghinh{:name => "btnUpload", :type => "submit", :value => "Đăng hình"}
+                  %span{:style => "font-size:11px; font-family:Arial, Helvetica, sans-serif;"} (≦ 15KB)
+                  %input#hIsFormUploaded{:name => "hIsFormUploaded", :type => "hidden", :value => "0"}
+            %h4.tit Thông tin liên hệ
+            %p
+              %span Địa chỉ
+              %label
+                %input{:type => "text",:placeholder => "114/4/9 Tam Vu, Ninh Kieu"}
+            %p
+              %span Tỉnh - Thành phố
+              %label
+                %select#cbProvinceCode.TEXTBOX{:name => "cbProvinceCode"}
+                  %option{:value => ""} Chọn tỉnh
+                  %option{:value => "HCM"} Hồ Chí Minh
+                  %option{:value => "HN"} Hà Nội
+                  %option{:value => "DN"} Đà Nẵng
+                  %option{:value => "AG"} An Giang
+                  %option{:value => "BRVT"} Bà Rịa - Vũng Tàu
+                  %option{:value => "BK"} Bắc Cạn
+                  %option{:value => "BG"} Bắc Giang
+                  %option{:value => "BL"} Bạc Liêu
+                  %option{:value => "BN"} Bắc Ninh
+                  %option{:value => "BTE"} Bến Tre
+                  %option{:value => "BDH"} Bình Định
+                  %option{:value => "BD"} Bình Dương
+                  %option{:value => "BP"} Bình Phước
+                  %option{:value => "BT"} Bình Thuận
+                  %option{:value => "CM"} Cà Mau
+                  %option{:selected => "", :value => "CT"} Cần Thơ
+                  %option{:value => "CB"} Cao Bằng
+                  %option{:value => "DL"} Đắk Lắk
+                  %option{:value => "DNG"} Đăk Nông
+                  %option{:value => "DB"} Điện Biên
+                  %option{:value => "DNI"} Đồng Nai
+                  %option{:value => "DT"} Đồng Tháp
+                  %option{:value => "GL"} Gia Lai
+                  %option{:value => "HG"} Hà Giang
+                  %option{:value => "HNM"} Hà Nam
+                  %option{:value => "HT"} Hà Tây
+                  %option{:value => "HTH"} Hà Tĩnh
+                  %option{:value => "HD"} Hải Dương
+                  %option{:value => "HP"} Hải Phòng
+                  %option{:value => "HAG"} Hậu Giang
+                  %option{:value => "HB"} Hòa Bình
+                  %option{:value => "HY"} Hưng Yên
+                  %option{:value => "KG"} Kiên Giang
+                  %option{:value => "KH"} Khánh Hòa
+                  %option{:value => "KT"} Kon Tum
+                  %option{:value => "LC"} Lai Châu
+                  %option{:value => "LD"} Lâm Đồng
+                  %option{:value => "LS"} Lạng Sơn
+                  %option{:value => "LCI"} Lào Cai
+                  %option{:value => "LA"} Long An
+                  %option{:value => "ND"} Nam Định
+                  %option{:value => "NA"} Nghệ An
+                  %option{:value => "NB"} Ninh Bình
+                  %option{:value => "NT"} Ninh Thuận
+                  %option{:value => "PT"} Phú Thọ
+                  %option{:value => "PY"} Phú Yên
+                  %option{:value => "QB"} Quảng Bình
+                  %option{:value => "QN"} Quảng Nam
+                  %option{:value => "QNI"} Quảng Ngãi
+                  %option{:value => "QNH"} Quảng Ninh
+                  %option{:value => "QT"} Quảng Trị
+                  %option{:value => "ST"} Sóc Trăng
+                  %option{:value => "SL"} Sơn La
+                  %option{:value => "TN"} Tây Ninh
+                  %option{:value => "TB"} Thái Bình
+                  %option{:value => "TNN"} Thái Nguyên
+                  %option{:value => "THH"} Thanh Hóa
+                  %option{:value => "TTH"} Thừa Thiên - Huế
+                  %option{:value => "TG"} Tiền Giang
+                  %option{:value => "TV"} Trà Vinh
+                  %option{:value => "TQ"} Tuyên Quang
+                  %option{:value => "VL"} Vĩnh Long
+                  %option{:value => "VP"} Vĩnh Phúc
+                  %option{:value => "OT"} Khác
+                  %option{:value => "NN"} Nước Ngoài
+              %p
+                %span Quốc gia
+                %label
+                  %select#jobseeker_country.TEXTBOX{:name => "jobseeker[country]", :onchange => "changeCountryOrProvince();", :required => "required"}
+                    %option{:value => ""} Chọn quốc gia
+                    %option{:value => "2"} Albania
+                    %option{:value => "3"} Algeria
+                    %option{:value => "4"} American Samoa
+                    %option{:value => "5"} Andorra
+                    %option{:value => "6"} Angola
+                    %option{:value => "7"} Anguilla
+                    %option{:value => "8"} Antarctica
+                    %option{:value => "9"} Antigua and Barbuda
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor Số Điện thoại
+                %label
+                  %input{:required=>"required", :type => "text", :placeholder => "Số Điện thoại"}
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Điện thoại di động                  
+                %label
+                  %input{:type => "text", :placeholder => "dtdd"}
+              %div.thoathuan.clearfix
+                %span.left.clearfix
+                  %span.red *
+                  %span.impor
+                    Thỏa thuận sử dụng                  
+                %div.box-dieule
+                  %font{:color => "#999999", :size => "4"}
+                    Thỏa Thuận Sử Dụng
+                  %br
+                    %div{:style => "text-align: justify;"}
+                      %span{:style => "color: #999999; font-size: large;"}
+                      %span{:style => "font-weight: bold;"} Xin hãy đọc cẩn thận những điều khoản của Bản thỏa thuận sử dụng khi truy cập vào Website việc làm Careerlink.vn, và nếu bạn không đồng ý với các điều khoản của Bản thỏa thuận này, xin đừng truy cập vào Website  CareerLink.vn. Việc bạn truy cập, sử dụng trang Web Careerlink.vn có nghĩa là bạn chấp nhận, đồng ý bị ràng buộc với điều khoản, điều kiện của  Bản thỏa thuận sử dụng này.
+                %br
+                %div.agree
+                  %input#jobseeker_agreeWithTnC{:name => "jobseeker[agreeWithTnC]", :required => "required", :type => "checkbox", :value => "1"}/
+                  %label Tôi đồng ý với thoả thuận sử dụng
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Bạn biết đến careerlink?                 
+                %label
+                  %select#jobseeker_howToKnow.TEXTBOX{:name => "jobseeker[howToKnow]", :required => "required"}
+                    %option{:value => ""} Vui lòng chọn
+                    %option{:value => "1"} Sách báo
+                    %option{:value => "2"} Tạp chí
+                    %option{:value => "3"} Các quảng cáo khác
+                    %option{:value => "4"} Máy tìm kiếm
+                    %option{:value => "5"} Other Website
+                    %option{:value => "6"} Bạn bè
+                    %option{:value => "7"} Khác
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Nhận bản tin việc làm                 
+                %label
+                  %select#jobseeker_receiveNewsLetter.TEXTBOX{:name => "jobseeker[receiveNewsLetter]", :required => "required"}
+                    %option{:selected => "selected", :value => "1"} Có
+                    %option{:value => "0"} Không
+            %ul.taohoso-button.clearfix
+              %li.luutam
+                %a{:href => "#"} Làm lại
+              %li.buocketiep
+                %a.current{:href => "#"} Chấp nhận
+        / /.danghoso
+        / ==========================

@@ -40,9 +40,9 @@
         ul {
           padding-left: 10px;
           li {
-            background: url('../images/bullet2.png') no-repeat left 11px;
-            padding-left: 18px;
-            line-height: 30px;
+            background: url('../images/bullet2.png') no-repeat left 5px;
+            padding: 0px 0 6px 18px;
+            line-height:18px;
           }
 
         }
@@ -70,6 +70,18 @@
 
   .desc{
     margin: 15px 0;
+    p{
+      @include float-left;
+      width: 75%;
+    }
+    .links-search {
+      @include float-right;
+      width: 210px;
+      li {
+        list-style-type:square;
+        color: #034CA3;
+      }
+    }
   }
   .views {
     li {
@@ -138,7 +150,7 @@
 }
 #profiles{
   #left{
-    @include background(url(../images/mycl-left-top.png), url(../images/mycl-left-bottom.png), url(../images/mycl-left-loop.png));
+    @include background(url(../images/mycl-left-top.png) no-repeat 0 0, url(../images/mycl-left-bottom.png) no-repeat 0 100%, url(../images/mycl-left-loop.png) repeat-y 0 0);
     width: 692px;
     background-position: left top, left bottom;
     background-repeat: no-repeat, no-repeat;
@@ -270,10 +282,99 @@
     font-weight:700;
     margin-right:5px;
   }
+  input {
+    height: 20px;
+    width: 300px;
+  }
   input, select {
     border:1px solid $borderinput;
+    height: 20px;
   }
-  #myselecttsmsms2side__sx, #myselecttsmsms2side__dx, #myselecttsmssms2side__sx, #myselecttsmssms2side__dx {
+  
+}
+.multi-two select {
+  height: auto;
+}
+#profiles .contents #left .box .view-rutgon .t-l,
+#profiles .contents #left .box.type2 .view-rutgon th.t-l, #profiles .contents #left .box.type2 .view-rutgon td.t-l {
+  text-align:left !important;
+}
+#profiles .contents #left .box.type2 .view-rutgon th, #profiles .contents #left .box.type2 .view-rutgon td {
+  text-align: center !important;
+}
+#profiles .contents #left .box .view-rutgon a.title {
+  color: #034CA3;
+}
+#profiles .contents #left .box.type2 .view-rutgon a.tk{
+    background: -moz-linear-gradient(top,#B4F6FF 1px,#63D0FE 1px,#58B0E7);
+    background: -webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#B4F6FF),color-stop(0.02,#63D0FE),color-stop(1,#58B0E7));
+    border-color: #8DC5E6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    padding: 4px 6px;
+    &:hover {
+      opacity: .5;
+    }
+}
+.hosocuatoi-ntd .view-rutgon a.tk {
+  border: solid 1px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 6px 9px 6px 9px;
+    color: #4A76C6 !important;
+    border-color: #8AAEEF;
+    background: #F7F9FE;
+    font-weight:700;
+    font-family: tahoma;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+      border: solid 1px;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      padding: 6px 9px 6px 9px;
+      color: #4A76C6;
+      border-color: #8AAEEF;
+      background: #F7F9FE;
+    }
+}
+#profiles .contents #left .box.type2 .view-rutgon a.edit,
+.hosocuatoi-ntd #profiles #left .box.type1 .view-rutgon a.edit {
+  background: url(../images/edit-img.png) ;
+  width: 14px;
+  height: 14px;
+  text-indent:-9999em;
+  font-size:0;
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  &:hover {
+    background: url(../images/edit-img-hover.png) ;
+  }
+}
+.tkct {
+  li {
+    list-style-type: square;
+    color: #0388A6;
+    margin-left:20px;
+  }
+}
+.hosocuatoi-ntd .tkct {
+  li {
+    color: #666;
+    a {
+      color:#666;
+      &:hover {
+        color:#b8b8b8;
+      }
+    }
+  }
+}#myselecttsmsms2side__sx, #myselecttsmsms2side__dx, #myselecttsmssms2side__sx, #myselecttsmssms2side__dx {
     width:220px;
   }
   .ms2side__select, .ms2side__options {
@@ -283,10 +384,9 @@
     background: url(../images/addone.png) top left no-repeat;
     width:38px;
     height:20px;
-    margin:10px; 
+    margin:10px !important; 
     @include hide-text;
   }
   .RemoveOne {
   background: url(../images/removeone.png) top left no-repeat;
   }
-}

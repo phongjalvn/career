@@ -18,189 +18,182 @@ trails:
         %h3 Trang tìm việc nâng cao
         %ul.timkiemnangcao
           %li
-            %label
-              %span Từ khóa: 
-              %input.input.formtip{:type => "text",:placeholder => "Từ khóa!",:title => "Nhập từ khóa nào để tìm kiếm"}
+            %span Từ khóa: 
+            %input.input.formtip{:type => "text",:placeholder => "Từ khóa!",:title => "Nhập từ khóa nào để tìm kiếm"}
           %li
-            %label
-              %span Sử dụng: 
-              %select
-                %option Tất cả từ khóa
-                %option Bất kỳ từ khóa nào
+            %span Sử dụng: 
+            %select
+              %option Tất cả từ khóa
+              %option Bất kỳ từ khóa nào
           %li
-            %label
-              %span Chọn ngành nghề: 
-              %div.multi-two
-                %select#myselecttsms.multiselect{:multiple => "true", :name => "myselecttsms", :size => "6"}
-                  %option{:value => "31"} Bán hàng
-                  %option{:value => "24"} Báo chí/ Biên tập viên/ Xuất bản
-                  %option{:value => "17"} Bảo hiểm
-                  %option{:value => "29"} Bất động sản
-                  %option{:value => "18"} Biên phiên dịch/ Thông dịch viên
-                  %option{:value => "154"} Biên phiên dịch (tiếng Nhật)
-                  %option{:value => "14"} Chăm sóc sức khỏe/ Y tế
-                  %option{:value => "130"} CNTT - Phần cứng/ Mạng
-                  %option{:value => "19"} CNTT - Phần mềm
-                  %option{:value => "26"} Dầu khí/ Khoáng sản
-                  %option{:value => "33"} Dệt may/ Da giày
-                  %option{:value => "9"} Dịch vụ khách hàng
-                  %option{:value => "28"} Dược/ Sinh học
-                  %option{:value => "148"} Điện/ Điện tử
-                  %option{:value => "10"} Giáo dục/ Đào tạo/ Thư viện
-                  %option{:value => "127"} Hóa chất/ Sinh hóa/ Thực phẩm
-                  %option{:value => "1"} Kế toán/ Tài chính/ Kiểm toán
-                  %option{:value => "15"} Khách sạn/ Du lịch
-                  %option{:value => "139"} Kiến trúc
-                  %option{:value => "11"} Kỹ thuật ứng dụng/ Cơ khí
-                  %option{:value => "20"} Lao động phổ thông
-                  %option{:value => "142"} Môi trường/ Xử lý chất thải
-                  %option{:value => "118"} Mới tốt nghiệp/ Thực tập
-                  %option{:value => "5"} Ngân hàng/ Chứng khoán/ Đầu tư
-                  %option{:value => "4"} Nghệ thuật/ Thiết kế/ Giải trí
-                  %option{:value => "12"} Người nước ngoài
-                  %option{:value => "30"} Nhà hàng/ Dịch vụ ăn uống
-                  %option{:value => "16"} Nhân sự
-                  %option{:value => "3"} Nông nghiệp/ Lâm nghiệp
-                  %option{:value => "151"} Ô tô
-                  %option{:value => "21"} Pháp lý/ Luật
-                  %option{:value => "25"} Phi chính phủ/ Phi lợi nhuận
-                  %option{:value => "145"} Quản lý chất lượng (QA/ QC)
-                  %option{:value => "22"} Quản lý điều hành
-                  %option{:value => "2"} Quảng cáo/ Khuyến mãi/ Đối ngoại
-                  %option{:value => "23"} Sản xuất/ Vận hành sản xuất
-                  %option{:value => "6"} Thư ký/ Hành chánh
-                  %option{:value => "136"} Tiếp thị
-                  %option{:value => "7"} Tư vấn
-                  %option{:value => "34"} Vận chuyển/ Giao thông/ Kho bãi
-                  %option{:value => "27"} Vật tư/ Mua hàng
-                  %option{:value => "32"} Viễn Thông
-                  %option{:value => "8"} Xây dựng
-                  %option{:value => "13"} Xuất nhập khẩu/ Ngoại thương
-                  %option{:value => "35"} Khác
+            %span Chọn ngành nghề: 
+            %div.multi-two
+              %select#myselecttsms.multiselect{:multiple => "true", :name => "myselecttsms", :size => "6"}
+                %option{:value => "31"} Bán hàng
+                %option{:value => "24"} Báo chí/ Biên tập viên/ Xuất bản
+                %option{:value => "17"} Bảo hiểm
+                %option{:value => "29"} Bất động sản
+                %option{:value => "18"} Biên phiên dịch/ Thông dịch viên
+                %option{:value => "154"} Biên phiên dịch (tiếng Nhật)
+                %option{:value => "14"} Chăm sóc sức khỏe/ Y tế
+                %option{:value => "130"} CNTT - Phần cứng/ Mạng
+                %option{:value => "19"} CNTT - Phần mềm
+                %option{:value => "26"} Dầu khí/ Khoáng sản
+                %option{:value => "33"} Dệt may/ Da giày
+                %option{:value => "9"} Dịch vụ khách hàng
+                %option{:value => "28"} Dược/ Sinh học
+                %option{:value => "148"} Điện/ Điện tử
+                %option{:value => "10"} Giáo dục/ Đào tạo/ Thư viện
+                %option{:value => "127"} Hóa chất/ Sinh hóa/ Thực phẩm
+                %option{:value => "1"} Kế toán/ Tài chính/ Kiểm toán
+                %option{:value => "15"} Khách sạn/ Du lịch
+                %option{:value => "139"} Kiến trúc
+                %option{:value => "11"} Kỹ thuật ứng dụng/ Cơ khí
+                %option{:value => "20"} Lao động phổ thông
+                %option{:value => "142"} Môi trường/ Xử lý chất thải
+                %option{:value => "118"} Mới tốt nghiệp/ Thực tập
+                %option{:value => "5"} Ngân hàng/ Chứng khoán/ Đầu tư
+                %option{:value => "4"} Nghệ thuật/ Thiết kế/ Giải trí
+                %option{:value => "12"} Người nước ngoài
+                %option{:value => "30"} Nhà hàng/ Dịch vụ ăn uống
+                %option{:value => "16"} Nhân sự
+                %option{:value => "3"} Nông nghiệp/ Lâm nghiệp
+                %option{:value => "151"} Ô tô
+                %option{:value => "21"} Pháp lý/ Luật
+                %option{:value => "25"} Phi chính phủ/ Phi lợi nhuận
+                %option{:value => "145"} Quản lý chất lượng (QA/ QC)
+                %option{:value => "22"} Quản lý điều hành
+                %option{:value => "2"} Quảng cáo/ Khuyến mãi/ Đối ngoại
+                %option{:value => "23"} Sản xuất/ Vận hành sản xuất
+                %option{:value => "6"} Thư ký/ Hành chánh
+                %option{:value => "136"} Tiếp thị
+                %option{:value => "7"} Tư vấn
+                %option{:value => "34"} Vận chuyển/ Giao thông/ Kho bãi
+                %option{:value => "27"} Vật tư/ Mua hàng
+                %option{:value => "32"} Viễn Thông
+                %option{:value => "8"} Xây dựng
+                %option{:value => "13"} Xuất nhập khẩu/ Ngoại thương
+                %option{:value => "35"} Khác
           %li
-            %label
-              %span Chọn địa điểm: 
-              %div.multi-two
-                %select#myselecttsmss.multiselect{:multiple => "true", :name => "myselecttsmss", :size => "6"}
-                  %option{:value => "HCM"} Hồ Chí Minh
-                  %option{:value => "HN"} Hà Nội
-                  %option{:value => "DN"} Đà Nẵng
-                  %option{:value => "AG"} An Giang
-                  %option{:value => "BRVT"} Bà Rịa - Vũng Tàu
-                  %option{:value => "BK"} Bắc Cạn
-                  %option{:value => "BG"} Bắc Giang
-                  %option{:value => "BL"} Bạc Liêu
-                  %option{:value => "BN"} Bắc Ninh
-                  %option{:value => "BTE"} Bến Tre
-                  %option{:value => "BDH"} Bình Định
-                  %option{:value => "BD"} Bình Dương
-                  %option{:value => "BP"} Bình Phước
-                  %option{:value => "BT"} Bình Thuận
-                  %option{:value => "CM"} Cà Mau
-                  %option{:value => "CT"} Cần Thơ
-                  %option{:value => "CB"} Cao Bằng
-                  %option{:value => "DL"} Đắk Lắk
-                  %option{:value => "DNG"} Đăk Nông
-                  %option{:value => "DB"} Điện Biên
-                  %option{:value => "DNI"} Đồng Nai
-                  %option{:value => "DT"} Đồng Tháp
-                  %option{:value => "GL"} Gia Lai
-                  %option{:value => "HG"} Hà Giang
-                  %option{:value => "HNM"} Hà Nam
-                  %option{:value => "HT"} Hà Tây
-                  %option{:value => "HTH"} Hà Tĩnh
-                  %option{:value => "HD"} Hải Dương
-                  %option{:value => "HP"} Hải Phòng
-                  %option{:value => "HAG"} Hậu Giang
-                  %option{:value => "HB"} Hòa Bình
-                  %option{:value => "HY"} Hưng Yên
-                  %option{:value => "KG"} Kiên Giang
-                  %option{:value => "KH"} Khánh Hòa
-                  %option{:value => "KT"} Kon Tum
-                  %option{:value => "LC"} Lai Châu
-                  %option{:value => "LD"} Lâm Đồng
-                  %option{:value => "LS"} Lạng Sơn
-                  %option{:value => "LCI"} Lào Cai
-                  %option{:value => "LA"} Long An
-                  %option{:value => "ND"} Nam Định
-                  %option{:value => "NA"} Nghệ An
-                  %option{:value => "NB"} Ninh Bình
-                  %option{:value => "NT"} Ninh Thuận
-                  %option{:value => "PT"} Phú Thọ
-                  %option{:value => "PY"} Phú Yên
-                  %option{:value => "QB"} Quảng Bình
-                  %option{:value => "QN"} Quảng Nam
-                  %option{:value => "QNI"} Quảng Ngãi
-                  %option{:value => "QNH"} Quảng Ninh
-                  %option{:value => "QT"} Quảng Trị
-                  %option{:value => "ST"} Sóc Trăng
-                  %option{:value => "SL"} Sơn La
-                  %option{:value => "TN"} Tây Ninh
-                  %option{:value => "TB"} Thái Bình
-                  %option{:value => "TNN"} Thái Nguyên
-                  %option{:value => "THH"} Thanh Hóa
-                  %option{:value => "TTH"} Thừa Thiên - Huế
-                  %option{:value => "TG"} Tiền Giang
-                  %option{:value => "TV"} Trà Vinh
-                  %option{:value => "TQ"} Tuyên Quang
-                  %option{:value => "VL"} Vĩnh Long
-                  %option{:value => "VP"} Vĩnh Phúc
-                  %option{:value => "YB"} Yên Bái
-                  %option{:value => "OT"} Khác
-                  %option{:value => "NN"} Nước Ngoài
+            %span Chọn địa điểm: 
+            %div.multi-two
+              %select#myselecttsmss.multiselect{:multiple => "true", :name => "myselecttsmss", :size => "6"}
+                %option{:value => "HCM"} Hồ Chí Minh
+                %option{:value => "HN"} Hà Nội
+                %option{:value => "DN"} Đà Nẵng
+                %option{:value => "AG"} An Giang
+                %option{:value => "BRVT"} Bà Rịa - Vũng Tàu
+                %option{:value => "BK"} Bắc Cạn
+                %option{:value => "BG"} Bắc Giang
+                %option{:value => "BL"} Bạc Liêu
+                %option{:value => "BN"} Bắc Ninh
+                %option{:value => "BTE"} Bến Tre
+                %option{:value => "BDH"} Bình Định
+                %option{:value => "BD"} Bình Dương
+                %option{:value => "BP"} Bình Phước
+                %option{:value => "BT"} Bình Thuận
+                %option{:value => "CM"} Cà Mau
+                %option{:value => "CT"} Cần Thơ
+                %option{:value => "CB"} Cao Bằng
+                %option{:value => "DL"} Đắk Lắk
+                %option{:value => "DNG"} Đăk Nông
+                %option{:value => "DB"} Điện Biên
+                %option{:value => "DNI"} Đồng Nai
+                %option{:value => "DT"} Đồng Tháp
+                %option{:value => "GL"} Gia Lai
+                %option{:value => "HG"} Hà Giang
+                %option{:value => "HNM"} Hà Nam
+                %option{:value => "HT"} Hà Tây
+                %option{:value => "HTH"} Hà Tĩnh
+                %option{:value => "HD"} Hải Dương
+                %option{:value => "HP"} Hải Phòng
+                %option{:value => "HAG"} Hậu Giang
+                %option{:value => "HB"} Hòa Bình
+                %option{:value => "HY"} Hưng Yên
+                %option{:value => "KG"} Kiên Giang
+                %option{:value => "KH"} Khánh Hòa
+                %option{:value => "KT"} Kon Tum
+                %option{:value => "LC"} Lai Châu
+                %option{:value => "LD"} Lâm Đồng
+                %option{:value => "LS"} Lạng Sơn
+                %option{:value => "LCI"} Lào Cai
+                %option{:value => "LA"} Long An
+                %option{:value => "ND"} Nam Định
+                %option{:value => "NA"} Nghệ An
+                %option{:value => "NB"} Ninh Bình
+                %option{:value => "NT"} Ninh Thuận
+                %option{:value => "PT"} Phú Thọ
+                %option{:value => "PY"} Phú Yên
+                %option{:value => "QB"} Quảng Bình
+                %option{:value => "QN"} Quảng Nam
+                %option{:value => "QNI"} Quảng Ngãi
+                %option{:value => "QNH"} Quảng Ninh
+                %option{:value => "QT"} Quảng Trị
+                %option{:value => "ST"} Sóc Trăng
+                %option{:value => "SL"} Sơn La
+                %option{:value => "TN"} Tây Ninh
+                %option{:value => "TB"} Thái Bình
+                %option{:value => "TNN"} Thái Nguyên
+                %option{:value => "THH"} Thanh Hóa
+                %option{:value => "TTH"} Thừa Thiên - Huế
+                %option{:value => "TG"} Tiền Giang
+                %option{:value => "TV"} Trà Vinh
+                %option{:value => "TQ"} Tuyên Quang
+                %option{:value => "VL"} Vĩnh Long
+                %option{:value => "VP"} Vĩnh Phúc
+                %option{:value => "YB"} Yên Bái
+                %option{:value => "OT"} Khác
+                %option{:value => "NN"} Nước Ngoài
           %li
-            %label
-              %span Trình độ học vấn: 
-              %select
-                %option{:value => "JHS"} PTCS
-                %option{:value => "HSC"} Trung học
-                %option{:value => "ITI"} Chứng chỉ
-                %option{:value => "ASD"} Trung cấp
-                %option{:value => "DIP"} Cao đẳng
-                %option{:value => "BAC"} Cử nhân
-                %option{:value => "MAS"} Thạc sĩ
-                %option{:value => "MAR"} Thạc sĩ Nghệ thuật
-                %option{:value => "MAC"} Thạc sĩ Thương mại
-                %option{:value => "MSC"} Thạc sĩ Khoa học
-                %option{:value => "MAA"} Thạc sĩ Kiến trúc
-                %option{:value => "MBA"} Thạc sĩ QTKD
-                %option{:value => "MAE"} Thạc sĩ Kỹ thuật ứng dụng
-                %option{:value => "MAL"} Thạc sĩ Luật
-                %option{:value => "MDMS"} Thạc sĩ Y học
-                %option{:value => "MAP"} Thạc sĩ Dược phẩm
-                %option{:value => "PHD"} Tiến sĩ
-                %option{:value => "OTH"} Khác
+            %span Trình độ học vấn: 
+            %select
+              %option{:value => "JHS"} PTCS
+              %option{:value => "HSC"} Trung học
+              %option{:value => "ITI"} Chứng chỉ
+              %option{:value => "ASD"} Trung cấp
+              %option{:value => "DIP"} Cao đẳng
+              %option{:value => "BAC"} Cử nhân
+              %option{:value => "MAS"} Thạc sĩ
+              %option{:value => "MAR"} Thạc sĩ Nghệ thuật
+              %option{:value => "MAC"} Thạc sĩ Thương mại
+              %option{:value => "MSC"} Thạc sĩ Khoa học
+              %option{:value => "MAA"} Thạc sĩ Kiến trúc
+              %option{:value => "MBA"} Thạc sĩ QTKD
+              %option{:value => "MAE"} Thạc sĩ Kỹ thuật ứng dụng
+              %option{:value => "MAL"} Thạc sĩ Luật
+              %option{:value => "MDMS"} Thạc sĩ Y học
+              %option{:value => "MAP"} Thạc sĩ Dược phẩm
+              %option{:value => "PHD"} Tiến sĩ
+              %option{:value => "OTH"} Khác
           %li
-            %label
-              %span Loại công việc: 
-              %select
-                %option{:selected => "", :value => ""} Chọn loại công việc
-                %option{:value => "Full-time Pernament"} Toàn thời gian cố định
-                %option{:value => "Full-time Temporary"} Toàn thời gian tạm thời
-                %option{:value => "Part-time Pernament"} Bán thời gian
-                %option{:value => "Part-time Temporary"} Bán thời gian tạm thời
-                %option{:value => "Contract"} Hợp đồng
-                %option{:value => "Other"} Khác
+            %span Loại công việc: 
+            %select
+              %option{:selected => "", :value => ""} Chọn loại công việc
+              %option{:value => "Full-time Pernament"} Toàn thời gian cố định
+              %option{:value => "Full-time Temporary"} Toàn thời gian tạm thời
+              %option{:value => "Part-time Pernament"} Bán thời gian
+              %option{:value => "Part-time Temporary"} Bán thời gian tạm thời
+              %option{:value => "Contract"} Hợp đồng
+              %option{:value => "Other"} Khác
           %li
-            %label
-              %span Cấp bậc: 
-              %select
-                %option{:selected => "", :value => ""} Chọn cấp bậc
-                %option{:value => "New Entry"} Mới đi làm
-                %option{:value => "Labor"} Nhân viên
-                %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
-                %option{:value => "Professional"} Chuyên viên
-                %option{:value => "Executive"} Điều hành
+            %span Cấp bậc: 
+            %select
+              %option{:selected => "", :value => ""} Chọn cấp bậc
+              %option{:value => "New Entry"} Mới đi làm
+              %option{:value => "Labor"} Nhân viên
+              %option{:value => "Technical/Engineer"} Kỹ thuật viên/Kỹ sư
+              %option{:value => "Professional"} Chuyên viên
+              %option{:value => "Executive"} Điều hành
           %li
-            %label
-              %span Công việc trong vòng: 
-              %select
-                %option 1 ngày
-                %option 5 ngày
-                %option 1 ngày
-                %option 5 ngày
-                %option 1 ngày
-                %option 5 ngày
+            %span Công việc trong vòng: 
+            %select.agn-l
+              %option 1 
+              %option 2 
+              %option 3 
+              %option 4 
+              %option 5 
+              %option 6 
+            %span.ngay ngày 
           %li.nut
             %ul.clearfix
               %li.search-enter

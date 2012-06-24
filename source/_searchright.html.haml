@@ -8,9 +8,9 @@
       %form{:action => "#"}
         %p.clearfix.nornal
           %label
-            %input.search-text{:placeholder => "Nhap tu khoa cong viec ...", :type => "text"}/
+            %input.search-text{:placeholder => "Nhập từ khóa công việc ...", :type => "text"}/
           %label.ml
-            %p.clearfix
+            %p.clearfix.tdhv
               %span.notimg Chọn trình độ học vấn
               %select#nganhnghe.multi-checklist{:multiple => "multiple",:name => "nganhnghe"}
                 %option{:value => "31"} Bán hàng
@@ -196,19 +196,19 @@
               %span#divSalaryFrom.clearfix{:style => "display: none;"}
                 %span.ser Từ:
                 %input#txtSalaryFrom.TEXTBOX{:name => "txtSalaryFrom", :size => "6", :type => "text", :value => "0"}
-                  %select#cbMoneyRateIDFrom.TEXTBOX{:name => "cbMoneyRateIDFrom", :onchange => "changeSalary(this);"}
+                  %select#cbMoneyRateIDFrom.TEXTBOX.moneyrate{:name => "cbMoneyRateIDFrom", :onchange => "changeMoney(this);"}
                     %option{:value => "2"} VND
                     %option{:value => "1"} USD
                 
               %span#divSalaryTo.clearfix{:style => "display: none;"}                
                 %span.ser Đến:
                 %input#txtSalaryTo.TEXTBOX{:name => "txtSalaryTo", :size => "6", :type => "text", :value => "0"}
-                  %select#cbMoneyRateIDTo.TEXTBOX{:name => "cbMoneyRateIDTo", :onchange => "changeSalary(this);"}
+                  %select#cbMoneyRateIDTo.TEXTBOX.moneyrate{:name => "cbMoneyRateIDTo", :onchange => "changeMoney(this);"}
                     %option{:value => "2"} VND
                     %option{:value => "1"} USD
           %p.date-job.clearfix
             %span.notimg Công việc trong vòng
-            %label
+            %span.select
               %select#cbCareedrrLevel.normal.TEXTBOX{:name => "cbCareyterLevel"}
                 %option{:value => "1"} 1
                 %option{:value => "2"} 2

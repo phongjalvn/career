@@ -1,0 +1,46 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Trang tim viec nhanh"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.chonhoso
+  .container
+    = partial(:breadcrumb)
+    %h2 Hồ sơ
+    .contents
+      .bg.clearfix
+        .chonsaochep
+          %a.chon{:href=>"#"}
+            %span
+              Bắt đầu
+          .des
+            %h3 
+              Sao chép nội dung
+            %p 
+              Chọn cách sao chép nội dung nếu bạn có sẵn hồ sơ lưu trên máy tính
+        .chontungbuoc
+          %a.chon{:href=>"#"}
+            %span
+              Bắt đầu
+          .des
+            %h3 
+              Tạo hồ sơ từng bước
+            %p 
+              Chọn cách tạo hồ sơ từng bước nếu bạn không có sẵn hồ sơ lưu trên máy tính. Những hướng dẫn chi tiết của chúng tôi sẽ giúp bạn tạo hồ sơ toàn chỉnh
+        .chonupload
+          %a.chon{:href=>"#"}
+            %span
+              Bắt đầu
+          .des
+            %h3 
+              Upload CV của bạn
+            %p 
+              Vui lòng upload CV của bạn
+        
+          

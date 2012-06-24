@@ -1,0 +1,152 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Ket qua tim kiem"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#searchresult.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Lưu hồ sơ
+    .contents
+      #left
+        / =========
+        / = Table =
+        %ul.pagination.clearfix
+          %li
+            %a.first{:href => "#"} First
+          %li
+            %a.previous{:href => "#"} Previous
+          %li
+            %a{:href => "#"} 1
+          %li
+            %a{:href => "#"} 2
+          %li
+            %a.current{:href => "#"} 3
+          %li
+            %a.next{:href => "#"} Next
+          %li
+            %a.last{:href => "#"} Last
+        %table.view-rutgon
+          %tbody
+            %tr.header
+              %th.t-l{:width => "136"} Vị trí mong muốn
+              %th{:width => "82"} Tên                  
+              %th{:width => "94"} Kinh nghiệm
+              %th{:width => "65"} Mức lương
+              %th{:width => "90"} Địa điểm
+              %th{:width => "65"} Cập nhật
+              %th{:width => "33"}
+                %input.check_all{:type => "checkbox", :value => ""}/
+            %tr.odd
+              %td.t-l
+                %a.title{:href => "#"}
+                  Nhân viên tuyển dụng
+              %td Lê Đình Thư                 
+              %td
+                %span.lx
+                  2 năm
+              %td 5.000.000 
+              %td
+                %span.kh
+                  Hồ Chí Minh    
+              %td
+                %span.tths
+                  23/05/20012
+              %td{:align => "center"}
+                %input{:type => "checkbox"}
+            %tr.even
+              %td.t-l
+                %a.title{:href => "#"}
+                  Nhân viên tuyển dụng
+              %td Lê Đình Thư                 
+              %td
+                %span.lx
+                  2 năm
+              %td 5.000.000 
+              %td
+                %span.kh
+                  Hồ Chí Minh    
+              %td
+                %span.tths
+                  23/05/20012
+              %td{:align => "center"}
+                %input{:type => "checkbox"}
+            %tr.odd
+              %td.t-l
+                %a.title{:href => "#"}
+                  Nhân viên tuyển dụng
+              %td Lê Đình Thư                 
+              %td
+                %span.lx
+                  2 năm
+              %td 5.000.000 
+              %td
+                %span.kh
+                  Hồ Chí Minh    
+              %td
+                %span.tths
+                  23/05/20012
+              %td{:align => "center"}
+                %input{:type => "checkbox"}
+            %tr.even
+              %td.t-l
+                %a.title{:href => "#"}
+                  Nhân viên tuyển dụng
+              %td Lê Đình Thư                 
+              %td
+                %span.lx
+                  2 năm
+              %td 5.000.000 
+              %td
+                %span.kh
+                  Hồ Chí Minh    
+              %td
+                %span.tths
+                  23/05/20012
+              %td{:align => "center"}
+                %input{:type => "checkbox"}
+        %br
+        %ul.pagination.clearfix
+          %li
+            %a.first{:href => "#"} First
+          %li
+            %a.previous{:href => "#"} Previous
+          %li
+            %a{:href => "#"} 1
+          %li
+            %a{:href => "#"} 2
+          %li
+            %a.current{:href => "#"} 3
+          %li
+            %a.next{:href => "#"} Next
+          %li
+            %a.last{:href => "#"} Last
+        .new-resume.clearfix
+          %li
+            %a.current.new-resume-button{:href => "#"} Xóa
+        / =========
+      #right
+        .mota
+          %h3 Hồ sơ đã lưu
+          / .list-mota
+          .list-search2.list-mota
+            %ul
+              %li
+                %a{:href => "#"} Folder 1
+              %li
+                %a{:href => "#"} Test
+              %li
+                %a{:href => "#"} Liên hệ
+              %li
+                %a{:href => "#"} Đang xem xét 
+              %li
+                %a{:href => "#"} Liên lạc folder này
+              %li.addnew
+                %a{:href => "#"} + Thêm mục lưu hồ sơ mới

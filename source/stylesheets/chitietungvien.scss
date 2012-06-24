@@ -1,0 +1,208 @@
+.taohoso-buoc6 {
+  #search-center .contents .kynang {
+    padding:0;
+    padding-left: 30px;
+    span {
+      margin-right: 10px;
+    }
+    li {
+      display:block;
+      width: 100%;
+      font-weight: 700;
+      span {
+        display:block;
+      width: 100%;
+      padding-left: 10px;
+      color: #034CA3;
+      }
+    }
+  }
+  .danghoso p {
+    margin:5px 0;
+  }
+  #search-center .contents .ungvien li {
+    display:block;
+      float: none;
+  }
+}
+#search-center .contents .ungvien {
+  .titb {
+    font-weight: 700;
+  }
+  .nganhhoc {
+    color: #034CA3;
+    font-weight: 700;
+  }
+  ul {
+    padding:0;
+    li {
+      display:block;
+      float: none;
+      width: auto;
+    }
+  }
+}
+.details table.ungvien {
+      width: 678px;
+      line-height:22px;
+      p {
+        line-height:18px;
+      }
+      .time, .ngoaingu {
+        img {
+          vertical-align:middle;
+        }
+        font-weight:700;
+        font-size: 16px;
+        padding-top: 0px;
+        vertical-align: top;
+        text-align:right;
+        padding-right: 10px;
+      }
+      .ngoaingu {
+        color: #0A587C;
+      }
+      .tar {
+         text-align:right;
+         padding-right: 10px;
+         color: #0a587c;
+         font-weight:700;
+      }
+      td {
+        background-color:transparent;
+        color:#444;
+        padding:0;
+        text-transform: none;
+        span,li {
+          display:block;
+        }
+       
+      }
+    }
+#ungvien {
+    .noidung {
+      @include clearfix;
+      border-top: 1px solid #d0d0d0;
+      padding-bottom:10px;
+      line-height:16px;
+    }
+    
+    .thaotac {
+      background: url(../images/bottom-ctuv.png) no-repeat bottom center;
+      padding-bottom: 9px;
+    }
+    .thaotackhac {
+      background:#5c5c5c url(../images/thaotac.png) no-repeat 10px 14px;
+      padding: 10px;
+      li {
+        display:block;
+        background: url(../images/line-ctuv.png) repeat-x bottom center;
+      }
+      a {
+        color: #fff;
+        font-weight:700;
+        padding-left: 25px;
+        line-height: 25px;
+      }
+    }
+  margin-bottom:10px;
+  #left {
+    .thongtinlienhe{
+      display: none;
+    }
+    .buttonthongtinlienhe p {
+      font-weight: 700;
+      padding-top:8px; 
+      @include float-left;
+      margin-left: 5px;
+    }
+    .time-edit {
+      text-align:right;
+      font-style: italic;
+      color: #da6500;
+      font-weight: 700;
+    }
+    h4 {
+      color: #da6500;
+      font-size: 16px;
+      font-style: italic;
+      font-weight:700;
+      margin:10px 0 7px 0;
+    }
+    h3 {
+      background-image:none;
+      color: #0a587c;
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display:block;
+      height: auto;
+    }
+    .kynang {
+      padding-left: 40px;
+      font-weight: 700;
+      line-height: 18px;
+      li {
+        margin: 5px 0;
+      }
+      span {
+        color: #0a587c;
+        display:block;
+        padding-left:5px;
+        text-transform:none;
+        font-size:12px;
+        font-style:normal;
+      }
+    }
+    .titb {
+      font-weight:700;
+      text-transform:none;
+        font-style: normal;
+        font-weight: 700;
+        color: #444 !important;
+        font-size:12px;
+    }
+    .nganhhoc {
+        display:block;
+        color: #0a587c !important;
+        text-transform:none;
+        font-style: normal;
+        font-weight: 700;
+        font-size:12px;
+      }
+    span {
+      color: #333333;
+      font-size: 14px;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #d7d7d7;
+  box-shadow: 2px 0px 2px #eee;
+  background-color:#f5f5f5;
+  padding: 15px;
+}
+}
+.infochung {
+  padding-bottom:10px;
+  img {
+    float: left;
+    display:inline;
+    margin-right:10px;
+    border:1px solid #0a587c;
+  }
+  ul {
+    width: 100%;
+    li {
+    width: 40%;
+    @include float-left;
+  }
+  span {
+    font-weight:700;
+    text-transform:none !important;
+  }
+  }
+  
+}

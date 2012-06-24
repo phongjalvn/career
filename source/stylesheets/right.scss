@@ -1,4 +1,59 @@
 #right{
+  .demo2 {
+    margin-top: 10px;
+  }
+  .ntd-view {
+    width: 95%;
+    margin: 0 auto 10px;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D3E7EE;
+    border-color: #719EAE #8EBDCC #8EBDCC;
+    border-right: 1px solid #8EBDCC;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 5px #8EBDCC inset, 0 1px 0 #FDFDFF;
+    color: #4A6B79;
+    text-shadow: 0 1px 0 rgba(253, 253, 255, 0.3);
+    border-radius: 7px;
+    padding: 0 !important;
+
+  .demo1 {
+    background-color:transparent !important;
+  }
+  h3 {
+   border-bottom:1px solid #daf5ff !important;
+   height: 30px;
+   line-height:30px;
+    font-weight: 700;
+    font-size:14px;
+    color: #3E6674 !important;
+    text-align: center;
+    background-color: #9ECADA;
+    -webkit-border-top-left-radius: 07px;
+   -webkit-border-top-right-radius: 07px;
+    -moz-border-radius-topleft: 07px;
+    -moz-border-radius-topright: 07px;
+    border-top-left-radius: 07px;
+    border-top-right-radius: 07px;
+    padding: 0 !important;
+  }
+  p{
+    font-style: italic;
+    border-top:1px solid #9ecada !important;
+    padding:10px 10px;
+    text-align:justify;
+
+    span {
+      color:#f00;
+      font-style:italic;
+      font-weight:700;
+    }
+  }
+}
   .luong {
     width:100%;
 
@@ -145,7 +200,7 @@ li.check{
 .progess-job {
   @include clearfix;
   background-image: url(../images/propress-right.png);
-  margin:10px auto;
+  margin:10px auto 0;
   width:231px;
   padding:15px;
   p {
@@ -169,16 +224,5 @@ li.check{
   font-weight:700;
   span {
     font-size:18px;
-  }
-}
-.ntd-view {
-  padding-bottom:10px;
-  p{
-    border-top: 1px solid #EBF3F6;
-    padding-top:10px;
-    span {
-      color:#f6811f;
-      font-weight:700;
-    }
   }
 }

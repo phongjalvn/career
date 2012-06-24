@@ -1,0 +1,138 @@
+.fbx table {
+  td {
+    background-color:transparent;
+  }
+}
+#login-page {
+  table table {
+    width: 100%;
+    margin: 0;
+  }
+  .fbx {
+    border: 6px solid #a2ccef;
+    color: #333333;
+    margin: 15px auto 15px;
+    width: 100%;
+    input[type="text"] {
+      border: 1px solid #cbb945;
+      background-color:#f7fadb;
+    }
+    input[type="password"] {
+      border: 1px solid #cbb945;
+      background-color:#f7fadb;
+    }
+    .btn {
+      input {
+        text-shadow: 0px 1px #4876C9;
+        background: #5A8CE7;
+        background: -moz-linear-gradient(top, #C2E0FF 1px, #84AFFE 1px, #5A8CE7);
+        background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #C2E0FF), color-stop(0.02, #84AFFE), color-stop(1, #5A8CE7));
+        border: solid 1px #3D6DC3;
+        background-color:#5A8CE7;
+        background-image: -moz-linear-gradient(top, #C2E0FF 1px, #84AFFE 1px, #5A8CE7);
+          background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #C2E0FF), color-stop(0.02, #84AFFE), color-stop(1, #5A8CE7));
+        -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, .4), inset 1px 0 rgba(255, 255, 255, .1), inset -1px 0 
+        rgba(255, 255, 255, .1);
+        -moz-box-shadow: inset 0 1px rgba(255,255,255, .4), inset 1px 0 rgba(255,255,255, .1), inset -1px 0 rgba(255,255,255, .1);
+        box-shadow: inset 0 1px rgba(255, 255, 255, .4), inset 1px 0 rgba(255, 255, 255, .1), inset -1px 0 rgba(255, 255, 255, .1);
+        padding: 4px 9px;
+        color: #fff;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius: 3px;
+        @include float-left;
+        margin-right:10px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+    img{
+      @include float-left;
+      margin-left:10px;
+      margin-top:-20px;
+    }
+    .table-container {
+      @include float-left;
+      width: 740px;
+      margin: 9px 10px 9px -30px;
+    }
+    h1 {
+      color: #034ca3;
+      font-size: 13.5pt;
+      padding: 0 0 10px;
+      font-weight:700;
+      text-align: left; }
+    .l {
+      font-weight: bold;
+      padding-top: 7px;
+      text-align: right;
+      vertical-align: top;
+      white-space: nowrap; }
+    .join {
+      border-left: 4px solid #dddddd;
+      padding: 0 20px 0;
+      text-align: center;
+      width: 380px;
+      a{
+        background: url('../images/guibanbe.png') right center no-repeat;
+        padding-right: 15px !important;
+        padding-left: 0 !important;
+        line-height: 30px;
+        display: inline-block;
+        margin: 0 auto;
+        width: 81px;
+        text-transform:uppercase;
+        span {
+          background: url('../images/guibanbe.png') left center no-repeat;
+          padding: 5px 0 9px 15px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #fff;
+          display: inline-block; } 
+        &:hover {
+            background: url("../images/guibanbe-hover.png") right center no-repeat;
+            span {
+              background: url("../images/guibanbe-hover.png") left center no-repeat;
+            }
+          }
+        }
+        
+      h2 {
+        color: #f37911;
+        font-weight: bold;
+        border-bottom:none;
+        border-top:3px solid #d7d7d7;
+        font-size: 12pt;
+        padding: 0 0 10px; 
+        &:first-child {
+          border-top:none;
+        }
+      }
+
+      p {
+        padding: 10px 5px 5px; }
+      ul {
+        list-style: none outside none;
+        margin-left: 10px;
+        text-align: left; }
+      li {
+        background: url("../images/arr-org.gif") no-repeat scroll left center transparent;
+        padding: 5px 0 5px 16px; } }
+    .back {
+      margin-top: 10px;
+      padding-left: 5px;
+      text-align: left;
+      a {
+        font-size: 8pt;
+        padding-left: 16px;
+        text-decoration: none; } } }
+  .status {
+    color: #E70000;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center; }
+  .fbx .regfrm {
+    
+    width: 310px; } }

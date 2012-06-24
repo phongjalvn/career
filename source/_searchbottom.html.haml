@@ -125,7 +125,7 @@
             %button search
           #search-more.searchmore.clearfix
             %p.clearfix
-              %span.notimg Chọn trình độ học vấn
+              %span.notimg Chọn trình độ học vấn: 
               %label
                 %select#cbEducatiodnLevel.multi-checklist.TEXTBOX{:multiple => "multiple", :name => "cbEducationLevel", :title => "Chon trinh do hoc van"}
                   %option{:selected => "", :value => ""} Chọn trình độ học vấn
@@ -148,7 +148,7 @@
                   %option{:value => "PHD"} Tiến sĩ
                   %option{:value => "OTH"} Khác
             %p.linefn.clearfix
-              %span.notimg Loại công việc
+              %span.notimg Loại công việc: 
               %label
                 %select#cbPositasisonType.multi-checklist.TEXTBOX{:multiple => "multiple", :name => "cbPositidsonType", :title => "Chon loai cong viec"}
                   %option{:selected => "", :value => ""} Chọn loại công việc
@@ -159,7 +159,7 @@
                   %option{:value => "Contract"} Hợp đồng
                   %option{:value => "Other"} Khác
             %p.linef.clearfix
-              %span.notimg Cấp bậc
+              %span.notimg Cấp bậc: 
               %label
                 %select#cbCarseerLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCasdreerLevel"}
                   %option{:selected => "", :value => ""} Chọn cấp bậc
@@ -169,7 +169,7 @@
                   %option{:value => "Professional"} Chuyên viên
                   %option{:value => "Executive"} Điều hành
             %p.linef.clearfix
-              %span.notimg Mức kinh nghiệm
+              %span.notimg Mức kinh nghiệm: 
               %label
                 %select#cbCareearLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCarsdaseerLevel"}
                   %option{:selected => "", :value => ""} Chọn mức kinh nghiệm
@@ -179,8 +179,8 @@
                   %option{:value => "5-10 years experience"} 5-10 năm kinh nghiệm
                   %option{:value => "10+ years experience"} Hơn 10 năm kinh nghiệm
             %p.luong.clearfix
-              %span.notimg Lương
-              %span.select
+              %span.notimg Lương: 
+              %span
                 %select#cbSalary.TEXTBOX{:name => "cbSalary", :onchange => "changeSalary(this);"}
                   %option{:value => "Negotiable"} Thương lượng
                   %option{:value => "Normal"} Nhập
@@ -198,7 +198,7 @@
                       %option{:value => "2"} VND
                       %option{:value => "1"} USD
             %p.clearfix
-              %span.notimg Công việc trong vòng
+              %span.notimg Công việc trong vòng: 
               %label
                 %select#cbCareedrrLevel.multi-checklist.normal.TEXTBOX{:multiple => "multiple",:name => "cbCareyterLevel"}
                   %option{:value => "1"} 1

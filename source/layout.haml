@@ -11,9 +11,8 @@
     -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
     %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/    
     = stylesheet_link_tag "site.css"
+    = javascript_include_tag "modernizr"
     /[if lt IE 9]
-      = javascript_include_tag "IE9"
-      = javascript_include_tag "modernizr"
       = javascript_include_tag "h5f"
     - if content_for?(:head)
       = yield_content :head
@@ -24,7 +23,7 @@
           .topmenu
             %ul
               %li
-                %a{:href => "#"} Việc làm đăng tuyển
+                %a{:href => "#"} Việc làm đang tuyển
                 %span 123456
               %li
                 %a{:href => "#"} Tìm việc
@@ -47,10 +46,10 @@
         /
           \-TODO: logo.png, transparent
         - if data.page.logo?
-          %h1#logo
+          #logo
             %a{:href => "#"}= image_tag data.page.logo
         - else
-          %h1#logo
+          #logo
             %a{:href => "#"}= image_tag 'logo.png'
         .login
           %ul
@@ -110,3 +109,5 @@
       %p.forgot-username
         %a#forgot_username_link{:href => "#", :title => ""} Bạn quên tên đăng nhập?
   = javascript_include_tag 'app'
+  /[if lt IE 8]
+    = javascript_include_tag "borderbox"

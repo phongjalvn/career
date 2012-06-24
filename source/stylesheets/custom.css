@@ -1,3 +1,186 @@
-body {
-	overflow-x:hidden;
+/*Form*/
+/* -----------------------------------------
+     Custom Forms
+
+  ----------------------------------------- */
+  #search-more {
+    display: none;
+  }
+  .list-mota.list-search span.notimg,
+  .list-mota.list-search #right-more .notimg {
+    padding: 10px 0 4px 0;
+    line-height:normal;
+  }
+  .multiDrop {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 
+    5px 0;
 }
+.multiDropHeader, .multiDropFooter {
+    background: #333;
+    height:   20px;
+    padding: 3px 10px;
+    line-height:14px;
+    position: relative;
+}
+.multiDropHeader a span, .multiDropFooter a span,
+.multiDropHeader a:hover , .multiDropFooter a:hover {
+  font-weight: 700;
+  color: #fff;
+}
+
+.multiDropMain .close {
+    position: absolute;
+    font-weight: 700 !important;
+    color: #fff;
+    right: 10px;
+    top: 3px;
+}
+.searchfooter form p.nornal button {
+    background: url("../images/search-button.png") repeat scroll -1px -4px transparent;
+    border: medium none;
+    cursor: pointer;
+    line-height: 18px;
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 0;
+    text-indent: 110%;
+    white-space: nowrap;
+    width: 48px;
+}
+.searchfooter form p.nornal button:hover {
+  background-image: url('../images/search-button-hover.png')
+}
+   span.custom,
+   span.custom { display: inline-block; width: 14px; height: 14px; position: relative; top: 2px; }
+   span.custom.radio { border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; }
+   span.custom.radio.checked {  }
+   span.custom.checkbox.checked {  }
+
+   div.custom.dropdown { display: block; position: relative; width: auto; height: 20px;}
+   div.custom.dropdown a.current { display: block; width: auto; line-height: 18px; min-height: 18px; padding: 0 38px 0 6px; color: #141414; background-color: #fff; word-wrap: nowrap; }
+   div.custom.dropdown a.selector { position: absolute; width: 26px; height: 18px; display: block; background: url("../images/dropdown.blue.png") no-repeat scroll right center #FFFFFF; right: 0; top: 0;}
+   div.custom.dropdown:hover a.selector,
+   div.custom.dropdown.open a.selector { background-image: url(../images/dropdown.blue.hover.png);}
+   .list-mota.list-search div.custom.dropdown a.current { display: block; width: auto; line-height: 18px; min-height: 18px; padding: 0 38px 0 6px; color: #141414; background-color: #fff; word-wrap: nowrap; }
+   .list-mota.list-search div.custom.dropdown a.selector { position: absolute; width: 26px; height: 18px; display: block; background: url("../images/selectarrrow.png") no-repeat scroll right center; right: 0; top: 0;}
+   .list-mota.list-search div.custom.dropdown:hover a.selector,
+   .list-mota.list-search div.custom.dropdown.open a.selector { background-image: url(../images/selectarrrow.png);}
+
+   div.custom.dropdown ul { z-index:9999;position: absolute; width: auto; display: none; margin: 0; left: 0 !important; top: 27px; margin: 0; padding: 0; background: #fff; background: rgba(255,255,255,0.95); border: solid 1px #ddd; }
+   div.custom.dropdown ul li,
+   .details #right .list-mota.list-search ul li { 
+    cursor: pointer; 
+    padding: 0 0 0 6px; min-height: 18px; margin: 0; white-space: nowrap; line-height: 18px;
+   }
+   .details #right .list-mota.list-search ul li:last-child {
+      background-image: none !important;
+   }
+   div.custom.dropdown ul li label {
+    display: block !important;
+    cursor: pointer; 
+   }
+   div.custom.dropdown ul li.selected,
+   .details #right .list-mota.list-search ul li.selected { background: url(../images/misc/custom-form-sprites.png) right -52px no-repeat; }
+   div.custom.dropdown ul li:hover,
+   .details #right .list-mota.list-search ul li:hover { background-color: #2a85e8; color: #fff;  }
+   div.custom.dropdown ul li.selected:hover,
+   .details #right .list-mota.list-search ul li.selected:hover { background: url(../images/misc/custom-form-sprites.png) #2a85e8 right -78px no-repeat; }
+   div.custom.dropdown ul.show { display: block; }
+
+   div.custom.dropdown.open ul { display: block; z-index: 10; }
+  
+   div.custom.dropdown.small { width: 134px !important; }
+   div.custom.dropdown.medium { width: 262px !important; }
+   div.custom.dropdown.large { width: 434px !important; }
+   div.custom.dropdown.expand { width: 100% !important; }
+  
+   div.custom.dropdown.open.small ul { width: 132px !important; }
+   div.custom.dropdown.open.medium ul { width: 260px !important; }
+   .list-mota.list-mota div.custom.dropdown .clear { width: 190px !important;border: 1px solid #bbb }
+   .list-mota.list-mota div.custom.dropdown ul { width: 191px !important;  }
+    .list-mota.list-mota .tdhv div.custom.dropdown ul { width: 238px !important;  }
+   .searchfooter div.custom.dropdown .clear { width: 260px !important; border: 1px solid #bbb }
+   .searchfooter div.custom.dropdown ul { width: 260px !important;  }
+   div.custom.dropdown.open.large ul { width: 432px !important; }
+   div.custom.dropdown.open.expand ul { width: 100% !important; box-sizing: border-box; }
+
+  /* Custom input, disabled */
+   .custom.disabled { background-color: #ddd; }
+
+  /* -----------------------------------------
+     Nicer Custom Forms
+  ----------------------------------------- */
+  .nice span.custom.checkbox { border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
+
+  .nice div.custom.dropdown a.current { border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; background-image: url(../images/input-bg-outset.png); background-position: bottom right; }
+  .nice div.custom.dropdown a.selector { height: 27px; border-width: 0 0 0 1px; }
+  .nice div.custom.dropdown ul { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; -webkit-border-bottom-left-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-bottomleft: 2px; -moz-border-radius-bottomright: 2px; }
+/*Linhtinh*/
+
+.hosocuatoi-ntd #bottombox {
+  margin-top: 10px;
+}
+.hosocuatoi-ntd .new-resume li a:hover,
+li.luuviec a:hover, li.guibanbe a:hover,
+.ketquatimkiem-hoso .details .list-search .editsearch a:hover,
+.ketquatimkiem-chitiet-ntd .details .list-search .editsearch a:hover,
+#search-center.advance-search .contents li li a:hover {
+  opacity: .9;
+}
+
+.ketquatimkiem-chitiet-ntd .list-mota.list-search span.notimg, .ketquatimkiem-chitiet-ntd.list-mota.list-search #right-more .notimg,
+.otherlink a:hover,
+#profiles .contents #left .box .view-rutgon a:hover.title {
+  color: #EB7814;
+}
+.otherlink a:hover.morongtimkiem {
+  color: #1F63AD;
+}
+.ketquatimkiem-chitiet-ntd .details #right .list-mota .moresearch a,
+ .ketquatimkiem-hoso .details #right .list-mota .moresearch a{
+  color: #666;
+}
+#profiles .contents #left .box {
+  margin-bottom:10px;
+}
+
+.details #right .list-mota li.moresearch {
+  background-image:none;
+  list-style-type: none;
+}
+.ketquatimkiem-chitiet-ntd .luong span.ser,
+.ketquatimkiem-hoso .luong span.ser {
+  color: #666;
+}
+/* ========== */
+/* = Logout = */
+/* ========== */
+#menu .login.logout {
+  text-align: center;
+  color: #d2e7f4;
+}
+#menu .login.logout a {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 3px;
+}
+#menu .login.logout a.out {
+  text-decoration: underline;
+  color: #d2e7f4;
+  
+  text-transform: none;
+  font-style: normal;
+}
+#menu .login.logout a:hover.out {
+  color: #fff;
+}
+
+body {
+  overflow-x:hidden;
+}
+
+

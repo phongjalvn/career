@@ -53,18 +53,21 @@
         margin-left: 15px;
         margin-top:17px;
         overflow:hidden;
+
       }
     }
     &:nth-child(2){
       select, span{
         width:263px;
         overflow:hidden;
+        padding:4px;
       }
     }
     &:nth-child(3){
       select, span{
         width:225px;
         overflow:hidden;
+        padding:4px;
       }
     }
   }
@@ -103,3 +106,8 @@
   }
 }
 
+#kn{
+  display: none;
+  width:100%;
+  .rowdetail{display:none;}
+}

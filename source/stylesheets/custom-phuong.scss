@@ -1,3 +1,6 @@
+.contents{
+  @include pie;
+}
 a:visited {
   color: #034CA3; }
 
@@ -29,12 +32,12 @@ a:visited {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  padding: 0 17px; }
+   }
 
 #main #breadcrumb {
   ul li:first-child a {
     color: #005196; }
-  padding: 7px 0 10px 10px; }
+    padding: 5px 0 5px 10px; }
 
 #bottombox {
   .container .box {
@@ -144,27 +147,33 @@ a:visited {
 /* = Thong tin khac = */
 
 .thongtinkhac {
-  position: relative; }
+  position: absolute;
+  right: 0;
+  top: 36px;
+   }
 
 .social, .luotxem, .ngaydang, .hienthiden {
-  position: absolute; }
+    float:right;
+    display: inline;
+    margin-left:5px;
+   }
 .luotxem, .ngaydang, .hienthiden {
   font-weight:700;
   span {
   font-weight:100;
   }
 }
-.social {
-  top: -28px;
-  left: 50%; }
+// .social {
+//   top: -28px;
+//   right: 0; }
 
-.luotxem {
-  top: -28px;
-  left: 64%; }
+// .luotxem {
+//   top: -28px;
+//   left: 64%; }
 
-.ngaydang {
-  top: -28px;
-  left: 74%; }
+// .ngaydang {
+//   top: -28px;
+//   left: 74%; }
 
 .nopdon {
   margin-bottom: 10px;
@@ -217,15 +226,19 @@ a {
     color: #034ca3; } }
 li:hover.luuviec {
   background: url("../images/luuvieclam-hover.png") right center no-repeat;
+  opacity:1;
 }
 li:hover.luuviec a {
   background: url("../images/luuvieclam-hover.png") left center no-repeat ;
+  opacity:1;
 }
 li:hover.guibanbe {
   background: url("../images/guibanbe-hover.png") right center no-repeat;
+  opacity:1;
 }
 li:hover.guibanbe a {
   background: url("../images/guibanbe-hover.png") left center no-repeat;
+  opacity:1;
 }
 #tag {
   color: #333;
@@ -270,6 +283,7 @@ li:hover.guibanbe a {
     padding: 10px 10px 0 10px; }
   li {
     width: 25%;
+    *width: 21%;
     margin: 0; }
   &.city li {
     width: 19%;
@@ -425,7 +439,7 @@ span {
     float: left;
     display: inline; }
   &.job-des {
-    color: #666666;
+    color: #555;
     margin: 5px 0; } }
 
 .details table.view-rutgon span {
@@ -452,15 +466,19 @@ span {
     float: left;
     display: inline;
     background-color:#fff;
-    margin-right: 10px;
+    
     border: 1px solid #b2cbe8;
     box-shadow: 3px 5px 8px #b2cbe8; }
   .ntd-chitietvieclam {
-    float: right;
+    float: left;
     display: inline;
+    margin-left:10px;
     width: 540px;
     table {
-      width: 540px; } } }
+      width: 540px;
+      td{
+        padding: 0;
+      } } } }
 
 /* ================= */
 /* = Trang profile = */
@@ -524,14 +542,24 @@ span {
   .name {
     font-size: 14px;
     font-weight: bold; }
-  .edit, .logout {
-    text-decoration: underline; } }
+  .edit a, .logout a {
+    text-decoration: underline;
+    color: #fff; } 
+     .edit a:hover, .logout a:hover {
+      color: #eee;
+     }
+  }
 
 /* ================= */
 /* =========================== */
 /* = Trang cam nang tim viec = */
-
+.camnangchitiet, .camnang,.vieclamcuatoi{
+  #bottombox {
+    margin-top:10px;
+  }
+}
 #career-center {
+  
   #left h3 {
     border-bottom: 1px dotted #c3c3c3;
     color: #f37911;
@@ -553,11 +581,11 @@ span {
     width: 50%;
     padding-right: 10px;
     .title {
-      color: #666666;
+      color: #555;
       font-weight: bold;
       padding-bottom: 6px;
       a {
-        color: #666666; } }
+        color: #555; } }
     img {
       border: 1px solid #eaeaea;
       padding: 1px;
@@ -589,14 +617,7 @@ span {
 /* =========================== */
 
 #profiles .contents {
-  background-attachment: scroll, scroll, scroll;
-  background-clip: border-box, border-box, border-box;
-  background-color: transparent;
-  background-image: url("../images/profile-top.png"), url("../images/profile-bottom.png"), url("../images/profile-loop.png");
-  background-origin: padding-box, padding-box, padding-box;
-  background-position: left top, left bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto auto, auto auto, auto auto;
+  @include background(url("../images/profile-top.png") no-repeat 0 0, url("../images/profile-bottom.png") no-repeat 0 100%, url("../images/profile-loop.png") repeat-y 0 0);
   padding: 20px 0 8px 0;
   .bg {
     background: url('../images/profile-loop.png') repeat-y;
@@ -612,7 +633,7 @@ span {
         td, th {
           text-align: center; }
         td {
-          color: #666666;
+          color: #555;
           padding: 7px 0; }
         th {
           padding: 7px 0; } }
@@ -623,7 +644,7 @@ span {
           color: #034CA3; } }
       .view-rutgon {
         a {
-          color: #666666;
+          color: #555;
           text-decoration: underline;
           &:hover {
             color: #b8b8b8; } }
@@ -643,7 +664,7 @@ span {
 .new-resume {}
 
 a {
-  &.new-resume-button, &:hover.new-resume-button {
+  &.new-resume-button{
     background: -moz-linear-gradient(center top, #c2e0ff 1px, #84affe 1px, #5a8ce7) repeat scroll 0 0 transparent;
     background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #C2E0FF), color-stop(0.02, #84AFFE), color-stop(1, #5A8CE7));
     border: 1px solid #3D6DC3;
@@ -652,7 +673,15 @@ a {
     padding: 4px 8px;
     color: #fff;
     float: right;
-    margin-top: 10px; } }
+    margin-top: 10px;
+    margin-left:10px; 
+    font-weight:700;
+    font-family: tahoma;
+  } 
+&:hover.new-resume-button  {
+  opacity:.5;
+}
+  }
 
 #advanced-search button {
   background: -moz-linear-gradient(center top, #c2e0ff 1px, #84affe 1px, #5a8ce7) repeat scroll 0 0 transparent;
@@ -743,45 +772,35 @@ a {
     margin-bottom: 10px; } }
 
 a.new-alert-button {
-  background: none repeat scroll 0 0 #F8FCFF;
-  border: 1px solid #8DC5E6;
-  color: #0A7EC5;
-  border-radius: 3px 3px 3px 3px;
-  padding: 6px 9px;
-  margin-top: 10px;
-  float: left; }
-
+  background-color: #F7F9FE;
+    border: 1px solid #A1BEF2;
+    border-radius: 3px 3px 3px 3px;
+    color: #4A76C6;
+    padding: 4px 8px;
+    margin-right:5px;
+}
+a:hover.new-alert-button {
+  text-decoration:underline;
+}
 #profiles .social, #career-center .social, #search-center .social {
   right: 0;
   left: auto; }
 
 #career-center {
   .contents {
-    background-attachment: scroll, scroll, scroll;
-    background-clip: border-box, border-box, border-box;
-    background-color: transparent;
-    background-image: url("../images/camnang-top.png"), url("../images/camnang-bottom.png"), url("../images/camnang-loop.png");
-    background-origin: padding-box, padding-box, padding-box;
-    background-position: left top, left bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto auto, auto auto, auto auto;
+    @include background(url("../images/camnang-top.png") no-repeat 0 0, url("../images/camnang-bottom.png") no-repeat 0 100%, url("../images/camnang-loop.png") repeat-y 0 0);
     padding: 20px 0 14px 0; }
   #left {
     padding-left: 20px;
     margin-top: 0; } }
 
 #search-center .contents {
-  background-attachment: scroll, scroll, scroll;
-  background-clip: border-box, border-box, border-box;
-  background-color: transparent;
-  background-image: url("../images/search-top.png"), url("../images/search-bottom.png"), url("../images/search-loop.png");
-  background-origin: padding-box, padding-box, padding-box;
-  background-position: left top, left bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto auto, auto auto, auto auto;
+  @include background(url("../images/search-top.png") no-repeat 0 0, url("../images/search-bottom.png") no-repeat 0 100%, url("../images/search-loop.png") repeat-y 0 0);
   padding: 20px 0 32px 0;
   .bg {
-    background: url('../images/search-loop.png') repeat-y; }
+    background: url('../images/search-loop.png') repeat-y; 
+    padding-bottom:10px;
+  }
   &.city {
     border-top: none; } }
 
@@ -817,7 +836,7 @@ a.new-alert-button {
     padding-left: 15px;
     border-bottom: 1px solid #e5f5ff;
     a {
-      color: #666666;
+      color: #555;
       font-weight: bold; } } }
 
 /* ========== */
@@ -827,19 +846,19 @@ a.new-alert-button {
   h3 {
     margin: 10px 20px 0;
     font-size: 12px;
-    color: #666666;
+    color: #555;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid #dddddd;
     padding-bottom: 10px; }
-  ul {
+  .search-cate, ul{
     padding: 20px;
-    li {
+    .cate, li{
       float: left;
-      width: 33%;
+      width: 30%;
       display: inline;
-      margin-bottom: 10px;
-      color: #666666;
+      margin-bottom: 5px;
+      color: #555;
       a {
         font-weight: bold;
         color: #666; }
@@ -847,7 +866,9 @@ a.new-alert-button {
         width: 100%;
         background: url('../images/arrow-xanh.png') no-repeat left 5px; }
       ul {
-        padding-left: 10px; }
+        padding: 10px 0 0 10px;
+        @include clearfix;
+      }
       li {
         span {
           color: #000; }
@@ -898,7 +919,7 @@ a.new-alert-button {
   span, input[type="text"], select {} }
 
 .jslider {
-  margin: 50px auto 0;
+  margin: 25px auto 25px;
   height: 10px;
   width: 906px;
   background-color: #444;
@@ -940,7 +961,7 @@ a.new-alert-button {
 /* ======================= */
 /* = Tạo hồ sơ từng bước = */
 
-p.instruction {
+p.contruction {
   padding: 5px 20px;
   color: #aeaeae;
   font-style: italic;
@@ -951,5 +972,17 @@ p.instruction {
 .danghoso {
   padding: 5px 13px;
   line-height: 18px; }
-
-/* ======================= */
+ .ketquatimkiem-hoso,
+   .ketquatimkiem-chitiet-ntd {
+      .details #right .list-mota.list-search ul li {
+        color: #666;
+        &:hover {
+        color:#fff;
+      }
+      }
+   }
+.ie8 {
+  a.new-resume-button {
+    background-color:#3D6DC3;
+  }
+}

@@ -1,0 +1,23 @@
+.employer-register {
+  .create-resume h4 {
+    background-image: url("../images/title-dhs.png");
+    border: medium none;
+    color: #6C6C6C;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 12px 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  .danghoso p span,.user-register .danghoso .thoathuan span.left {
+    color: #333;
+    margin-right:5px;
+  }
+  #search-center.create-resume .taohoso-button li a {
+    color: #4A76C6;
+  }
+  #search-center.create-resume .taohoso-button li a:hover, #search-center.create-resume .taohoso-button li a.current {
+    color: #fff;
+  }
+}

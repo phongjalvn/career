@@ -1,0 +1,81 @@
+.effs dl
+  width: 950px
+  height: 179px
+  display: none
+  dd
+    height: 178px
+  dt
+    height: 72px
+    text-align: right
+    span
+      font-weight: bold
+      padding: 50px 7px
+      display: block
+      font-size: 16px
+      color: #fff
+      text-transform: uppercase
+  .banner-content
+    color: $blue
+    margin-left: 290px
+    width: 310px
+    font-size: 14px
+    font-weight: normal
+    overflow: hidden
+    position: relative
+    h2
+      font-size: 24px
+      margin: 30px 0
+    p
+      padding-right: 10px
+  img
+    @include absolute
+    left: 0
++all-banner-sprites
+.effs .p2-acc
+  display: block
+  position: relative
+  overflow: hidden
+  padding: 0
+  margin: 0
+  dt, dd
+    margin: 0
+    padding: 0
+  dt, dd
+    position: absolute
+  dt
+    margin-bottom: 0
+    margin-left: 0
+    z-index: 5
+    /* Safari
+    -webkit-transform: rotate(-90deg)
+    /* Firefox
+    -moz-transform: rotate(-90deg)
+    -moz-transform-origin: 20px 0px
+    /* Internet Explorer
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+    cursor: pointer
+  dd
+    z-index: 1
+    opacity: 0
+    overflow: hidden
+    &.active
+      opacity: 1
+    &.no-more-active
+      z-index: 2
+      opacity: 1
+    &.active
+      z-index: 3
+    &.plus
+      z-index: 4
+  .slide-number
+    position: absolute
+    bottom: 0
+    left: 10px
+    font-weight: normal
+    font-size: 1.1em
+    /* Safari
+    -webkit-transform: rotate(90deg)
+    /* Firefox
+    -moz-transform: rotate(90deg)
+    /* Internet Explorer
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)

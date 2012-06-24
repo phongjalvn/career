@@ -1,9 +1,5 @@
 /*Mixin Library*/
 @import "mixin.sass";
-@import "compass/support";
-$legacy-support-for-ie7: true;
-@import "mixin.sass";
-@import "compass/css3/pie";
 
 @mixin debug(){
   /*background-image: url(../images/screen/1.1.1.Trangchu.png);*/
@@ -112,7 +108,8 @@ a:hover {
       height: 30px;
       font-size: 16px;
       font-weight: bold;
-      padding: 0 19px;
+      padding: 0 15px 0 19px;
+      text-align:center;
       margin-left:0;
     }
 
@@ -143,7 +140,9 @@ a:hover {
       overflow: visible;
       height: 35px;
       line-height: 35px;
-      margin-top: 5px;
+      margin: 5px 0 0 0;
+      top: 1px;
+      position: relative;
 
       a, span{
         display: block;
@@ -152,7 +151,7 @@ a:hover {
       }
       a{
         @include link-colors(#034ca3);
-
+        margin-top: -1px;
         span{
           padding: 0 10px 0 0;
           background-position: top right;
@@ -161,7 +160,7 @@ a:hover {
 
         &:hover, &:hover span,
         &.active, &.active span{
-          margin-top: 1px;
+          margin-top: 0;
           background-image: url(../images/nav-a-active.png);
           color: #fff;
           height: 36px;
@@ -170,8 +169,8 @@ a:hover {
       }
       ul{
         position: absolute;
-        bottom: 0;
-        left:0;
+        top: 35px;
+        left: -315px;
         margin-top:0;
         height: 25px;
         line-height: 25px;
@@ -181,9 +180,9 @@ a:hover {
           line-height: 25px !important;
         }
         li{
-          padding-left: 30px;
+          padding-left: 20px;
           padding-right: 0;
-          background: url(../images/nav-a-sub.png) 15px 10px no-repeat;
+          background: url(../images/nav-a-sub.png) 8px 10px no-repeat;
           &:first-child, .first  {
           background-image:none;
         }
@@ -219,10 +218,14 @@ a:hover {
       a{
         @include link-colors(#d06100, #013d6d);
         display: block;
-        width: 82px;
-        margin-left: 12px;
+        width: 85px;
+        margin-left: 10px;
+        margin-top:8px;
         text-align: center;
         text-transform: uppercase;
+        background-image: url(../images/login.png);
+        height: 26px;
+        line-height:26px;
       }
       #btn-login{
         width: 84px;
@@ -300,7 +303,7 @@ div.dialog-titlebar {
 
 }
 
-@import "slider.scss";
+@import "slider.sass";
 @import "search.scss";
 @import "homecontent.scss";
 @import "chitiet.scss";
@@ -308,7 +311,7 @@ div.dialog-titlebar {
 
 #breadcrumb{
   @extend .container;
-  padding: 7px 0 10px 10px;
+  padding: 5px 0 5px 10px;
   
   ul{
     @include horizontal-list(10px);
@@ -515,33 +518,33 @@ input:-webkit-autofill {
 /* = Vua them vao = */
 
 .ie7 {
-  #menu .menu ul a:hover, #menu .menu ul a:hover span, #menu .menu ul a.active, #menu .menu ul a.active span {
-    margin-top:0px;
-  }
-  #menu {
-    height: 65px;
-  }
+  // #menu .menu ul a:hover, #menu .menu ul a:hover span, #menu .menu ul a.active, #menu .menu ul a.active span {
+  //   margin-top:0px;
+  // }
+  // #menu {
+  //   height: 65px;
+  // }
   .search-top li {
     zoom:1;
     float:none;
   }
-  .search-top label select#nganhnghe {
-    width: 263px;
-  }
-  .search-top label select#thanhpho {
-    width: 225px;
-  }
-  #doitac .container ul {
-    height: 42px;
-  }
-  #bottombox .box {
-    width: 30%;
-  }
-  #bottombox .col-3 {
-    #socialbottom {
-      height: 32px;
-    }    
-  }
+  // .search-top label select#nganhnghe {
+  //   width: 263px;
+  // }
+  // .search-top label select#thanhpho {
+  //   width: 225px;
+  // }
+  // #doitac .container ul {
+  //   height: 42px;
+  // }
+  // #bottombox .box {
+  //   width: 30%;
+  // }
+  // #bottombox .col-3 {
+  //   #socialbottom {
+  //     height: 32px;
+  //   }    
+  // }
   #socialbottom #zing a {
     background-position:-192px -32px;
   }
@@ -561,7 +564,8 @@ input:-webkit-autofill {
     border-color: #3D6DC3;
     text-shadow: 0 1px #4876C9;
 }
-.details table.view-rutgon span.job-title a:hover {
+.details table.view-rutgon span.job-title a:hover,
+a:hover.luuviec, a:hover.mailbanbe {
   color: #387fd3;
 }
 .listjob ul li a:hover {
@@ -577,12 +581,36 @@ input:-webkit-autofill {
 .details #right .list-search2.list-mota {
   line-height:25px;
 }
+.details #right .mota .list-mota li {
+  margin: 0;
+}
+select {
+  option {
+    text-decoration:none !important;
+    &:hover {
+      text-decoration:none  !important;
+    }
+  }
+  cursor:pointer;
+  
+  
+
+}
 /* ================ */
 /*@import "debug.sass";*/
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 @import "custom.css";
+@import "jquery.qtip.css";
+@import "jquery.qtip.min.css";
 @import "custom-phuong.scss";
 @import "search-advance.scss";
 @import "create-resume.scss";
 @import "nhatuyendung.scss";
-
+@import "taohosostep3.scss";
+@import "chitietungvien.scss";
+@import "user-register.scss";
+@import "employer-register.scss";
+@import "dangtuyendung-buoc.scss";
+@import "chonhoso.scss";
+@import "trangchulogin.scss";
+/*@import "ie7.scss";*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }

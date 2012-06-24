@@ -1,0 +1,578 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Đăng tuyển dụng"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.create-resume
+  .container
+    = partial(:breadcrumb)
+    %h2 Đăng tuyển dụng - Bước 3 - Thong tin lien he
+    .contents
+      .bg.clearfix
+        %br.clearfix/
+        %div.tip.clearfix
+          .jslider{:current => "2", :total => "3"}
+            .filler
+          %div.instruction
+            Thông tin Miêu tả sơ lược công ty,Tên việc làm… 
+            Bạn hãy chọn nút “Lưu Bước 1 để tiếp tục Bước 2“ để ttiếp tục
+            %p.not-input
+              Những mục có dấu sao
+              %span *
+              là bắt buộc.
+        .danghoso
+          %form{:action => "#"}
+            %h4.tit Mô tả công việc
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Cách liên hệ                 
+              %label
+                %input#jobStep3_applyOnline{:checked => "checked", :disabled => "disabled", :name => "jobStep3[applyOnline]", :type => "checkbox", :value => "1"}
+                  %label{:for => "jobStep3_applyOnline"} Nộp trực tuyến
+                %input#jobStep3_applyAttachment{:checked => "checked", :name => "jobStep3[applyAttachment]", :type => "checkbox", :value => "1"}
+                  %label{:for => "jobStep3_applyAttachment"} Gửi kèm File 
+                %input#jobStep3_applyDirect{:checked => "checked", :name => "jobStep3[applyDirect]", :type => "checkbox", :value => "1"}
+                  %label{:for => "jobStep3_applyDirect"} Trực tiếp
+            %p
+              %span.clearfix
+                Nhận hồ hơ bằng ngôn ngữ                 
+              %label
+                %select#jobStep3_applicationPreferredLanguage.TEXTBOX{:name => "jobStep3[applicationPreferredLanguage]", :required => "required"}
+                  %option{:value => ""} Chọn ngôn ngữ
+                  %option{:selected => "selected", :value => "31"} Tiếng Việt
+                  %option{:value => "1"} Tiếng Ả Rập
+                  %option{:value => "2"} Tiếng Myanma
+                  %option{:value => "33"} Tiếng Trung Quốc (Quảng Đông)
+                  %option{:value => "3"} Tiếng Trung Quốc (Quan Thoại)
+                  %option{:value => "4"} Tiếng Đan Mạch
+                  %option{:value => "5"} Tiếng Hà Lan
+                  %option{:value => "8"} Tiếng Anh
+                  %option{:value => "9"} Tiếng Pháp
+                  %option{:value => "10"} Tiếng Đức
+                  %option{:value => "11"} Tiếng Hy Lạp
+                  %option{:value => "12"} Tiếng Hebrew
+                  %option{:value => "6"} Tiếng Indonesia
+                  %option{:value => "13"} Tiếng Ý
+                  %option{:value => "14"} Tiếng Nhật
+                  %option{:value => "15"} Tiếng Java
+                  %option{:value => "16"} Tiếng Khmer
+                  %option{:value => "17"} Tiếng Hàn
+                  %option{:value => "18"} Tiếng Lào
+                  %option{:value => "19"} Tiếng Mã Lai
+                  %option{:value => "20"} Tiếng Na Uy
+                  %option{:value => "21"} Tiếng Ba Lan
+                  %option{:value => "22"} Tiếng Bồ Đào Nha
+                  %option{:value => "23"} Tiếng Romana
+                  %option{:value => "24"} Tiếng Nga
+                  %option{:value => "25"} Tiếng Tây Ban Nha
+                  %option{:value => "26"} Tiếng Thụy Điển
+                  %option{:value => "27"} Tiếng Tagalog
+                  %option{:value => "34"} Tiếng Đài Loan
+                  %option{:value => "28"} Tiếng Tamil
+                  %option{:value => "29"} Tiếng Thái
+                  %option{:value => "30"} Tiếng Thổ Nhĩ Kỳ
+                  %option{:value => "32"} Khắc
+            %p
+              %span.clearfix
+                Mô tả                
+              %label
+                %img{:alt => "", :src => "/images/editor2.png"}
+            %p
+              %span.clearfix
+                Địa chỉ                
+              %label
+                %input
+            %div.mutichon.clearfix
+              %span.clearfix
+                Nơi làm việc
+              %label
+                %select#myselecttsms{:name => "myselecttsms", :size => "6"}
+                  %option{:selected => "selected", :value => "23"} Hồ Chí Minh
+                  %option{:value => "27"} Hà Nội
+                  %option{:value => "17"} Đà Nẵng
+                  %option{:value => "1"} An Giang
+                  %option{:value => "9"} Bà Rịa - Vũng Tàu
+                  %option{:value => "5"} Bắc Cạn
+                  %option{:value => "4"} Bắc Giang
+                  %option{:value => "6"} Bạc Liêu
+                  %option{:value => "7"} Bắc Ninh
+                  %option{:value => "11"} Bến Tre
+                  %option{:value => "3"} Bình Định
+                  %option{:value => "2"} Bình Dương
+                  %option{:value => "8"} Bình Phước
+                  %option{:value => "10"} Bình Thuận
+                  %option{:value => "13"} Cà Mau
+                  %option{:value => "14"} Cần Thơ
+                  %option{:value => "12"} Cao Bằng
+                  %option{:value => "16"} Đắk Lắk
+                  %option{:value => "18"} Đăk Nông
+                  %option{:value => "15"} Điện Biên
+                  %option{:value => "19"} Đồng Nai
+                  %option{:value => "20"} Đồng Tháp
+                  %option{:value => "21"} Gia Lai
+                  %option{:value => "25"} Hà Giang
+                  %option{:value => "28"} Hà Nam
+                  %option{:value => "30"} Hà Tây
+                  %option{:value => "31"} Hà Tĩnh
+                  %option{:value => "24"} Hải Dương
+                  %option{:value => "29"} Hải Phòng
+                  %option{:value => "26"} Hậu Giang
+                  %option{:value => "22"} Hòa Bình
+                  %option{:value => "32"} Hưng Yên
+                  %option{:value => "33"} Kiên Giang
+                  %option{:value => "34"} Khánh Hòa
+                  %option{:value => "35"} Kon Tum
+                  %option{:value => "65"} Lai Châu
+                  %option{:value => "38"} Lâm Đồng
+                  %option{:value => "39"} Lạng Sơn
+                  %option{:value => "66"} Lào Cai
+                  %option{:value => "36"} Long An
+                  %option{:value => "42"} Nam Định
+                  %option{:value => "40"} Nghệ An
+                  %option{:value => "41"} Ninh Bình
+                  %option{:value => "43"} Ninh Thuận
+                  %option{:value => "44"} Phú Thọ
+                  %option{:value => "45"} Phú Yên
+                  %option{:value => "46"} Quảng Bình
+                  %option{:value => "47"} Quảng Nam
+                  %option{:value => "49"} Quảng Ngãi
+                  %option{:value => "48"} Quảng Ninh
+                  %option{:value => "50"} Quảng Trị
+                  %option{:value => "52"} Sóc Trăng
+                  %option{:value => "51"} Sơn La
+                  %option{:value => "56"} Tây Ninh
+                  %option{:value => "53"} Thái Bình
+                  %option{:value => "57"} Thái Nguyên
+                  %option{:value => "55"} Thanh Hóa
+                  %option{:value => "74"} Thừa Thiên - Huế
+                  %option{:value => "54"} Tiền Giang
+                  %option{:value => "75"} Trà Vinh
+                  %option{:value => "73"} Tuyên Quang
+                  %option{:value => "76"} Vĩnh Long
+                  %option{:value => "77"} Vĩnh Phúc
+                  %option{:value => "78"} Yên Bái
+                  %option{:value => "79"} Khác
+                  %option{:value => "80"} Nước Ngoài
+            %p
+              %span Quốc gia
+              %label
+                %select#jobStep3_country.TEXTBOX{:name => "jobStep3[country]", :onchange => "changeCountryOrProvince();", :required => "required"}
+                  %option{:value => ""} Chọn quốc gia
+                  %option{:value => "2"} Albania
+                  %option{:value => "3"} Algeria
+                  %option{:value => "4"} American Samoa
+                  %option{:value => "5"} Andorra
+                  %option{:value => "6"} Angola
+                  %option{:value => "7"} Anguilla
+                  %option{:value => "8"} Antarctica
+                  %option{:value => "9"} Antigua and Barbuda
+                  %option{:value => "10"} Argentina
+                  %option{:value => "11"} Armenia
+                  %option{:value => "12"} Aruba
+                  %option{:value => "13"} Australia
+                  %option{:value => "14"} Austria
+                  %option{:value => "15"} Azerbaijan
+                  %option{:value => "16"} Bahamas
+                  %option{:value => "17"} Bahrain
+                  %option{:value => "18"} Bangladesh
+                  %option{:value => "19"} Barbados
+                  %option{:value => "20"} Belarus
+                  %option{:value => "21"} Belgium
+                  %option{:value => "22"} Belize
+                  %option{:value => "23"} Benin
+                  %option{:value => "24"} Bermuda
+                  %option{:value => "25"} Bhutan
+                  %option{:value => "26"} Bolivia
+                  %option{:value => "27"} Bosnia and Herzegowina
+                  %option{:value => "28"} Botswana
+                  %option{:value => "29"} Bouvet Island
+                  %option{:value => "30"} Brazil
+                  %option{:value => "31"} British Indian Ocean Territory
+                  %option{:value => "32"} Brunei Darussalam
+                  %option{:value => "33"} Bulgaria
+                  %option{:value => "34"} Burkina Faso
+                  %option{:value => "35"} Burundi
+                  %option{:value => "36"} Cambodia
+                  %option{:value => "37"} Cameroon
+                  %option{:value => "38"} Canada
+                  %option{:value => "39"} Cape Verde
+                  %option{:value => "40"} Cayman Islands
+                  %option{:value => "41"} Central African Republic
+                  %option{:value => "42"} Chad
+                  %option{:value => "43"} Chile
+                  %option{:value => "44"} China
+                  %option{:value => "45"} Christmas Island
+                  %option{:value => "46"} Cocos (Keeling) Islands
+                  %option{:value => "47"} Colombia
+                  %option{:value => "48"} Comoros
+                  %option{:value => "49"} Congo
+                  %option{:value => "50"} Cook Islands
+                  %option{:value => "51"} Costa Rica
+                  %option{:value => "52"} Cote D'Ivoire
+                  %option{:value => "53"} Croatia
+                  %option{:value => "54"} Cuba
+                  %option{:value => "55"} Cyprus
+                  %option{:value => "56"} Czech Republic
+                  %option{:value => "57"} Denmark
+                  %option{:value => "58"} Djibouti
+                  %option{:value => "59"} Dominica
+                  %option{:value => "60"} Dominican Republic
+                  %option{:value => "61"} East Timor
+                  %option{:value => "62"} Ecuador
+                  %option{:value => "63"} Egypt
+                  %option{:value => "64"} El Salvador
+                  %option{:value => "65"} Equatorial Guinea
+                  %option{:value => "66"} Eritrea
+                  %option{:value => "67"} Estonia
+                  %option{:value => "68"} Ethiopia
+                  %option{:value => "69"} Falkland Islands (Malvinas)
+                  %option{:value => "70"} Faroe Islands
+                  %option{:value => "71"} Fiji
+                  %option{:value => "72"} Finland
+                  %option{:value => "73"} France
+                  %option{:value => "74"} France, Metropolitan
+                  %option{:value => "75"} French Guiana
+                  %option{:value => "76"} French Polynesia
+                  %option{:value => "77"} French Southern Territories
+                  %option{:value => "78"} Gabon
+                  %option{:value => "79"} Gambia
+                  %option{:value => "80"} Georgia
+                  %option{:value => "81"} Germany
+                  %option{:value => "82"} Ghana
+                  %option{:value => "83"} Gibraltar
+                  %option{:value => "84"} Greece
+                  %option{:value => "85"} Greenland
+                  %option{:value => "86"} Grenada
+                  %option{:value => "87"} Guadeloupe
+                  %option{:value => "88"} Guam
+                  %option{:value => "89"} Guatemala
+                  %option{:value => "90"} Guinea
+                  %option{:value => "91"} Guinea-bissau
+                  %option{:value => "92"} Guyana
+                  %option{:value => "93"} Haiti
+                  %option{:value => "94"} Heard and Mc Donald Islands
+                  %option{:value => "95"} Honduras
+                  %option{:value => "96"} Hong Kong
+                  %option{:value => "97"} Hungary
+                  %option{:value => "98"} Iceland
+                  %option{:value => "99"} India
+                  %option{:value => "100"} Indonesia
+                  %option{:value => "101"} Iran (Islamic Republic of)
+                  %option{:value => "102"} Iraq
+                  %option{:value => "103"} Ireland
+                  %option{:value => "104"} Israel
+                  %option{:value => "105"} Italy
+                  %option{:value => "106"} Jamaica
+                  %option{:value => "107"} Japan
+                  %option{:value => "108"} Jordan
+                  %option{:value => "109"} Kazakhstan
+                  %option{:value => "110"} Kenya
+                  %option{:value => "111"} Kiribati
+                  %option{:value => "112"} Korea, Democratic People's Republic of
+                  %option{:value => "113"} Korea, Republic of
+                  %option{:value => "114"} Kuwait
+                  %option{:value => "115"} Kyrgyzstan
+                  %option{:value => "116"} Lao People's Democratic Republic
+                  %option{:value => "117"} Latvia
+                  %option{:value => "118"} Lebanon
+                  %option{:value => "119"} Lesotho
+                  %option{:value => "120"} Liberia
+                  %option{:value => "121"} Libyan Arab Jamahiriya
+                  %option{:value => "122"} Liechtenstein
+                  %option{:value => "123"} Lithuania
+                  %option{:value => "124"} Luxembourg
+                  %option{:value => "125"} Macau
+                  %option{:value => "126"} Macedonia, The Former Yugoslav Republic of
+                  %option{:value => "127"} Madagascar
+                  %option{:value => "128"} Malawi
+                  %option{:value => "129"} Malaysia
+                  %option{:value => "130"} Maldives
+                  %option{:value => "131"} Mali
+                  %option{:value => "132"} Malta
+                  %option{:value => "133"} Marshall Islands
+                  %option{:value => "134"} Martinique
+                  %option{:value => "135"} Mauritania
+                  %option{:value => "136"} Mauritius
+                  %option{:value => "137"} Mayotte
+                  %option{:value => "138"} Mexico
+                  %option{:value => "139"} Micronesia, Federated States of
+                  %option{:value => "140"} Moldova, Republic of
+                  %option{:value => "141"} Monaco
+                  %option{:value => "142"} Mongolia
+                  %option{:value => "143"} Montserrat
+                  %option{:value => "144"} Morocco
+                  %option{:value => "145"} Mozambique
+                  %option{:value => "146"} Myanmar
+                  %option{:value => "147"} Namibia
+                  %option{:value => "148"} Nauru
+                  %option{:value => "149"} Nepal
+                  %option{:value => "150"} Netherlands
+                  %option{:value => "151"} Netherlands Antilles
+                  %option{:value => "152"} New Caledonia
+                  %option{:value => "153"} New Zealand
+                  %option{:value => "154"} Nicaragua
+                  %option{:value => "155"} Niger
+                  %option{:value => "156"} Nigeria
+                  %option{:value => "157"} Niue
+                  %option{:value => "158"} Norfolk Island
+                  %option{:value => "159"} Northern Mariana Islands
+                  %option{:value => "160"} Norway
+                  %option{:value => "161"} Oman
+                  %option{:value => "162"} Pakistan
+                  %option{:value => "163"} Palau
+                  %option{:value => "164"} Panama
+                  %option{:value => "165"} Papua New Guinea
+                  %option{:value => "166"} Paraguay
+                  %option{:value => "167"} Peru
+                  %option{:value => "168"} Philippines
+                  %option{:value => "169"} Pitcairn
+                  %option{:value => "170"} Poland
+                  %option{:value => "171"} Portugal
+                  %option{:value => "172"} Puerto Rico
+                  %option{:value => "173"} Qatar
+                  %option{:value => "174"} Reunion
+                  %option{:value => "175"} Romania
+                  %option{:value => "176"} Russian Federation
+                  %option{:value => "177"} Rwanda
+                  %option{:value => "178"} Saint Kitts and Nevis
+                  %option{:value => "179"} Saint Lucia
+                  %option{:value => "180"} Saint Vincent and the Grenadines
+                  %option{:value => "181"} Samoa
+                  %option{:value => "182"} San Marino
+                  %option{:value => "183"} Sao Tome and Principe
+                  %option{:value => "184"} Saudi Arabia
+                  %option{:value => "185"} Senegal
+                  %option{:value => "186"} Seychelles
+                  %option{:value => "187"} Sierra Leone
+                  %option{:value => "188"} Singapore
+                  %option{:value => "189"} Slovakia (Slovak Republic)
+                  %option{:value => "190"} Slovenia
+                  %option{:value => "191"} Solomon Islands
+                  %option{:value => "192"} Somalia
+                  %option{:value => "193"} South Africa
+                  %option{:value => "194"} South Georgia and the South Sandwich Islands
+                  %option{:value => "195"} Spain
+                  %option{:value => "196"} Sri Lanka
+                  %option{:value => "197"} St. Helena
+                  %option{:value => "198"} St. Pierre and Miquelon
+                  %option{:value => "199"} Sudan
+                  %option{:value => "200"} Suriname
+                  %option{:value => "201"} Svalbard and Jan Mayen Islands
+                  %option{:value => "202"} Swaziland
+                  %option{:value => "203"} Sweden
+                  %option{:value => "204"} Switzerland
+                  %option{:value => "205"} Syrian Arab Republic
+                  %option{:value => "206"} Taiwan
+                  %option{:value => "207"} Tajikistan
+                  %option{:value => "208"} Tanzania, United Republic of
+                  %option{:value => "209"} Thailand
+                  %option{:value => "210"} Togo
+                  %option{:value => "211"} Tokelau
+                  %option{:value => "212"} Tonga
+                  %option{:value => "213"} Trinidad and Tobago
+                  %option{:value => "214"} Tunisia
+                  %option{:value => "215"} Turkey
+                  %option{:value => "216"} Turkmenistan
+                  %option{:value => "217"} Turks and Caicos Islands
+                  %option{:value => "218"} Tuvalu
+                  %option{:value => "219"} Uganda
+                  %option{:value => "220"} Ukraine
+                  %option{:value => "221"} United Arab Emirates
+                  %option{:value => "222"} United Kingdom
+                  %option{:value => "223"} United States
+                  %option{:value => "224"} United States Minor Outlying Islands
+                  %option{:value => "225"} Uruguay
+                  %option{:value => "226"} Uzbekistan
+                  %option{:value => "227"} Vanuatu
+                  %option{:value => "228"} Vatican City State (Holy See)
+                  %option{:value => "229"} Venezuela
+                  %option{:selected => "selected", :value => "230"} Việt Nam
+                  %option{:value => "231"} Virgin Islands (British)
+                  %option{:value => "232"} Virgin Islands (U.S.)
+                  %option{:value => "233"} Wallis and Futuna Islands
+                  %option{:value => "234"} Western Sahara
+                  %option{:value => "235"} Yemen
+                  %option{:value => "236"} Yugoslavia
+                  %option{:value => "237"} Zaire
+                  %option{:value => "238"} Zambia
+                  %option{:value => "239"} Zimbabwe
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Tên liên hệ                  
+              %label
+                %input
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Điện thoại liên lạc                 
+              %label
+                %input
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Email                 
+              %label
+                %input
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Điện thoại liên hệ                  
+              %label
+                %input
+            %h4.tit Lịch đăng và thanh toán
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Ngày gửi                  
+              %label
+                %select#jobStep3_dateFrom_day{:disabled => "disabled", :name => "jobStep3[dateFrom][day]", :onchange => "changeDate();", :required => "required"}
+                  %option{:value => "1"} 01
+                  %option{:value => "2"} 02
+                  %option{:value => "3"} 03
+                  %option{:value => "4"} 04
+                  %option{:value => "5"} 05
+                  %option{:value => "6"} 06
+                  %option{:value => "7"} 07
+                  %option{:value => "8"} 08
+                  %option{:value => "9"} 09
+                  %option{:value => "10"} 10
+                  %option{:value => "11"} 11
+                  %option{:value => "12"} 12
+                  %option{:value => "13"} 13
+                  %option{:value => "14"} 14
+                  %option{:value => "15"} 15
+                  %option{:value => "16"} 16
+                  %option{:value => "17"} 17
+                  %option{:value => "18"} 18
+                  %option{:value => "19"} 19
+                  %option{:value => "20"} 20
+                  %option{:selected => "selected", :value => "21"} 21
+                  %option{:value => "22"} 22
+                  %option{:value => "23"} 23
+                  %option{:value => "24"} 24
+                  %option{:value => "25"} 25
+                  %option{:value => "26"} 26
+                  %option{:value => "27"} 27
+                  %option{:value => "28"} 28
+                  %option{:value => "29"} 29
+                  %option{:value => "30"} 30
+                  %option{:value => "31"} 31
+                \/
+                %select#jobStep3_dateFrom_month{:disabled => "disabled", :name => "jobStep3[dateFrom][month]", :onchange => "changeDate();", :required => "required"}
+                  %option{:value => "1"} 01
+                  %option{:value => "2"} 02
+                  %option{:value => "3"} 03
+                  %option{:value => "4"} 04
+                  %option{:selected => "selected", :value => "5"} 05
+                  %option{:value => "6"} 06
+                  %option{:value => "7"} 07
+                  %option{:value => "8"} 08
+                  %option{:value => "9"} 09
+                  %option{:value => "10"} 10
+                  %option{:value => "11"} 11
+                  %option{:value => "12"} 12
+                \/
+                %select#jobStep3_dateFrom_year{:disabled => "disabled", :name => "jobStep3[dateFrom][year]", :onchange => "changeDate();", :required => "required"}
+                  %option{:value => "2007"} 2007
+                  %option{:value => "2008"} 2008
+                  %option{:value => "2009"} 2009
+                  %option{:value => "2010"} 2010
+                  %option{:value => "2011"} 2011
+                  %option{:selected => "selected", :value => "2012"} 2012
+                  %option{:value => "2013"} 2013
+                  %option{:value => "2014"} 2014
+                  %option{:value => "2015"} 2015
+                  %option{:value => "2016"} 2016
+                  %option{:value => "2017"} 2017
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Thời gian                  
+              %label
+                %select#jobStep3_span.TEXTBOX{:disabled => "disabled", :name => "jobStep3[span]", :onchange => "changeDate();", :required => "required"}
+                  %option{:selected => "selected", :value => "15"} 15 ngày
+                  %option{:value => "30"} 30 ngày
+                  %option{:value => "45"} 45 ngày
+                  %option{:value => "60"} 60 ngày
+                  %option{:value => "1"} 1 ngày
+                  %option{:value => "2"} 2 ngày
+                  %option{:value => "3"} 3 ngày
+                  %option{:value => "4"} 4 ngày
+                  %option{:value => "5"} 5 ngày
+                  %option{:value => "6"} 6 ngày
+                  %option{:value => "7"} 7 ngày
+                  %option{:value => "8"} 8 ngày
+                  %option{:value => "9"} 9 ngày
+                  %option{:value => "10"} 10 ngày
+                  %option{:value => "11"} 11 ngày
+                  %option{:value => "12"} 12 ngày
+                  %option{:value => "13"} 13 ngày
+                  %option{:value => "14"} 14 ngày
+                  %option{:value => "28"} 28 ngày
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Ngày hết hạn                  
+              %span#divExpireDate 5/6/2012
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Ưu tiên hiển thị                 
+              %label
+                %select#jobStep3_isTopLevelPriority.TEXTBOX{:disabled => "disabled", :name => "jobStep3[isTopLevelPriority]", :required => "required"}
+                  %option{:selected => "selected", :value => "1"} Có
+                  %option{:value => "0"} Không
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Cách hiển thị                  
+              %label
+                %select#jobStep3_displayStatus.TEXTBOX{:disabled => "disabled", :name => "jobStep3[displayStatus]", :required => "required"}
+                  %option{:value => "N"} Bình thường
+                  %option{:value => "B"} Đậm
+                  %option{:selected => "selected", :value => "R"} Đỏ dậm
+            %p
+              %span.clearfix
+                Việc làm hấp dẫn                 
+              %label
+                %select#jobStep3_isClVneHot.TEXTBOX{:disabled => "disabled", :name => "jobStep3[isClVneHot]", :required => "required"}
+                  %option{:value => "N"} Not Available
+                  %option{:value => "B"} Both
+                  %option{:value => "C"} CareerLink
+                  %option{:selected => "selected", :value => "V"} VnExpress
+            %p
+              %span.clearfix
+                %span.red *
+                %span.impor
+                  Phương thức thanh toán                  
+              %label
+                %select#jobStep3_howToPay.TEXTBOX{:disabled => "disabled", :name => "jobStep3[howToPay]", :required => "required"}
+                  %option{:selected => "selected", :value => "F"} Miễn phí
+                  %option{:value => "B"} Tiền mặt
+                  %option{:value => "C"} Chuyển qua ngân hàng
+              %ul.taohoso-button.clearfix
+                %li.luutam
+                  %a{:href => "#"} Đóng
+                %li.buocketiep
+                  %a.current{:href => "#"} Lưu bước 3
+        / /.danghoso
+        / ==========================

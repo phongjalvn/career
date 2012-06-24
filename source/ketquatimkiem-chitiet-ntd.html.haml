@@ -15,7 +15,14 @@ trails:
     = partial(:breadcrumb)
     %h2 Ket qua tim kiem
     .contents
-      %p.desc Chung toi da tim duoc 29 cong viec theo yeu cau: Tu khoa: <strong>designer</strong> | Viec lam phai co: <strong>tu khoa chinh xac</strong> | Nghanh nghe: <strong>IT - Phan mem</strong> | Dia diem: <strong>Ho Chi Minh</strong>
+      %div.desc 
+        %p Chung toi da tim duoc 29 cong viec theo yeu cau: Tu khoa: <strong>designer</strong> | Viec lam phai co: <strong>tu khoa chinh xac</strong> | Nghanh nghe: <strong>IT - Phan mem</strong> | Dia diem: <strong>Ho Chi Minh</strong>
+        %div.links-search
+          %ul
+            %li
+              %a{:href => "#"} Sửa yêu cầu tìm việc làm tuyển dụng
+            %li
+              %a{:href => "#"} Đăng ký Thông Báo Việc Làm
       #left
         .toolbar
           %ul.pagination
@@ -88,8 +95,8 @@ trails:
                   .dtop.clearfix
                     %span.h.clearfix
                       %span.noilamviec 
-                        Ha Noi<br/>
-                        Ho Chi Minh<br/>
+                        %a{:href => "#"} Ha Noi<br/>
+                        %a{:href => "#"} Ho Chi Minh<br/>
 
                       %span.date 22-2-2012
                     %span.nganhnghe.loaihoso.clearfix

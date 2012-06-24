@@ -21,292 +21,149 @@ trails:
       .bg.clearfix
         #left
           .box.type1.clearfix
-            %h3 Tủ hồ sơ
+            %h3 Các công việc của tôi
             %table.view-rutgon
               %tbody
                 %tr.header
-                  %th
-                    Thao tác
-                  %th Chức danh
-                  %th Ngày hết hạn
-                  %th Trạng thái
-                  %th Mở rộng
-                  %th Lượt xem
+                  %th{:width => "54"}
+                    Sửa
+                  %th.t-l{:width => "136"} Chức danh
+                  %th{:width => "82"} Công ty                  
+                  %th{:width => "94"} Địa điểm
+                  %th{:width => "65"} Số lần xem
+                  %th{:width => "90"} Ngày hết hạn
+                  %th{:width => "55"} Mở rộng
+                  %th{:width => "65"} Trạng thái
+                  %th{:width => "33"}
+                    %input.check_all{:type => "checkbox", :value => ""}/
                 %tr.odd
                   %td
                     %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
+                      Sửa
+                  %td.t-l
+                    %a.title{:href => "#"}
+                      Nhân viên tuyển dụng
+                  %td Careerlink
                   %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
-                  %td{:align => "center"}
-                    Gia han
+                    %span
+                      Hồ Chí Minh                  
                   %td
                     %span.lx
                       50
+                  %td 20/05/2012
+                  %td
+                    %span.kh
+                      Gia hạn    
+                  %td
+                    %span.tths
+                      Kích hoạt
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
                 %tr.even
                   %td
                     %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
+                      Sửa
+                  %td.t-l
+                    %a.title{:href => "#"}
+                      Nhân viên tuyển dụng
+                  %td Careerlink
                   %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
-                  %td{:align => "center"}
-                    
+                    %span
+                      Hồ Chí Minh                  
                   %td
                     %span.lx
                       50
-                %tr.odd
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
+                  %td 20/05/2012
                   %td
                     %span.kh
-                      Gia hạn
+                      Gia hạn    
+                  %td
+                    %span.tths
+                      Kích hoạt
                   %td{:align => "center"}
-                    
-                  %td
-                    %span.lx
-                      50
-                %tr.even
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
-                  %td{:align => "center"}
-                   
-                  %td
-                    %span.lx
-                      50
+                    %input{:type => "checkbox"}
             .new-resume.clearfix
-              %li
-                %a.current.new-resume-button{:href => "#"} Tạo hồ sơ mới
+              %span
+                %a.current.new-resume-button{:href => "#"} Xóa
+              %span
+                %a.current.new-resume-button{:href => "#"} Bỏ kích hoạt
+              %span
+                %a.current.new-resume-button{:href => "#"} Đăng tuyển dụng
           .box.type1.clearfix
             / =======================
             / = Noi dung box type 2 =
-            %h3 Thư xin việc
+            %h3 Lưu tìm kiếm hồ sơ/ Thông báo hồ sơ
             %table.view-rutgon
               %tbody
                 %tr.header
-                  %th
-                    Thao tác
-                  %th Tiêu đề hồ sơ
-                  %th Ngày sửa đổi
-                  %th Trạng thái
-                  %th Mo rong
-                  %th Lượt xem
+                  %th{:width => "12%"}
+                  %th{:width => "5%"}
+                  %th.t-l{:width => "28%"} Tên tìm kiếm
+                  %th.t-l{ :width => "35%"} Việc làm mới nhất
+                  %th{:width => "14%"} Tổng số
+                  %th{:width => "6%"} 
+                    %input#check_all3{:type => "checkbox", :value => ""}/
                 %tr.odd
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
                   %td{:align => "center"}
-                    
-                  %td
-                    %span.lx
-                      50
+                    %a.tk{:href => "#"} Tìm kiếm 
+                  %td{:align => "center"}
+                    %a.edit{:href => "#"}
+                      Edit
+                  %td.t-l
+                    %a{:href => "#"} aa (1,748)
+                  %td.t-l 
+                    %a{:href => "#"} Viet Thai International - 4D BU
+                  %td 
+                    5678
+                  %td{:align => "center"}
+                    %input{:type => "checkbox"}
                 %tr.even
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
                   %td{:align => "center"}
-                    
-                  %td
-                    %span.lx
-                      50
-                %tr.odd
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
+                    %a.tk{:href => "#"} Tìm kiếm
                   %td{:align => "center"}
-                    
-                  %td
-                    %span.lx
-                      50
-                %tr.even
-                  %td
-                    %a{:href => "#"}
-                      Chỉnh sửa
-                    |
-                    %a{:href => "#"}
-                      Xóa
-                  %td
-                    %span.title
-                      Web Design
-                  %td 21-2-2012
-                  %td
-                    %span.kh
-                      Kich hoat
+                    %a.edit{:href => "#"}
+                      Edit
+                  %td.t-l
+                    %a{:href => "#"} aa (1,748)
+                  %td.t-l 
+                    %a{:href => "#"} Viet Thai International - 4D BU
+                  %td 
+                    5678
                   %td{:align => "center"}
-                    
-                  %td
-                    %span.lx
-                      50
+                    %input{:type => "checkbox"}
             .new-resume.clearfix
-              %li
-                %a.current.new-resume-button{:href => "#"} Tạo thư xin việc mới
+              %span
+                %a.current.new-resume-button{:href => "#"} Xóa
+              %span
+                %a.current.new-resume-button{:href => "#"} Tạo thông báo mới
             / =======================
           / ==================================
-          / = Noi dung cac cong viec cua toi =
           .box.type2.clearfix
-            %h3 Các công việc của tôi
-            %h4
-              Công việc đã Ứng tuyển
-              %a{:href => "#"} Xem thêm
-            %table.view-rutgon
-              %tbody
-                %tr.header
-                  %th{:width => "3%"}
-                  %th{:align => "center", :width => "37%"} Chức danh
-                  %th{:align => "center", :width => "30%"} Tên công ty
-                  %th{:align => "center", :width => "15%"} Địa điểm
-                  %th{:align => "center", :width => "15%"} Ngày ứng tuyển
-                %tr.odd
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.even
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.odd
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.even
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-            %h4
-              Công việc đã lưu
-              %a{:href => "#"} Xem thêm
-            %table.view-rutgon
-              %tbody
-                %tr.header
-                  %th{:width => "3%"}
-                  %th{:align => "center", :width => "37%"} Chức danh
-                  %th{:align => "center", :width => "30%"} Tên công ty
-                  %th{:align => "center", :width => "15%"} Địa điểm
-                  %th{:align => "center", :width => "15%"} Ngày đăng
-                %tr.odd
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.even
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.odd
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-                %tr.even
-                  %td{:align => "center"}
-                    
-                  %td
-                    %a{:href => "#"} Chief Electrical Engineer
-                  %td Viet Thai International - 4D BU
-                  %td Hồ Chí Minh
-                  %td 21-2-2012
-          / = Noi dung cac cong viec cua toi =
+            %h3 Các ứng viên
+            .tkct.clearfix
+              %li
+                %a{:href => "#"} Các thư xin việc đã nhận
+              %li
+                %a{:href => "#"} Hồ sơ đã lưu
+              %li
+                %a{:href => "#"}Mẫu thư của tôi
           / =====================================
           / = Luu tim kiem - thong bao viec lam =
           / ==================================
           / = Noi dung cac cong viec cua toi =
           .box.type2.clearfix
-            %h3 Các công việc của tôi
-            %p
-              Hiện tại bạn vẫn chưa lưu tìm kiếm - thông báo việc làm
-            .new-alert.clearfix
+            %h3 Tài khoản của tôi
+            .tkct.clearfix
               %li
-                %a.current.new-alert-button{:href => "#"} Tạo thông báo mới
+                %a{:href => "#"} Xem tài khoản
+              %li
+                %a{:href => "#"} Thay đổi thông tin tài khoản
+              %li
+                %a{:href => "#"}Thay đổi tên đăng nhập
+              %li
+                %a{:href => "#"}Thay đổi mật khẩu
+              %li
+                %a{:href => "#"}Thoát 
           / ===End luu tim - thong bao viec lam==================================
         #right
           / ===================
@@ -330,6 +187,16 @@ trails:
               %li
                 %a{:href => "#"} Các thư xin việc đã xem
           / ===================
+          / = Hoanthanhhoso =
+          .my-status.tchs
+            %h3
+              Truy cập hồ sơ
+            %ul
+              %li 
+                Trạng thái: Kích hoạt
+              %li 
+                Expire: 07/05/2012
+          / ===================
           / = Vieclam phu hop =
           .app-job
             %h3 Việc làm phù hợp
@@ -346,34 +213,13 @@ trails:
               %li
                 %a{:href => "#"} Senior ASP.NET Web Developer
                 %span ELISOFT - TP. Ho Chi Minh
-              %li
-                %a{:href => "#"} Senior ASP.NET Web Developer
-                %span ELISOFT - TP. Ho Chi Minh
-              %li
-                %a{:href => "#"} Senior ASP.NET Web Developer
-                %span ELISOFT - TP. Ho Chi Minh
-              %li
-                %a{:href => "#"} Senior ASP.NET Web Developer
-                %span ELISOFT - TP. Ho Chi Minh
           / ===================
           / = Cam nang gneh nghiep =
-          .career-advice
-            %h3 Cẩm nang tìm việc
-            %ul.advice-list
-              %li.clearfix
-                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
-                  %a{:href => "#"} Năm mới, tự tin khởi đầu thành công mới.
-              %li.clearfix
-                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
-                  %a{:href => "#"} Senior ASP.NET Web Developer
-              %li.clearfix
-                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
-                  %a{:href => "#"} Senior ASP.NET Web Developer
-              %li.clearfix
-                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
-                  %a{:href => "#"} Senior ASP.NET Web Developer
-              %li.clearfix
-                %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
-                  %a{:href => "#"} Senior ASP.NET Web Developer
+          / .career-advice
+          /   %h3 Cẩm nang tìm việc
+          /   %ul.advice-list
+          /     %li.clearfix
+          /       %img{:alt => "Camnang Img List", :height => "51", :src => "images/camnang-img-list.png", :width => "51"}
+          /         %a{:href => "#"} Năm mới, tự tin khởi đầu thành công mới.
           / ===================
       #right

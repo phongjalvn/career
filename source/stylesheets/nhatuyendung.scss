@@ -1,346 +1,531 @@
+.dangtuyendung .create-resume .instruction,
+.dangtuyendung-buoc2 .create-resume .instruction,
+.dangtuyendung-buoc3 .create-resume .instruction,
+.dangtuyendung-buoc4 .create-resume .instruction
+{
+  color: #666666;
+    display: inline;
+    float: right;
+    width: 410px;
+}
+.search-basic-hoso {
+  #search-center .contents .search-cate .cate li a, #search-center .contents .search-cate li li a, #search-center .contents ul .cate li a, #search-center .contents ul li li a {
+    color:#666;
+  }
+  .cate{
+    >a {
+      color:#EB7713 !important;
+    }
+  }
+}
 .search-basic-hoso, .ketquatimkiem-hoso,.ketquatimkiem-chitiet-ntd,
-.hosocuatoi-ntd, .dangtuyendung {
-	#breadcrumb ul {
-		li{
-		      background-image: url(../images/arrow-ntd.png);
-		      &:last-child{
-		        a{
-		          color: #555;
-		        }
-	      	}
-		      &:first-child{
-			        background-image: url(../images/home-ntd.png) ;
-			        a{
-			          color: #005196;
-			        }
-		      }
-		}
-	}
-	li {
-	  &.luuviec {
-	    margin-right:5px;
-	    background: url('../images/luuntd.png') right center no-repeat;
-		    a {
-		      background: url('../images/luuntd.png') left center no-repeat;
-		      padding-top:8px;
-		      } 
-	      }
-	  &.guibanbe {
-	    background: url('../images/guibanbentd.png') right center no-repeat;
-		    a {
-		      background: url('../images/guibanbentd.png') left center no-repeat;
-		      color:#333;
-		      padding-top:8px;
-		      } 
-	      } 
-	}
-	#footer {
-		li {
-			border-color: $or;
-			a {
-			color:$or;
+.hosocuatoi-ntd, .dangtuyendung,
+.chitietungvien,
+.dangtuyendung-buoc2,
+.dangtuyendung-buoc3,
+.dangtuyendung-buoc4,
+.ntd-thongbaohoso-sua,
+.luuhoso,
+.ntd,
+.ntd-xemhoso,
+.employer-register {
+  #breadcrumb ul {
+    li{
+          background-image: url(../images/arrow-ntd.png);
+          &:last-child{
+            a{
+              color: #555;
+            }
+    }
+          &:first-child{
+              background-image: url(../images/home-ntd.png) ;
+              a{
+                color: #005196;
+              }
+          }
+    }
+  }
+  li {
+    &.luuviec {
+      margin-right:5px;
+      background: url('../images/luuntd.png') right center no-repeat;
+        a {
+          background: url('../images/luuntd.png') left center no-repeat;
+          padding-top:8px;
+          }
+        }
+    &.guibanbe {
+      background: url('../images/guibanbentd.png') right center no-repeat;
+        a {
+          background: url('../images/guibanbentd.png') left center no-repeat;
+          color:#333;
+          padding-top:8px;
+          }
+        }
+  }
+  #footer {
+    li {
+      border-color: $or;
+      a {
+      color:$or;
 
-			}
-		}
-		
-	}
-	#menu {
-		.login {
-			background-image: url("../images/loginntd-bg.png");
-			}
-	}
-	.searchfooter {
-		background: url("../images/searchbginner.png");
-		border-color:#dfdfdf;
-	}
-	background: url("../images/ntd-bg.png") ;
-	.details {
-		background: url("../images/ntd-bg.png") ;
-	}
-	#bottombox {
-		background: url("../images/footer-ntd.png") top left repeat-x;
-	}
-	#header{
-		background: url(../images/header-ntd.png) top left repeat-x;
-	}
-	#topbar .container .topmisc a.ntd {
-		color:#0955a9;
-	}
-	#topbar .topmisc .select {
-	option {
-		background-color:#fff;
-	}
-	color:$or;
-	background-image: url("../images/language-selectntd.png");
-	}
-	#search-center .contents ul li a {
-		color:#7D7979;
-	}
-	#search-center .contents ul li li {
-	    background: url("../images/arrow-xam.png") no-repeat left 5px;
-	    
-	}
-	#search-center .contents h3 {
-		color:$or;
-	}
-	.details h2 {
-		color:#333;
-	}
-	#search-center .contents ul.search-city li {
-		background: url("../images/bulletntd.png") no-repeat left 5px;
-		a {
-			text-decoration: underline;
-		}
-	}
-	#search-center .contents {
-		@include background(url(../images/searchntd-top.png), url(../images/searchntd-bot.png), url(../images/searchntd-loop.png));
-		background-position: left top, left bottom;
-	    background-repeat: no-repeat, no-repeat;
-	    padding: 23px 0;
-	    .bg {
-	    		background: url(../images/searchntd-loop.png) left top repeat-y;
-	    		padding: 0 10px 5px;
-	    }
-	}
-	#menu .menu ul a, #menu .menu ul span {
-		background-image: url(../images/navntd-a.png);
-		color:#7e7e7e;
-	}
-	#menu .menu ul a:hover, #menu .menu ul a:hover span, #menu .menu ul a.active, #menu .menu ul a.active span {
-		background-image: url(../images/navntd-a-active.png);
-	}
-	#menu .menu ul ul a, 
-	#menu .menu ul ul a:hover,
-	#menu .menu ul ul a.active {
-		background-image:none;
-		color:#fff
-	}
+      }
+    }
 
-	#menu .menu ul ul a:hover,
-	#menu .menu ul ul a.active {
-		text-decoration: underline;
-	}
-	#bottombox .box li,
-	#bottombox .container .col-3 ul  {
-		border-color:#b5b5b5;
-		a:hover {
-			color:#c2c2c2;
-		}
-	}
+  }
+  #menu {
+    .login {
+      background-image: url("../images/loginntd-bg.png");
+      }
+  }
+  .searchfooter {
+    background: url("../images/searchbginner.png");
+    border-color:#dfdfdf;
+  }
+  background: url("../images/ntd-bg.png") ;
+  .details {
+    background: url("../images/ntd-bg.png") ;
+  }
+  #bottombox {
+    background: url("../images/footer-ntd.png") top left repeat-x;
+  }
+  #header{
+    background: url(../images/header-ntd.png) top left repeat-x;
+  }
+  #topbar .container .topmisc a.ntd {
+    color:#0955a9;
+  }
+  #topbar .topmisc .select {
+  option {
+    background-color:#fff;
+  }
+  color:$or;
+  background-image: url("../images/language-selectntd.png");
+  }
+  #search-center .contents ul li a {
+    color:#EB7713;
+  }
+  #search-center .contents ul li li {
+      background: url("../images/arrow-xam.png") no-repeat left 5px;
+      a {
+    color:#7D7979;
+      }
+  }
+  #search-center .contents h3 {
+    color:$or;
+  }
+  .details h2 {
+    color:#333;
+  }
+  #search-center .contents ul.search-city li {
+    background: url("../images/bulletntd.png") no-repeat left 5px;
+    a {
+      text-decoration: underline;
+      color:#7D7979;
+    }
+  }
+  #search-center .contents {
+    @include background(url(../images/searchntd-top.png), url(../images/searchntd-bot.png), url(../images/searchntd-loop.png));
+    background-position: left top, left bottom;
+      background-repeat: no-repeat, no-repeat;
+      padding: 23px 0;
+      .bg {
+      background: url(../images/searchntd-loop.png) left top repeat-y;
+      padding: 0 10px 30px;
+      }
+  }
+  #menu .menu ul a, #menu .menu ul span {
+    background-image: url(../images/navntd-a.png);
+    color:#7e7e7e;
+  }
+  #menu .menu ul a:hover, #menu .menu ul a:hover span, #menu .menu ul a.active, #menu .menu ul a.active span {
+    background-image: url(../images/navntd-a-active.png);
+    color: #fff;
+  }
+  #menu .menu ul ul a,
+  #menu .menu ul ul a:hover,
+  #menu .menu ul ul a.active {
+    background-image:none;
+    color:#fff
+  }
+
+  #menu .menu ul ul a:hover,
+  #menu .menu ul ul a.active {
+    text-decoration: underline;
+  }
+  #bottombox .box li,
+  #bottombox .container .col-3 ul  {
+    border-color:#b5b5b5;
+    a:hover {
+      color:#c2c2c2;
+    }
+  }
 }
 
 .search-basic-hoso .searchfooter {
-	
+
 }
-.ketquatimkiem-hoso,.ketquatimkiem-chitiet-ntd {
-	.loaihoso {
-		padding-bottom:5px;
-		color:$or;
-	}
-	.h {
-		height:90px;
-		overflow:hidden;
-	}
-	span.noilamviec {
-		@include float-left;
-		width:103px;
-	}
-	span.kn {
-		@include float-left;
-		width:100px;
-	}
-	.details table.view-rutgon span.recentemployeer a {
-		color:#818181;
-	}
-	.details table.view-rutgon span.job-title{
-		width:332px;
-		text-decoration: none;
-		a{
-			color:$or;
-			text-decoration: underline;
-			font-weight:700;
+.ketquatimkiem-hoso,.ketquatimkiem-chitiet-ntd, .luuhoso, .ntd {
+  .loaihoso {
+    padding-bottom:5px;
+    color:$or;
+  }
+  .h {
+    height:90px;
+    overflow:hidden;
+  }
+  span.noilamviec {
+    @include float-left;
+    width:103px;
+    z-index: 9999;
+  }
+  span.kn {
+    @include float-left;
+    width:100px;
+  }
+  .details table.view-rutgon span.recentemployeer a {
+    color:#818181;
+  }
+  .details table.view-rutgon span.job-title{
+    width:332px;
+    text-decoration: none;
+    a{
+      color:$or;
+      text-decoration: underline;
+      font-weight:700;
 
-			&:hover {
-				color:#818181;
-			}
-		}
+      &:hover {
+        color:#818181;
+      }
+    }
 
-	}
-	#right {
-	    .list-mota {
-	      padding: 10px 15px 25px;
-	      color: #034ca3;
-	      font-weight: bold;
-	      line-height: 35px;
-	      li {
-	        background: url('../images/line-right-chitietntd.png') bottom center repeat-x;
-	      }
-	    }
-	    .mota {
-	      background: #fbfbfb url('../images/right-bg-chitietntd.png') no-repeat bottom center;
-	      h3 {
-	        background-color: #eb7814;
-	      } 
-	      }
-	 }
-	.details {
-		  .list-search{
-		    .editsearch{
-		      @include buttonB05;
-		    }
-		  }
-		table{
-		    th{
-		      background-color: #959595;
-		    }
-		    .odd td{
-		      background-color:#f8f8f8;
-		      border-bottom: 1px solid #e4e4e4;
-		    }
-		    .even td{
-		      background-color:#efefef;
-		      border-bottom: 1px solid #e4e4e4;
-		      }
-		}
-		.views {
-			input {
-				vertical-align: sub;
-			}
-		}
-		ul.pagination{
-	      margin: 5px 0 7px;
-	      @include float-right;
-	      li{
-	        @include buttonA01;
-	        a{
-	        	margin-left:5px;
-	        }
-	      }
-	    }
-	}
+  }
+  #right {
+      .list-mota {
+        padding: 10px 15px 25px;
+        color: #034ca3;
+        font-weight: bold;
+        line-height: 35px;
+        li {
+          background: url('../images/line-right-chitietntd.png') bottom center repeat-x;
+        }
+      }
+      .mota {
+        background: #fbfbfb url('../images/right-bg-chitietntd.png') no-repeat bottom center;
+        h3 {
+          background-color: #eb7814;
+        }
+        }
+   }
+  .details {
+      .list-search{
+        .editsearch{
+          @include buttonB05;
+        }
+      }
+    table{
+        th{
+          background-color: #959595;
+        }
+        .odd td{
+          background-color:#f8f8f8;
+          border-bottom: 1px solid #e4e4e4;
+        }
+        .even td{
+          background-color:#efefef;
+          border-bottom: 1px solid #e4e4e4;
+          }
+    }
+    .views {
+      input {
+        vertical-align: sub;
+      }
+    }
+    ul.pagination{
+        margin: 5px 0 7px;
+        @include float-right;
+        li{
+          @include buttonA01;
+          a{
+            margin-left:5px;
+          }
+        }
+      }
+  }
 }
 .hosocuatoi-ntd #profiles #right .my-status h3 {
-	color:#eb7713;
-	text-transform:none;
-	font-size:16px;
-	background: url('../images/line-trangthaicuathoi.png') bottom center no-repeat;
-	border-bottom:none;
-	
+  color:#eb7713;
+  text-transform:none;
+  font-size:16px;
+  background: url('../images/line-trangthaicuathoi.png') bottom center no-repeat;
+  border-bottom:none;
+
 }
 .hosocuatoi-ntd {
-	#right {
-		.my-status {
-			width:90%;
-			margin: 10px auto 0;
-			padding:5px 10px 10px;
-			-webkit-border-radius: 8px;
-			-moz-border-radius: 8px;
-			border-radius: 8px;
-			background-color:#f8f1ec;
-			border:1px solid #ffbd85;
-			li {
-				color:#f69a58;
-				list-style-type: square;
-    				margin-left: 20px;
-    				line-height:25px;
-    				a {
-    					color:#333;
-    					 text-decoration: underline;
-    				}
-			}
-		}
+  #right {
+    .my-status {
+      width:90%;
+      margin: 10px auto 0;
+      padding:5px 10px 10px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      background-color:#f8f1ec;
+      border:1px solid #ffbd85;
+      li {
+        color:#f69a58;
+        list-style-type: square;
+            margin-left: 20px;
+            line-height:25px;
+            a {
+              color:#333;
+               text-decoration: underline;
+            }
+      }
+    }
 
-	}
-	.new-alert{
-		li{
-			@include buttonI05;
-		}
-	}
-	.new-resume{
-		float:right;
-		li {
-			@include buttonB10;
-		}
-		
-	}
-	.details table th {
-		background-color: #959595;
-	}
-	.details table.view-rutgon .even td {
-		background-color:#efefef;
-		border-bottom: 1px solid #e4e4e4;
-	}
-	.details table.view-rutgon .odd td {
-		background-color:#f8f8f8;
-		border-bottom: 1px solid #e4e4e4;
-	}
-	#profiles .type1 h3 {
-		background-image:none;
-		padding-left:0;
-		font-size:16px;
-		color:$or;
-	}
-	#profiles .login-info {
-		background: #64d1ff url(../images/bg-hsvl-info.png) left top repeat-x;
-		border-left:1px solid #5ab4ea;
-		border-right:1px solid #5ab4ea;
-	}
-	#profiles .contents {
-		@include background(url(../images/hsvl-top.png), url(../images/hsvl-bot.png), url(../images/hsvl-loop.png));
-		background-position: left top, left bottom;
-	    background-repeat: no-repeat, no-repeat;
-	    padding: 25px 0 8px;
-	    .bg {
-	    		background: url(../images/hsvl-loop.png) left top repeat-y;
-	    		padding: 0 0 8px 8px;
-	    }
-	}
-	#profiles .contents #left .box {
-		padding: 0 13px 0 5px;
-	}
-	#profiles #right {
-		width:249px;
-		padding: 0 4px 0 0; 
-		h3 {
-			color:#333333;
-		}
-	}
-	.app-job-list a {
-		color:#034ca3;
-	}
+  }
+  .new-alert{
+    li{
+      @include buttonI05;
+    }
+  }
+  .new-resume{
+    float: right;
+    span {
+      @include buttonB10;
+      height: auto;
+    }
+
+  }
+  .details table th {
+    background-color: #959595;
+  }
+  .details table.view-rutgon .even td {
+    background-color:#efefef;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .details table.view-rutgon .odd td {
+    background-color:#f8f8f8;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  #profiles .type1 h3 {
+    background-image:none;
+    padding-left:0;
+    font-size:16px;
+    color:$or;
+  }
+  #profiles .login-info {
+    background: #64d1ff url(../images/bg-hsvl-info.png) left top repeat-x;
+    border-left:1px solid #5ab4ea;
+    border-right:1px solid #5ab4ea;
+  }
+  #profiles .contents {
+    @include background(url(../images/hsvl-top.png) no-repeat 0 0, url(../images/hsvl-bot.png) no-repeat 0 100%, url(../images/hsvl-loop.png) repeat-y 0 0);
+    background-position: left top, left bottom;
+      background-repeat: no-repeat, no-repeat;
+      padding: 25px 0 8px;
+      .bg {
+          background: url(../images/hsvl-loop.png) left top repeat-y;
+          padding: 0 0 8px 8px;
+      }
+  }
+  #profiles .contents #left .box {
+    padding: 0 13px 0 5px;
+  }
+  #profiles #right {
+    width:249px;
+    padding: 0 4px 0 0;
+    h3 {
+      color:#333333;
+    }
+  }
+  .app-job-list a {
+    color:#034ca3;
+  }
 }
-.dangtuyendung {
-	#search-center.create-resume .taohoso-button li {
-		@include buttonB03;
-	}
-	.jslider {
-		padding:0;
-		width:475px;
-		@include float-left;
-		margin-left:20px;
-		background:url(../images/bg-slider.png) top left repeat-x;
-		background-color:transparent;
-		height:37px;
-		.filler {
-			background:url(../images/bg-slider-filler.png) top left repeat-x;
-			background-color:transparent;
-			border-radius:none;
-			height:37px;
-		}
-	}
-	.instruction {
-		@include float-right;
-		width:410px;
-	}
-	.create-resume h4 {
-		background-image: url(../images/title-dhs.png);
-		color:#6c6c6c;
-		border:none;
-	}
-	.danghoso p span {
-		.red {
-			color:red;
-		}
-		color:#333;
-	}
+.dangtuyendung,
+.dangtuyendung-buoc2,
+.dangtuyendung-buoc3,
+.dangtuyendung-buoc4 {
+  #search-center.create-resume .taohoso-button li {
+    @include buttonB03;
+  }
+  .jslider {
+    padding:0;
+    width:475px;
+    @include float-left;
+    margin-left:20px;
+    background:url(../images/bg-slider.png) top left repeat-x;
+    background-color:transparent;
+    height:37px;
+    .filler {
+      background:url(../images/bg-slider-filler.png) top left repeat-x;
+      background-color:transparent;
+      border-radius:none;
+      height:37px;
+    }
+  }
+  .instruction {
+    @include float-right;
+    width:410px;
+  }
+  .create-resume h4 {
+    background-image: url(../images/title-dhs.png);
+    color:#6c6c6c;
+    border:none;
+  }
+  .danghoso p span {
+    .red {
+      color:red;
+    }
+    color:#333;
+    margin-right:5px;
+  }
+}
+.ketquatimkiem-hoso {
+  .list-mota .multiSelectOptions {
+    top: 47px !important;
+  }
+  .list-mota span.notimg {
+    color: #EB7814;
+  }
+  #right .date-job label span {
+    color: #EB7814;
+  }
+  .moresearch a,
+  .details #right .list-search2.list-mota a {
+    color: #666;
+  }
+
+}
+.hosocuatoi-ntd #profiles #right .my-status.tchs {
+  background-color: #fff;
+
+    border: 1px solid #FFBD85;
+    border-radius: 0;
+    h3 {
+  color:#666;
+  background:none;
+  border-bottom:1px dotted #e3e3e3;
+    }
+    li {
+  color:#666;
+    }
+}
+.ntd-thongbaohoso-sua,
+.ntd-xemhoso {
+  .timkiemnangcao span {
+    color: #333;
+  }
+  #search-center.advance-search .contents li li {
+    background:none;
+  }
+  ul.pagination{
+        margin: 5px 0 7px;
+        @include float-right;
+        li{
+      @include float-left;
+      width: auto;
+          @include buttonA01;
+          a{
+      margin-left:5px;
+      @include float-left;
+      width: auto;
+      color: #666 !important;
+          }
+        }
+      }
+   #search-center.advance-search .contents .pagination {
+    padding-top:0;
+    padding-bottom:0;
+    li {
+      width: auto;
+    }
+   }
+   .details table {
+    width: 96%;
+    margin:0 auto;
+    td,th {
+      padding:4px 5px;
+    }
+    th {
+      background-color: #959595;
+    }
+    tr.odd td {
+      background-color: #F8F8F8;
+    }
+    tr.even td {
+      background-color: #EFEFEF;
+    }
+   }
+   .view-rutgon a {
+
+   }
+   .view-rutgon .kh a {
+    color: #F08120;
+    font-style: italic;
+   }
+   .view-rutgon a.title
+    {
+      color: #034CA3;
+      text-decoration: underline;
+      &:hover {
+      color: #EB7814;
+    }
+  }
+}
+.luuhoso, .ntd-xemhoso {
+  .new-resume{
+    width: 100%;
+    margin-bottom: 10px;
+    float:right;
+    li {
+      @include buttonB10;
+      @include float-right;
+    }
+
+  }
+  .details table {
+    td,th {
+      padding:4px 5px;
+    }
+  }
+  #right .list-search2.list-mota a {
+    color: #666;
+  }
+  .addnew a {
+    font-weight:700;
+    font-style:italic;
+    color: #F68625 !important;
+    text-align: right;
+  }
+}
+.ntd-xemhoso {
+  td,th {
+    text-align: center;
+  }
+  .t-l {
+    text-align:left;
+    a {
+      color: #034CA3 !important;
+      &:hover {
+        color: #F68625 !important;
+
+      }
+    }
+  }
+  .new-resume {
+    margin-right: 20px;
+
+  }
+  .note-update {
+    width: 100%;
+    padding:40px 20px;
+    a {
+      font-weight:700;
+      font-style:italic;
+      color: red;
+    }
+  }
 }

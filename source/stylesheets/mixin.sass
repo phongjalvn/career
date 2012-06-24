@@ -1,6 +1,15 @@
 /*Compass Library*/
-
+$experimental-support-for-microsoft : true
+$experimental-support-for-pie : true
+$legacy-support-for-ie: true
+$legacy-support-for-ie7: true
+$experimental-support-for-svg: true
+$experimental-support-for-pie: true
+$pie-behavior: url("/PIE.htc")
 @import "compass"
+@import "compass/reset"
+@import "compass/css3"
+// @import "compass/support"
 @import "compass/css3/pie"
 
 $link-color:         #0388a6
@@ -31,7 +40,6 @@ $main-widht: 950px
 
 /*Third party modules*/
 
-@import "compass/reset"
 @import "libs/_helpers.scss"
 @import "libs/_kwicks.css.scss"
 @import "libs/pagin/_pagination.scss"
@@ -50,7 +58,7 @@ $main-widht: 950px
 
 //Sprite generator
 
-@import "banner/kwick*.png"
+@import "banner/*.png"
 
 //Layout mixin
 

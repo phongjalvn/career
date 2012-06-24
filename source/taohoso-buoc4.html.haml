@@ -1,0 +1,376 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Trang tao ho so tung buoc"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.create-resume
+  .container
+    = partial(:breadcrumb)
+    %h2 Kỹ năng
+    .contents
+      .bg.clearfix
+        %br.clearfix/
+        .jslider{:current => "4", :total => "6"}
+          .filler
+            .tooltip
+              %span
+                %span Buoc 4/6
+            %span.indicator
+        %div.instruction.no-content
+          %p.not-input
+            Những mục có dấu sao
+            %span *
+            là bắt buộc.
+        / .danghoso
+        .danghoso
+          %form{:action => "#"}
+            %h4.tit Kỹ năng
+            %div.kinhnghiem
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Nhóm kỹ năng
+                %select#resumeSkill_skillGroup.TEXTBOX{:name => "resumeSkill[skillGroup]", :onchange => "changeSkillGroup(this);", :required => "required"}
+                  %option{:value => ""} Chọn
+                  %option{:value => "142"} Kỹ năng vi tính văn phòng
+                  %option{:value => "127"} Kỹ năng vi tính chuyên nghiệp
+                  %option{:value => "130"} Kỹ năng giao tiếp
+                  %option{:value => "133"} Kỹ năng bán hàng
+                  %option{:value => "136"} Kỹ năng quản lý
+                  %option{:value => "139"} Kỹ năng khác
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Kỹ năng
+                %select#resumeSkill_skill.TEXTBOX.disabled-when-no-group{:name => "resumeSkill[skill]", :required => "required"}
+                  %option{:value => ""} Chọn
+                  %option{:value => "163"} AutoCAD
+                  %option{:value => "145"} Microsoft Word
+                  %option{:value => "148"} Microsoft Excel
+                  %option{:value => "151"} Microsoft Access
+                  %option{:value => "154"} Microsoft PowerPoint
+                  %option{:value => "157"} Microsoft Visio
+                  %option{:value => "160"} Microsoft Outlook
+                  %option{:value => "166"} Internet
+                  %option{:value => "169"} Đánh máy
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Trình độ
+                %select#resumeSkill_proficiency.TEXTBOX.disabled-when-no-group{:name => "resumeSkill[proficiency]", :required => "required"}
+                  %option{:value => ""} ...
+                  %option{:value => "B"} Sơ cấp
+                  %option{:value => "I"} Trung cấp
+                  %option{:value => "A"} Cao cấp
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Số năm sử dụng (nếu có)
+                %select#resumeSkill_yearOfUse.TEXTBOX.disabled-when-no-group{:name => "resumeSkill[yearOfUse]"}
+                  %option{:value => ""} ...
+                  %option{:value => "1"} 1
+                  %option{:value => "2"} 2
+                  %option{:value => "3"} 3
+                  %option{:value => "4"} 4
+                  %option{:value => "5"} 5
+                  %option{:value => "6"} 6
+                  %option{:value => "7"} 7
+                  %option{:value => "8"} 8
+                  %option{:value => "9"} 9
+                  %option{:value => "10"} 10
+                  %option{:value => "11"} 11
+                  %option{:value => "12"} 12
+                  %option{:value => "13"} 13
+                  %option{:value => "14"} 14
+                  %option{:value => "15"} 15
+                  %option{:value => "16"} 16
+                  %option{:value => "17"} 17
+                  %option{:value => "18"} 18
+                  %option{:value => "19"} 19
+                  %option{:value => "20"} 20
+                  %option{:value => "21"} 21
+                  %option{:value => "22"} 22
+                  %option{:value => "23"} 23
+                  %option{:value => "24"} 24
+                  %option{:value => "25"} 25
+                  %option{:value => "26"} 26
+                  %option{:value => "27"} 27
+                  %option{:value => "28"} 28
+                  %option{:value => "29"} 29
+                  %option{:value => "30"} 30
+                  %option{:value => "31"} 31
+                  %option{:value => "32"} 32
+                  %option{:value => "33"} 33
+                  %option{:value => "34"} 34
+                  %option{:value => "35"} 35
+                  %option{:value => "36"} 36
+                  %option{:value => "37"} 37
+                  %option{:value => "38"} 38
+                  %option{:value => "39"} 39
+                  %option{:value => "40"} 40
+                  %option{:value => "41"} 41
+                  %option{:value => "42"} 42
+                  %option{:value => "43"} 43
+                  %option{:value => "44"} 44
+                  %option{:value => "45"} 45
+                  %option{:value => "46"} 46
+                  %option{:value => "47"} 47
+                  %option{:value => "48"} 48
+                  %option{:value => "49"} 49
+                  %option{:value => "50"} 50
+
+              %p.knr.clearfix
+                %a.lkn{:href => "#"} Lưu mục kỹ năng
+              %p.clearfix
+                %table{:summary => "Submitted table designs"}
+                  %thead
+                    %tr
+                      %th Kỹ năng
+                      %th Trình độ
+                      %th Số năm kinh nghiệm
+                      %th Sửa
+                  %tbody
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/minus_button.gif"}/
+                        %a.tcty{:href => "#"} Vi tính
+                      %td
+                        %a.n{:href => "#"} Cao cấp
+                      %td 10 năm 
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                    %tr{:bgcolor => "#EFEFEF"}
+                      %td.textsize{:colspan => "4"}
+                        #divResumeWorkExperience{:style => ""}
+                          %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td.textsize{:align => "right", :bgcolor => "#FFFFFF", :style => "FONT-WEIGHT: BOLD; padding-right:20px;text-align:right;", :valign => "top", :width => "30%"}
+                                  09/1997 - Hiện tại
+                                %td{:align => "left", :bgcolor => "#FFFFFF", :valign => "top"}
+                                  %div
+                                    %b NA
+                                  .FORM_CAPTION Accountant
+                                  %div Kế toán/ Tài chính/ Kiểm toán
+                                  %div Hồ Chí Minh - Việt Nam
+                                  %div
+                                    Accountant
+                                    %br
+                                      TTBST - Kế toán/Tài chính
+                                      
+                    %tr.odd
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} Careerlink Việt Nam
+                      %td
+                        %a.n{:href => "#"} Kế Toán
+                      %td 09/1997 - Hiện tại 
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} VietProtocol
+                      %td
+                        %a.n{:href => "#"} Kế Toán
+                      %td 09/1997 - Hiện tại 
+                      %td 
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+            %h4.tit Kỹ năng khác
+            %div.kinhnghiem
+              %p
+                %span.clearfix
+                  %span.impor
+                    Kỹ năng              
+                %label
+                  %input{:type => "text"}
+              %p
+                %span.clearfix
+                  %span.impor
+                    Trình độ                
+                %label
+                  %select#resumeOtherSkill_proficiency.TEXTBOX{:name => "resumeOtherSkill[proficiency]", :required => "required"}
+                    %option{:value => ""} ...
+                    %option{:value => "B"} Sơ cấp
+                    %option{:value => "I"} Trung cấp
+                    %option{:value => "A"} Cao cấp
+              %p
+                %span.clearfix
+                  %span.impor
+                    Số năm sử dụng               
+                %label
+                  %select#resumeOtherSkill_yearOfUse.TEXTBOX{:name => "resumeOtherSkill[yearOfUse]"}
+                    %option{:value => ""} ...
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                    %option{:value => "3"} 3
+                    %option{:value => "4"} 4
+                    %option{:value => "5"} 5
+                    %option{:value => "6"} 6
+                    %option{:value => "7"} 7
+                    %option{:value => "8"} 8
+                    %option{:value => "9"} 9
+                    %option{:value => "10"} 10
+                    %option{:value => "11"} 11
+                    %option{:value => "12"} 12
+                    %option{:value => "13"} 13
+                    %option{:value => "14"} 14
+                    %option{:value => "15"} 15
+                    %option{:value => "16"} 16
+                    %option{:value => "17"} 17
+                    %option{:value => "18"} 18
+                    %option{:value => "19"} 19
+                    %option{:value => "20"} 20
+                    %option{:value => "21"} 21
+                    %option{:value => "22"} 22
+                    %option{:value => "23"} 23
+                    %option{:value => "24"} 24
+                    %option{:value => "25"} 25
+                    %option{:value => "26"} 26
+                    %option{:value => "27"} 27
+                    %option{:value => "28"} 28
+                    %option{:value => "29"} 29
+                    %option{:value => "30"} 30
+                    %option{:value => "31"} 31
+                    %option{:value => "32"} 32
+                    %option{:value => "33"} 33
+                    %option{:value => "34"} 34
+                    %option{:value => "35"} 35
+                    %option{:value => "36"} 36
+                    %option{:value => "37"} 37
+                    %option{:value => "38"} 38
+                    %option{:value => "39"} 39
+                    %option{:value => "40"} 40
+                    %option{:value => "41"} 41
+                    %option{:value => "42"} 42
+                    %option{:value => "43"} 43
+                    %option{:value => "44"} 44
+                    %option{:value => "45"} 45
+                    %option{:value => "46"} 46
+                    %option{:value => "47"} 47
+                    %option{:value => "48"} 48
+                    %option{:value => "49"} 49
+                    %option{:value => "50"} 50
+              %p
+                %span.clearfix
+                  %span.impor
+                    Kỹ năng               
+                %label
+                  %textarea#resumeOtherSkill_description.TEXTBOX{:cols => "70", :name => "resumeOtherSkill[description]", :rows => "10", :wrap => "virtual"}
+              %p.knr.clearfix
+                %a.lkn{:href => "#"} Lưu mục kỹ năng khác
+              %p.clearfix
+                %table{:summary => "Submitted table designs"}
+                  %thead
+                    %tr
+                      %th Kỹ năng
+                      %th Trình độ
+                      %th Số năm sử dụng
+                      %th Sửa
+                  %tbody
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/minus_button.gif"}/
+                        %a.tcty{:href => "#"} ISass
+                      %td
+                        %a.n{:href => "#"} Cao cấp
+                      %td 10 năm 
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                    %tr{:bgcolor => "#EFEFEF"}
+                      %td.textsize{:colspan => "4"}
+                        #divResumeWorkExperience{:style => ""}
+                          %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td.textsize{:align => "right", :bgcolor => "#FFFFFF", :style => "FONT-WEIGHT: BOLD; padding-right:20px;text-align:right;", :valign => "top", :width => "30%"}
+                                  09/1997 - Hiện tại
+                                %td{:align => "left", :bgcolor => "#FFFFFF", :valign => "top"}
+                                  %div
+                                    %b NA
+                                  .FORM_CAPTION Accountant
+                                  %div Kế toán/ Tài chính/ Kiểm toán
+                                  %div Hồ Chí Minh - Việt Nam
+                                  %div
+                                    Accountant
+                                    %br
+                                      TTBST - Kế toán/Tài chính
+                                      
+                    %tr.odd
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} Careerlink Việt Nam
+                      %td
+                        %a.n{:href => "#"} Kế Toán
+                      %td 09/1997 - Hiện tại 
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} VietProtocol
+                      %td
+                        %a.n{:href => "#"} Kế Toán
+                      %td 09/1997 - Hiện tại 
+                      %td 
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+
+            %ul.taohoso-button.clearfix
+              %li.luutam
+                %a{:href => "#"} Lưu tạm
+              %li.buocketiep
+                %a.current{:href => "#"} Lưu bước 4 để tiếp tục bước 5
+        / /.danghoso
+        / ==========================

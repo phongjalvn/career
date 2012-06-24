@@ -11,9 +11,9 @@
 # require 'susy'
 
 # Change Compass configuration
-#compass_config do |config|
- #config.output_style = :compressed
-#end
+# compass_config do |config|
+  # config.output_style = :compressed
+# end
 
 ###
 # Haml

@@ -1,0 +1,761 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Trang tao ho so tung buoc"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#search-center.details.create-resume
+  .container
+    = partial(:breadcrumb)
+    %h2 Kinh nghiệm - Người tham khảo
+    .contents
+      .bg.clearfix
+        %br.clearfix/
+        .jslider{:current => "3", :total => "6"}
+          .filler
+            .tooltip
+              %span
+                %span Buoc 3/6
+            %span.indicator
+        %div.instruction.no-content
+         
+          %p.not-input
+            Những mục có dấu sao
+            %span *
+            là bắt buộc.
+        / .danghoso
+        .danghoso
+          %form{:action => "#"}
+            %h4.tit Kinh nghiệm làm việc
+            %div.kinhnghiem
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Số năm kinh nghiệm              
+                %label
+                  %select#resumeStep3_totalWorkExperience.TEXTBOX{:name => "resumeStep3[totalWorkExperience]", :required => "required", :style => "width:100px;"}
+                    %option{:value => ""} ...
+                    %option{:value => "0"} 0
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                    %option{:value => "3"} 3
+                    %option{:value => "4"} 4
+                    %option{:value => "5"} 5
+                    %option{:value => "6"} 6
+                    %option{:value => "7"} 7
+                    %option{:value => "8"} 8
+                    %option{:value => "9"} 9
+                    %option{:value => "10"} 10
+                    %option{:value => "11"} 11
+                    %option{:selected => "selected", :value => "12"} 12
+                    %option{:value => "13"} 13
+                    %option{:value => "14"} 14
+                    %option{:value => "15"} 15
+                    %option{:value => "16"} 16
+                    %option{:value => "17"} 17
+                    %option{:value => "18"} 18
+                    %option{:value => "19"} 19
+                    %option{:value => "20"} 20
+                    %option{:value => "21"} 21
+                    %option{:value => "22"} 22
+                    %option{:value => "23"} 23
+                    %option{:value => "24"} 24
+                    %option{:value => "25"} 25
+                    %option{:value => "26"} 26
+                    %option{:value => "27"} 27
+                    %option{:value => "28"} 28
+                    %option{:value => "29"} 29
+                    %option{:value => "30"} 30
+                    %option{:value => "31"} 31
+                    %option{:value => "32"} 32
+                    %option{:value => "33"} 33
+                    %option{:value => "34"} 34
+                    %option{:value => "35"} 35
+                    %option{:value => "36"} 36
+                    %option{:value => "37"} 37
+                    %option{:value => "38"} 38
+                    %option{:value => "39"} 39
+                    %option{:value => "40"} 40
+                    %option{:value => "41"} 41
+                    %option{:value => "42"} 42
+                    %option{:value => "43"} 43
+                    %option{:value => "44"} 44
+                    %option{:value => "45"} 45
+                    %option{:value => "46"} 46
+                    %option{:value => "47"} 47
+                    %option{:value => "48"} 48
+                    %option{:value => "49"} 49
+                    %option{:value => "50"} 50
+              .kinhnghiem
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Tên công ty                
+                  %label
+                    %input{:type => "text"}
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Chức danh               
+                  %label
+                    %input{:type => "text"}
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Ngành nghề việc làm               
+                  %label
+                    %select#resumeWorkExperience_jobCategory.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[jobCategory]", :required => "required", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} Chọn ngành nghề
+                      %option{:value => "31"} Bán hàng
+                      %option{:value => "24"} Báo chí/ Biên tập viên/ Xuất bản
+                      %option{:value => "17"} Bảo hiểm
+                      %option{:value => "29"} Bất động sản
+                      %option{:value => "18"} Biên phiên dịch/ Thông dịch viên
+                      %option{:value => "154"} Biên phiên dịch (tiếng Nhật)
+                      %option{:value => "14"} Chăm sóc sức khỏe/ Y tế
+                      %option{:value => "130"} CNTT - Phần cứng/ Mạng
+                      %option{:value => "19"} CNTT - Phần mềm
+                      %option{:value => "26"} Dầu khí/ Khoáng sản
+                      %option{:value => "33"} Dệt may/ Da giày
+                      %option{:value => "9"} Dịch vụ khách hàng
+                      %option{:value => "28"} Dược/ Sinh học
+                      %option{:value => "148"} Điện/ Điện tử
+                      %option{:value => "10"} Giáo dục/ Đào tạo/ Thư viện
+                      %option{:value => "127"} Hóa chất/ Sinh hóa/ Thực phẩm
+                      %option{:value => "1"} Kế toán/ Tài chính/ Kiểm toán
+                      %option{:value => "15"} Khách sạn/ Du lịch
+                      %option{:value => "139"} Kiến trúc
+                      %option{:value => "11"} Kỹ thuật ứng dụng/ Cơ khí
+                      %option{:value => "20"} Lao động phổ thông
+                      %option{:value => "142"} Môi trường/ Xử lý chất thải
+                      %option{:value => "118"} Mới tốt nghiệp/ Thực tập
+                      %option{:value => "5"} Ngân hàng/ Chứng khoán/ Đầu tư
+                      %option{:value => "4"} Nghệ thuật/ Thiết kế/ Giải trí
+                      %option{:value => "12"} Người nước ngoài
+                      %option{:value => "30"} Nhà hàng/ Dịch vụ ăn uống
+                      %option{:value => "16"} Nhân sự
+                      %option{:value => "3"} Nông nghiệp/ Lâm nghiệp
+                      %option{:value => "151"} Ô tô
+                      %option{:value => "21"} Pháp lý/ Luật
+                      %option{:value => "25"} Phi chính phủ/ Phi lợi nhuận
+                      %option{:value => "145"} Quản lý chất lượng (QA/ QC)
+                      %option{:value => "22"} Quản lý điều hành
+                      %option{:value => "2"} Quảng cáo/ Khuyến mãi/ Đối ngoại
+                      %option{:value => "23"} Sản xuất/ Vận hành sản xuất
+                      %option{:value => "6"} Thư ký/ Hành chánh
+                      %option{:value => "136"} Tiếp thị
+                      %option{:value => "7"} Tư vấn
+                      %option{:value => "34"} Vận chuyển/ Giao thông/ Kho bãi
+                      %option{:value => "27"} Vật tư/ Mua hàng
+                      %option{:value => "32"} Viễn Thông
+                      %option{:value => "8"} Xây dựng
+                      %option{:value => "13"} Xuất nhập khẩu/ Ngoại thương
+                      %option{:value => "35"} Khác
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Khoảng thời gian làm việc               
+                  %label
+                    %select#resumeWorkExperience_startMonth.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[startMonth]", :required => "required", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} ...
+                      %option{:value => "1"} Tháng 1
+                      %option{:value => "2"} Tháng 2
+                      %option{:value => "3"} Tháng 3
+                      %option{:value => "4"} Tháng 4
+                      %option{:value => "5"} Tháng 5
+                      %option{:value => "6"} Tháng 6
+                      %option{:value => "7"} Tháng 7
+                      %option{:value => "8"} Tháng 8
+                      %option{:value => "9"} Tháng 9
+                      %option{:value => "10"} Tháng 10
+                      %option{:value => "11"} Tháng 11
+                      %option{:value => "12"} Tháng 12
+                  %label
+                    %select#resumeWorkExperience_startYear.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[startYear]", :required => "required", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} ...
+                      %option{:value => "1962"} 1962
+                      %option{:value => "1963"} 1963
+                      %option{:value => "1964"} 1964
+                      %option{:value => "1965"} 1965
+                      %option{:value => "1966"} 1966
+                      %option{:value => "1967"} 1967
+                      %option{:value => "1968"} 1968
+                      %option{:value => "1969"} 1969
+                      %option{:value => "1970"} 1970
+                      %option{:value => "1971"} 1971
+                      %option{:value => "1972"} 1972
+                      %option{:value => "1973"} 1973
+                      %option{:value => "1974"} 1974
+                      %option{:value => "1975"} 1975
+                      %option{:value => "1976"} 1976
+                      %option{:value => "1977"} 1977
+                      %option{:value => "1978"} 1978
+                      %option{:value => "1979"} 1979
+                      %option{:value => "1980"} 1980
+                      %option{:value => "1981"} 1981
+                      %option{:value => "1982"} 1982
+                      %option{:value => "1983"} 1983
+                      %option{:value => "1984"} 1984
+                      %option{:value => "1985"} 1985
+                      %option{:value => "1986"} 1986
+                      %option{:value => "1987"} 1987
+                      %option{:value => "1988"} 1988
+                      %option{:value => "1989"} 1989
+                      %option{:value => "1990"} 1990
+                      %option{:value => "1991"} 1991
+                      %option{:value => "1992"} 1992
+                      %option{:value => "1993"} 1993
+                      %option{:value => "1994"} 1994
+                      %option{:value => "1995"} 1995
+                      %option{:value => "1996"} 1996
+                      %option{:value => "1997"} 1997
+                      %option{:value => "1998"} 1998
+                      %option{:value => "1999"} 1999
+                      %option{:value => "2000"} 2000
+                      %option{:value => "2001"} 2001
+                      %option{:value => "2002"} 2002
+                      %option{:value => "2003"} 2003
+                      %option{:value => "2004"} 2004
+                      %option{:value => "2005"} 2005
+                      %option{:value => "2006"} 2006
+                      %option{:value => "2007"} 2007
+                      %option{:value => "2008"} 2008
+                      %option{:value => "2009"} 2009
+                      %option{:value => "2010"} 2010
+                      %option{:value => "2011"} 2011
+                      %option{:value => "2012"} 2012
+                  đến 
+                  %label
+                    %select#resumeWorkExperience_endMonth.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[endMonth]", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} Hiện tại
+                      %option{:value => "1"} Tháng 1
+                      %option{:value => "2"} Tháng 2
+                      %option{:value => "3"} Tháng 3
+                      %option{:value => "4"} Tháng 4
+                      %option{:value => "5"} Tháng 5
+                      %option{:value => "6"} Tháng 6
+                      %option{:value => "7"} Tháng 7
+                      %option{:value => "8"} Tháng 8
+                      %option{:value => "9"} Tháng 9
+                      %option{:value => "10"} Tháng 10
+                      %option{:value => "11"} Tháng 11
+                      %option{:value => "12"} Tháng 12
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Chọn tỉnh               
+                  %label
+                    %select#resumeWorkExperience_province.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[province]", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} Chọn tỉnh
+                      %option{:value => "23"} Hồ Chí Minh
+                      %option{:value => "27"} Hà Nội
+                      %option{:value => "17"} Đà Nẵng
+                      %option{:value => "1"} An Giang
+                      %option{:value => "9"} Bà Rịa - Vũng Tàu
+                      %option{:value => "5"} Bắc Cạn
+                      %option{:value => "4"} Bắc Giang
+                      %option{:value => "6"} Bạc Liêu
+                      %option{:value => "7"} Bắc Ninh
+                      %option{:value => "11"} Bến Tre
+                      %option{:value => "3"} Bình Định
+                      %option{:value => "2"} Bình Dương
+                      %option{:value => "8"} Bình Phước
+                      %option{:value => "10"} Bình Thuận
+                      %option{:value => "13"} Cà Mau
+                      %option{:value => "14"} Cần Thơ
+                      %option{:value => "12"} Cao Bằng
+                      %option{:value => "16"} Đắk Lắk
+                      %option{:value => "18"} Đăk Nông
+                      %option{:value => "15"} Điện Biên
+                      %option{:value => "19"} Đồng Nai
+                      %option{:value => "20"} Đồng Tháp
+                      %option{:value => "21"} Gia Lai
+                      %option{:value => "25"} Hà Giang
+                      %option{:value => "28"} Hà Nam
+                      %option{:value => "30"} Hà Tây
+                      %option{:value => "31"} Hà Tĩnh
+                      %option{:value => "24"} Hải Dương
+                      %option{:value => "29"} Hải Phòng
+                      %option{:value => "26"} Hậu Giang
+                      %option{:value => "22"} Hòa Bình
+                      %option{:value => "32"} Hưng Yên
+                      %option{:value => "33"} Kiên Giang
+                      %option{:value => "34"} Khánh Hòa
+                      %option{:value => "35"} Kon Tum
+                      %option{:value => "65"} Lai Châu
+                      %option{:value => "38"} Lâm Đồng
+                      %option{:value => "39"} Lạng Sơn
+                      %option{:value => "66"} Lào Cai
+                      %option{:value => "36"} Long An
+                      %option{:value => "42"} Nam Định
+                      %option{:value => "40"} Nghệ An
+                      %option{:value => "41"} Ninh Bình
+                      %option{:value => "43"} Ninh Thuận
+                      %option{:value => "44"} Phú Thọ
+                      %option{:value => "45"} Phú Yên
+                      %option{:value => "46"} Quảng Bình
+                      %option{:value => "47"} Quảng Nam
+                      %option{:value => "49"} Quảng Ngãi
+                      %option{:value => "48"} Quảng Ninh
+                      %option{:value => "50"} Quảng Trị
+                      %option{:value => "52"} Sóc Trăng
+                      %option{:value => "51"} Sơn La
+                      %option{:value => "56"} Tây Ninh
+                      %option{:value => "53"} Thái Bình
+                      %option{:value => "57"} Thái Nguyên
+                      %option{:value => "55"} Thanh Hóa
+                      %option{:value => "74"} Thừa Thiên - Huế
+                      %option{:value => "54"} Tiền Giang
+                      %option{:value => "75"} Trà Vinh
+                      %option{:value => "73"} Tuyên Quang
+                      %option{:value => "76"} Vĩnh Long
+                      %option{:value => "77"} Vĩnh Phúc
+                      %option{:value => "78"} Yên Bái
+                      %option{:value => "79"} Khác
+                      %option{:value => "80"} Nước Ngoài
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Quốc gia
+                  %label
+                    %select#resumeWorkExperience_country.TEXTBOX.disabled-when-no-experience{:name => "resumeWorkExperience[country]", :required => "required", :style => "background-color: rgb(255, 255, 255);"}
+                      %option{:value => ""} Chọn quốc gia
+                      %option{:value => "2"} Albania
+                      %option{:value => "3"} Algeria
+                      %option{:value => "4"} American Samoa
+                      %option{:value => "5"} Andorra
+                      %option{:value => "6"} Angola
+                      %option{:value => "7"} Anguilla
+                      %option{:value => "8"} Antarctica
+                      %option{:value => "9"} Antigua and Barbuda
+                      %option{:value => "10"} Argentina
+                      %option{:value => "11"} Armenia
+                      %option{:value => "12"} Aruba
+                      %option{:value => "13"} Australia
+                      %option{:value => "14"} Austria
+                      %option{:value => "15"} Azerbaijan
+                      %option{:value => "16"} Bahamas
+                      %option{:value => "17"} Bahrain
+                      %option{:value => "18"} Bangladesh
+                      %option{:value => "19"} Barbados
+                      %option{:value => "20"} Belarus
+                      %option{:value => "21"} Belgium
+                      %option{:value => "22"} Belize
+                      %option{:value => "23"} Benin
+                      %option{:value => "24"} Bermuda
+                      %option{:value => "25"} Bhutan
+                      %option{:value => "26"} Bolivia
+                      %option{:value => "27"} Bosnia and Herzegowina
+                      %option{:value => "28"} Botswana
+                      %option{:value => "29"} Bouvet Island
+                      %option{:value => "30"} Brazil
+                      %option{:value => "31"} British Indian Ocean Territory
+                      %option{:value => "32"} Brunei Darussalam
+                      %option{:value => "33"} Bulgaria
+                      %option{:value => "34"} Burkina Faso
+                      %option{:value => "35"} Burundi
+                      %option{:value => "36"} Cambodia
+                      %option{:value => "37"} Cameroon
+                      %option{:value => "38"} Canada
+                      %option{:value => "39"} Cape Verde
+                      %option{:value => "40"} Cayman Islands
+                      %option{:value => "41"} Central African Republic
+                      %option{:value => "42"} Chad
+                      %option{:value => "43"} Chile
+                      %option{:value => "44"} China
+                      %option{:value => "45"} Christmas Island
+                      %option{:value => "46"} Cocos (Keeling) Islands
+                      %option{:value => "47"} Colombia
+                      %option{:value => "48"} Comoros
+                      %option{:value => "49"} Congo
+                      %option{:value => "50"} Cook Islands
+                      %option{:value => "51"} Costa Rica
+                      %option{:value => "52"} Cote D'Ivoire
+                      %option{:value => "53"} Croatia
+                      %option{:value => "54"} Cuba
+                      %option{:value => "55"} Cyprus
+                      %option{:value => "56"} Czech Republic
+                      %option{:value => "57"} Denmark
+                      %option{:value => "58"} Djibouti
+                      %option{:value => "59"} Dominica
+                      %option{:value => "60"} Dominican Republic
+                      %option{:value => "61"} East Timor
+                      %option{:value => "62"} Ecuador
+                      %option{:value => "63"} Egypt
+                      %option{:value => "64"} El Salvador
+                      %option{:value => "65"} Equatorial Guinea
+                      %option{:value => "66"} Eritrea
+                      %option{:value => "67"} Estonia
+                      %option{:value => "68"} Ethiopia
+                      %option{:value => "69"} Falkland Islands (Malvinas)
+                      %option{:value => "70"} Faroe Islands
+                      %option{:value => "71"} Fiji
+                      %option{:value => "72"} Finland
+                      %option{:value => "73"} France
+                      %option{:value => "74"} France, Metropolitan
+                      %option{:value => "75"} French Guiana
+                      %option{:value => "76"} French Polynesia
+                      %option{:value => "77"} French Southern Territories
+                      %option{:value => "78"} Gabon
+                      %option{:value => "79"} Gambia
+                      %option{:value => "80"} Georgia
+                      %option{:value => "81"} Germany
+                      %option{:value => "82"} Ghana
+                      %option{:value => "83"} Gibraltar
+                      %option{:value => "84"} Greece
+                      %option{:value => "85"} Greenland
+                      %option{:value => "86"} Grenada
+                      %option{:value => "87"} Guadeloupe
+                      %option{:value => "88"} Guam
+                      %option{:value => "89"} Guatemala
+                      %option{:value => "90"} Guinea
+                      %option{:value => "91"} Guinea-bissau
+                      %option{:value => "92"} Guyana
+                      %option{:value => "93"} Haiti
+                      %option{:value => "94"} Heard and Mc Donald Islands
+                      %option{:value => "95"} Honduras
+                      %option{:value => "96"} Hong Kong
+                      %option{:value => "97"} Hungary
+                      %option{:value => "98"} Iceland
+                      %option{:value => "99"} India
+                      %option{:value => "100"} Indonesia
+                      %option{:value => "101"} Iran (Islamic Republic of)
+                      %option{:value => "102"} Iraq
+                      %option{:value => "103"} Ireland
+                      %option{:value => "104"} Israel
+                      %option{:value => "105"} Italy
+                      %option{:value => "106"} Jamaica
+                      %option{:value => "107"} Japan
+                      %option{:value => "108"} Jordan
+                      %option{:value => "109"} Kazakhstan
+                      %option{:value => "110"} Kenya
+                      %option{:value => "111"} Kiribati
+                      %option{:value => "112"} Korea, Democratic People's Republic of
+                      %option{:value => "113"} Korea, Republic of
+                      %option{:value => "114"} Kuwait
+                      %option{:value => "115"} Kyrgyzstan
+                      %option{:value => "116"} Lao People's Democratic Republic
+                      %option{:value => "117"} Latvia
+                      %option{:value => "118"} Lebanon
+                      %option{:value => "119"} Lesotho
+                      %option{:value => "120"} Liberia
+                      %option{:value => "121"} Libyan Arab Jamahiriya
+                      %option{:value => "122"} Liechtenstein
+                      %option{:value => "123"} Lithuania
+                      %option{:value => "124"} Luxembourg
+                      %option{:value => "125"} Macau
+                      %option{:value => "126"} Macedonia, The Former Yugoslav Republic of
+                      %option{:value => "127"} Madagascar
+                      %option{:value => "128"} Malawi
+                      %option{:value => "129"} Malaysia
+                      %option{:value => "130"} Maldives
+                      %option{:value => "131"} Mali
+                      %option{:value => "132"} Malta
+                      %option{:value => "133"} Marshall Islands
+                      %option{:value => "134"} Martinique
+                      %option{:value => "135"} Mauritania
+                      %option{:value => "136"} Mauritius
+                      %option{:value => "137"} Mayotte
+                      %option{:value => "138"} Mexico
+                      %option{:value => "139"} Micronesia, Federated States of
+                      %option{:value => "140"} Moldova, Republic of
+                      %option{:value => "141"} Monaco
+                      %option{:value => "142"} Mongolia
+                      %option{:value => "143"} Montserrat
+                      %option{:value => "144"} Morocco
+                      %option{:value => "145"} Mozambique
+                      %option{:value => "146"} Myanmar
+                      %option{:value => "147"} Namibia
+                      %option{:value => "148"} Nauru
+                      %option{:value => "149"} Nepal
+                      %option{:value => "150"} Netherlands
+                      %option{:value => "151"} Netherlands Antilles
+                      %option{:value => "152"} New Caledonia
+                      %option{:value => "153"} New Zealand
+                      %option{:value => "154"} Nicaragua
+                      %option{:value => "155"} Niger
+                      %option{:value => "156"} Nigeria
+                      %option{:value => "157"} Niue
+                      %option{:value => "158"} Norfolk Island
+                      %option{:value => "159"} Northern Mariana Islands
+                      %option{:value => "160"} Norway
+                      %option{:value => "161"} Oman
+                      %option{:value => "162"} Pakistan
+                      %option{:value => "163"} Palau
+                      %option{:value => "164"} Panama
+                      %option{:value => "165"} Papua New Guinea
+                      %option{:value => "166"} Paraguay
+                      %option{:value => "167"} Peru
+                      %option{:value => "168"} Philippines
+                      %option{:value => "169"} Pitcairn
+                      %option{:value => "170"} Poland
+                      %option{:value => "171"} Portugal
+                      %option{:value => "172"} Puerto Rico
+                      %option{:value => "173"} Qatar
+                      %option{:value => "174"} Reunion
+                      %option{:value => "175"} Romania
+                      %option{:value => "176"} Russian Federation
+                      %option{:value => "177"} Rwanda
+                      %option{:value => "178"} Saint Kitts and Nevis
+                      %option{:value => "179"} Saint Lucia
+                      %option{:value => "180"} Saint Vincent and the Grenadines
+                      %option{:value => "181"} Samoa
+                      %option{:value => "182"} San Marino
+                      %option{:value => "183"} Sao Tome and Principe
+                      %option{:value => "184"} Saudi Arabia
+                      %option{:value => "185"} Senegal
+                      %option{:value => "186"} Seychelles
+                      %option{:value => "187"} Sierra Leone
+                      %option{:value => "188"} Singapore
+                      %option{:value => "189"} Slovakia (Slovak Republic)
+                      %option{:value => "190"} Slovenia
+                      %option{:value => "191"} Solomon Islands
+                      %option{:value => "192"} Somalia
+                      %option{:value => "193"} South Africa
+                      %option{:value => "194"} South Georgia and the South Sandwich Islands
+                      %option{:value => "195"} Spain
+                      %option{:value => "196"} Sri Lanka
+                      %option{:value => "197"} St. Helena
+                      %option{:value => "198"} St. Pierre and Miquelon
+                      %option{:value => "199"} Sudan
+                      %option{:value => "200"} Suriname
+                      %option{:value => "201"} Svalbard and Jan Mayen Islands
+                      %option{:value => "202"} Swaziland
+                      %option{:value => "203"} Sweden
+                      %option{:value => "204"} Switzerland
+                      %option{:value => "205"} Syrian Arab Republic
+                      %option{:value => "206"} Taiwan
+                      %option{:value => "207"} Tajikistan
+                      %option{:value => "208"} Tanzania, United Republic of
+                      %option{:value => "209"} Thailand
+                      %option{:value => "210"} Togo
+                      %option{:value => "211"} Tokelau
+                      %option{:value => "212"} Tonga
+                      %option{:value => "213"} Trinidad and Tobago
+                      %option{:value => "214"} Tunisia
+                      %option{:value => "215"} Turkey
+                      %option{:value => "216"} Turkmenistan
+                      %option{:value => "217"} Turks and Caicos Islands
+                      %option{:value => "218"} Tuvalu
+                      %option{:value => "219"} Uganda
+                      %option{:value => "220"} Ukraine
+                      %option{:value => "221"} United Arab Emirates
+                      %option{:value => "222"} United Kingdom
+                      %option{:value => "223"} United States
+                      %option{:value => "224"} United States Minor Outlying Islands
+                      %option{:value => "225"} Uruguay
+                      %option{:value => "226"} Uzbekistan
+                      %option{:value => "227"} Vanuatu
+                      %option{:value => "228"} Vatican City State (Holy See)
+                      %option{:value => "229"} Venezuela
+                      %option{:selected => "selected", :value => "230"} Việt Nam
+                      %option{:value => "231"} Virgin Islands (British)
+                      %option{:value => "232"} Virgin Islands (U.S.)
+                      %option{:value => "233"} Wallis and Futuna Islands
+                      %option{:value => "234"} Western Sahara
+                      %option{:value => "235"} Yemen
+                      %option{:value => "236"} Yugoslavia
+                      %option{:value => "237"} Zaire
+                      %option{:value => "238"} Zambia
+                      %option{:value => "239"} Zimbabwe
+                %p
+                  %span.clearfix
+                    %span.red *
+                    %span.impor
+                      Mô tả
+                  %label
+                    %textarea#resumeWorkExperience_description.TEXTBOX.disabled-when-no-experience{:cols => "70", :name => "resumeWorkExperience[description]", :required => "required", :rows => "10", :style => "border: 1px solid #b5b5b5;background-color: rgb(255, 255, 255);"}
+                %p.knr.clearfix
+                  %a.lkn{:href => "#"} Lưu mục kinh nghiệm làm việc
+                %p.clearfix
+                  %table{:summary => "Submitted table designs"}
+                    %thead
+                      %tr
+                        %th Tên công ty
+                        %th Chức danh
+                        %th Từ tháng/năm - Đến
+                        %th Sửa
+                    %tbody
+                      %tr
+                        %td
+                          %a{:href => "#"}
+                            %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/minus_button.gif"}/
+                          %a.tcty{:href => "#"} VietProtocol
+                        %td
+                          %a.n{:href => "#"} Kế Toán
+                        %td 09/1997 - Hiện tại 
+                        %td
+                          %a{:href => "#"}
+                            %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                          %a{:href => "#"}
+                            %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                          %a{:href => "#"}
+                            %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                      %tr{:bgcolor => "#EFEFEF"}
+                        %td.textsize{:colspan => "4"}
+                          #divResumeWorkExperience{:style => ""}
+                            %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                              %tbody
+                                %tr
+                                  %td.textsize{:align => "right", :bgcolor => "#FFFFFF", :style => "FONT-WEIGHT: BOLD; padding-right:20px;text-align:right;", :valign => "top", :width => "30%"}
+                                    09/1997 - Hiện tại
+                                  %td{:align => "left", :bgcolor => "#FFFFFF", :valign => "top"}
+                                    %div
+                                      %b NA
+                                    .FORM_CAPTION Accountant
+                                    %div Kế toán/ Tài chính/ Kiểm toán
+                                    %div Hồ Chí Minh - Việt Nam
+                                    %div
+                                      Accountant
+                                      %br
+                                        TTBST - Kế toán/Tài chính
+                                        
+                      %tr.odd
+                        %td
+                          %a{:href => "#"}
+                            %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                          %a.tcty{:href => "#"} Careerlink Việt Nam
+                        %td
+                          %a.n{:href => "#"} Kế Toán
+                        %td 09/1997 - Hiện tại 
+                        %td
+                          %a{:href => "#"}
+                            %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                          %a{:href => "#"}
+                            %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                          %a{:href => "#"}
+                            %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+                          %a{:href => "#"}
+                            %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                      %tr
+                        %td
+                          %a{:href => "#"}
+                            %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                          %a.tcty{:href => "#"} VietProtocol
+                        %td
+                          %a.n{:href => "#"} Kế Toán
+                        %td 09/1997 - Hiện tại 
+                        %td 
+                          %a{:href => "#"}
+                            %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                          %a{:href => "#"}
+                            %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                          %a{:href => "#"}
+                            %a{:href => "#"}
+                            %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+            %h4.tit Người tham khảo
+            %div.kinhnghiem
+              %p
+                %span.clearfix
+                  %span.impor
+                    Mối quan hệ       
+                %label
+                  %select#resumeReference_referenceType.TEXTBOX{:name => "resumeReference[referenceType]", :onchange => "changeReferenceLevel(this);", :required => "required"}
+                    %option{:value => ""} ...
+                    %option{:value => "A"} Chuyên viên
+                    %option{:value => "B"} Cá nhân
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Tên       
+                %label
+                  %input{:type => "text"}
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Chức danh       
+                %label
+                  %input{:type => "text"}
+              %p
+                %span.clearfix
+                  %span.impor
+                    Điện thoại       
+                %label
+                  %input{:type => "text"}
+              %p
+                %span.clearfix
+                  %span.red *
+                  %span.impor
+                    Email        
+                %label
+                  %input{:type => "text"}
+              %p
+                %span.clearfix
+                  %span.impor
+                    Thông tin liên quan       
+                %label
+                  %textarea#resumeReference_relateInformation.TEXTBOX.disabled-when-no-reference-type{:cols => "70", :name => "resumeReference[relateInformation]", :rows => "10"}
+              %p.knr.clearfix
+                %a.lkn{:href => "#"} Lưu mục người tham khảo
+              %p.clearfix
+                %table{:summary => "Submitted table designs"}
+                  %thead
+                    %tr
+                      %th Tên
+                      %th Chức danh
+                      %th Sửa
+                  %tbody
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} John Mayoer
+                      %td Giám đốc 
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}                  
+                    %tr.odd
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} Phan Hoài Phúc
+                      %td Trưởng phòng
+                      %td
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+                        %a{:href => "#"}
+                          %img{:src => "images/down_arrow.gif", :title => "Xuống dưới", :alt => "Xuống dưới"}
+                    %tr
+                      %td
+                        %a{:href => "#"}
+                          %img#imgResumeWorkExperience{:border => "0", :hspace => "2", :src => "images/plus_button.gif"}/
+                        %a.tcty{:href => "#"} Lê Đình Thư Các
+                      %td Giám đốc kỹ thuật 
+                      %td 
+                        %a{:href => "#"}
+                          %img{:src => "images/edit-img.png",:title => "Edit", :alt => "Edit"}
+                        %a{:href => "#"}
+                          %img{:src => "images/delete_icon.png", :title => "Delete", :alt => "Delete"}
+                        %a{:href => "#"}
+                          %a{:href => "#"}
+                          %img{:src => "images/up_arrow.gif", :title => "Lên trên", :alt => "Lên trên"}
+
+            %ul.taohoso-button.clearfix
+              %li.luutam
+                %a{:href => "#"} Lưu tạm
+              %li.buocketiep
+                %a.current{:href => "#"} Lưu bước 3 để tiếp tục bước 4
+        / /.danghoso
+        / ==========================

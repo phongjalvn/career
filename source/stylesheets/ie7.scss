@@ -1,0 +1,232 @@
+.ie7,.ie8 {
+  /* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+.kwicks.horizontal .kwick-panel,
+#p2box-arrows,
+#p2box-arrows a,
+#topbar .topmenu,
+#topbar .topmisc a,#topbar .topmisc .language,
+#topbar .topmisc select,
+#menu .login,
+#menu .login ul li,
+#loginform .buttons,
+#banner li,
+.search-top li,
+.search-top label input,.search-top label select,.search-top label span,
+#left,
+#left h3 span a,
+.listjob ul li,
+.newsletter .description,
+#doitac ul li,
+#bottombox .box,
+#bottombox .col-3 ul li,
+#footer .logo,
+.details #left,
+.details #right,
+.details .toolbar ul.pagination,
+.details .list-search .editsearch a,
+.career-advice-details img,
+.career-advice-details li,
+.tsmsselect,
+.tsmsoptions,
+.timkiemnangcao span,
+#right,
+#right .luong #divSalaryFrom,
+#right .luong #divSalaryFrom input,#right .luong #divSalaryFrom select,
+#right .luong #divSalaryTo,
+#right .luong #divSalaryTo input,#right .luong #divSalaryTo select,
+#forjobseeker li,
+#lastestnews img,
+li.check .checklist input,
+#breadcrumb ul li,
+#socialbottom li a,
+.login-popup,
+img.btn_close,
+.details .lienhe.list span.titbold,
+.details .lienhe.list span,
+.nopdon.bottom img,
+a.nop,
+a.nop span,
+a:hover.nop,
+a:hover.nop span,
+#vieclienquan .box,
+.otherlink a,
+.otherlink a.morongtimkiem,
+li.luuviec,
+li.luuviec a,
+li.guibanbe,
+li.guibanbe a,
+.details table.view-rutgon span.job-title,
+span.jobsalary,
+.details .job-description .logo-chitietvieclam img,
+.details .job-description .ntd-chitietvieclam,
+#profiles .login-info img,
+.advice-list li img,
+#career-center .hot-advice,
+#career-center .hot-advice img,
+#career-center .list-advice,
+a.new-resume-button,
+#advanced-search button,
+.advance-search.holder button,
+.advance-search p>span,
+#profiles .type2 h4 a,
+#search-center .contents .search-cate .cate,#search-center .contents .search-cate li,#search-center .contents ul .cate,#search-center .contents ul li,
+.select-dropdown li,
+#advanced-search label,
+#search-center.advance-search .contents li li,
+.searchfooter #divSalaryFrom input,.searchfooter #divSalaryFrom select,.searchfooter #divSalaryTo input,.searchfooter #divSalaryTo select,
+.searchfooter .searchbutton,
+.searchfooter form p.nornal .ml,
+.searchfooter form p.nornal .search-text,
+.danghoso p span .impor,.danghoso p span span,
+#search-center.create-resume .taohoso-button li,
+.ketquatimkiem-hoso span.noilamviec,.ketquatimkiem-chitiet-ntd span.noilamviec,
+.ketquatimkiem-hoso span.kn,.ketquatimkiem-chitiet-ntd span.kn,
+.ketquatimkiem-hoso .details ul.pagination,.ketquatimkiem-chitiet-ntd .details ul.pagination,
+.hosocuatoi-ntd .new-alert li,
+.hosocuatoi-ntd .new-resume,
+.dangtuyendung .jslider,
+.dangtuyendung .instruction,
+.dangtuyendung .create-resume .instruction,
+.knr a,
+#topbar .topmenu ul li,#footer ul li,
+#topbar .topmisc,#menu .menu,.listjob ul li:nth-child(2n),#footer .backtotop,
+#menu .menu ul li,.details .toolbar ul li,
+.search-top label,.ms2side__select,.ms2side__options,
+.details .toolbar .luu,.details .toolbar .sendmail,.details .toolbar ul.pagination li,.ketquatimkiem-hoso .details ul.pagination li,.ketquatimkiem-chitiet-ntd .details ul.pagination li,
+.details .list-search .editsearch,.ketquatimkiem-hoso .details .list-search .editsearch,.ketquatimkiem-chitiet-ntd .details .list-search .editsearch,.hosocuatoi-ntd .new-resume li,.dangtuyendung #search-center.create-resume .taohoso-button li,
+#right .luong #divSalaryFrom span.ser,#right .luong #divSalaryTo span.ser,
+.advance-search .select,.agn-l {display:inline;}
+
+/* fix negative margins */
+.tipsy-n .tipsy-arrow,
+.tipsy-s .tipsy-arrow,
+.tipsy-e .tipsy-arrow,
+.tipsy-w .tipsy-arrow,
+#p2box-container.warning h1,
+#left h3,
+img.btn_close,
+#career-center #right,
+.search label span.span-select-dropdown,
+.jslider .indicator,
+#right .date-job .select {position:relative; zoom:1;}
+
+/* add zoom:1 to overflow:hidden */
+.clearfix:after,
+.container:after,
+#doitac:after,
+#breadcrumb:after,
+.kwicks .kwick-panel,
+#p2box-middle,
+#loginform .buttons,
+#banner li,
+#banner .banner-content,
+.search-top label:nth-child(1) input,
+.search-top label:nth-child(2) select,
+.search-top label:nth-child(2) span,
+.search-top label:nth-child(3) select,
+.search-top label:nth-child(3) span,
+.search-top button,
+.newsletter form button,
+.AddOne,
+.RemoveOne,
+#socialbottom li a,
+#search-center.advance-search .contents li li,
+.searchfooter .searchbutton,
+.questiontip,
+#search-center.create-resume .taohoso-button li,
+.ketquatimkiem-hoso .h,
+.ketquatimkiem-chitiet-ntd .h,
+.hosocuatoi-ntd .new-alert li,
+.listjob ul li *,
+.list-mota.list-mota div.custom.dropdown a.current,
+.details .toolbar .luu,
+.details .toolbar .sendmail,
+.details .toolbar ul.pagination li,
+.ketquatimkiem-hoso .details ul.pagination li,
+.ketquatimkiem-chitiet-ntd .details ul.pagination li,
+.details .list-search .editsearch,
+.ketquatimkiem-hoso .details .list-search .editsearch,
+.ketquatimkiem-chitiet-ntd .details .list-search .editsearch,
+.hosocuatoi-ntd .new-resume li,
+.dangtuyendung #search-center.create-resume .taohoso-button li {zoom:1;}
+
+/* add zoom:1 to pos:relative elements */
+.pie-element,
+#search-center .contents,
+.kwicks,
+*,
+#menu .login,
+.newsletter,
+.searchfooter form p.luong #cbSalary,
+.create-resume .instruction,
+div.dialog-titlebar,
+.dtop,
+.thongtinkhac,
+.searchfooter form p.luong {zoom:1;}
+
+/* add transparancy */
+#banner li.active .banner-header {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+#banner li.active img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+#banner img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+#doitac img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+#doitac img:hover,#doitac img.hover {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+#mask {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);}
+li:hover.luuviec {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+li:hover.luuviec a {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+li:hover.guibanbe {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+li:hover.guibanbe a {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+.searchfooter #divSalaryFrom input,.searchfooter #divSalaryFrom select,.searchfooter #divSalaryTo input,.searchfooter #divSalaryTo select {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+#banner .banner-header:hover,#profiles .contents #left .box.type2 .view-rutgon a.tk:hover,a:hover.new-resume-button,#search-center.create-resume .taohoso-button li a:hover {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);}
+
+
+/* add zoom:1; display:inline; to inline-block elements */
+#loginform li span,
+.timkiemnangcao span,
+.details .lienhe.list span.titbold,
+.view-chitiet span.nganhnghe span,
+#advanced-search label span,
+#search-more .notimg,
+#search-more label,
+.questiontip,
+.danghoso p span,
+.nncv label {zoom:1; display:inline;}
+
+/* add overflow:visible to (submit) buttons */
+ input, button {overflow:visible;}
+}
+.ie7 {
+  .details .contents {
+    width: 100%;
+  }
+  #vieclienquan .box {
+    width: 29%;
+  }
+  .details .job-description .ntd-chitietvieclam {
+    width: 500px;
+  }
+  .notejob {
+    width: 710px;
+  }
+  #right .mota {
+    padding-bottom: 10px;
+    h3 {
+      height: 28px;
+    }
+  }
+  #topbar .topmisc a.ntd {
+    padding-left: 0;
+  }
+  .details .job-description .title {
+    line-height: 15px;
+  }
+  .list-mota.list-search div.custom.dropdown a.selector {
+    zoom:1;
+  }
+}
+a.luuviec, a.mailbanbe {
+  float: left;
+  display: inline;
+}

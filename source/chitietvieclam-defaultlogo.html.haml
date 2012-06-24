@@ -1,0 +1,130 @@
+---
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Tìm việc nhanh"
+    link: "#"
+  - links:
+    title: "Phiên dịch tiếng Anh"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#searchresult.details
+  .container
+    = partial(:breadcrumb)
+    %h2 Biên phiên dịch tiếng Anh
+    .thongtinkhac
+      .social
+        %img{:alt => "Social2", :height => "18", :src => "images/social2.png", :width => "111"}
+      .luotxem
+        Lượt xem: 
+        %span 450
+      .ngaydang
+        Ngày đăng:
+        %span 9/2/2012
+        Hiển thị đến:
+        %span 29/2/2012
+    .contents
+      #left
+        / .job-description
+        .job-details
+          .nopdon.clearfix
+            %a.nop{:href => "#"}
+              %span Nộp đơn
+            %a.luuviec{:href => "#"} Lưu việc làm này
+            %a.mailbanbe{:href => "#"} Gửi email việc làm tương tự
+          %table.job-description{:border => "1", :bordercolor => "#efefef", :cellpadding => "10", :cellspacing => "5", :style => "background-color:transparent", :width => "710"}
+            %tbody
+              %tr.title
+                %td{:colspan => "2"} Thông tin nhà tuyển dụng
+              %tr
+                %td.logo-chitietvieclam{:colspan => "2"}
+                  %div.ttchung
+                    %img{:alt => "Logo Chitiet Demo", :height => "80", :src => "images/default-logo.jpg", :width => "130"}
+                    %div.ntd-chitietvieclam
+                      %table{:border => "0", :bordercolor => "#FFCC00", :cellpadding => "0", :cellspacing => "5", :style => "background-color:transparent", :width => "520"}
+                        %tbody
+                          %tr
+                            %td{:valign => "top", :width => "100"} Tên công ty
+                            %td
+                              %span{:style => "font-weight:bold;color:#034ca3;font-size:14px"} CareerLink
+                          %tr
+                            %td{:valign => "top", :width => "100"} Website
+                            %td 
+                              %a{:href => "#"} www.careerlink.vn
+                          %tr
+                            %td{:valign => "top", :width => "100"} Số nhân viên
+                            %td 25-99
+                          %tr
+                            %td{:valign => "top", :width => "100"} Liên hệ
+                            %td
+                              %span{:style => "color:#034ca3;"} HR Department
+                  %div.hoso
+                    %p CareerLink Vietnam managed by Japanese is one of Vietnam’s most successful recruitment agencies, supplying high quality personnel to hundreds of companies. Currently more than 500 companies use the Executive Search service and over 10,000 companies are always CareerLink Vietnam managed by Japanese is one of Vietnam’s most successful recruitment agencies, supplying high quality personnel to hundreds of companies. Currently more than 500 
+              %tr.title
+                %td{:colspan => "2"} Mô tả công việc
+              %tr
+                %td{:colspan => "2"}
+                  %ul.list
+                    %li + Dạy tiếng Nhật cho nhân viên ( cấp staff đến cấp quản lý)
+                    %li +  Thực hiện một số công việc liên quan tới nghiệp vụ Nhân Sự.
+                    %li +  Nội dung cụ thể sẽ trao đổi khi phỏng vấn
+              %tr.title
+                %td{:colspan => "2"} Mô tả công việc
+              %tr
+                %td{:colspan => "2"}
+                  %ul.list
+                    %li + Dạy tiếng Nhật cho nhân viên ( cấp staff đến cấp quản lý)
+                    %li + Thực hiện một số công việc liên quan tới nghiệp vụ Nhân Sự.
+                    %li + Nội dung cụ thể sẽ trao đổi khi phỏng vấn
+              %tr.title
+                %td{:colspan => "2"} thông tin liên hệ
+              %tr
+                %td{:colspan => "2"}
+                  %ul.list.lienhe.clearfix
+                    %li.clearfix
+                      %span.titbold Cách liên hệ
+                      %span Nộp trực tiếp
+                    %li.clearfix
+                      %span.titbold Nhận hồ sơ ứng viên bằng ngôn ngữ: 
+                      %span Trực tiếp
+                    %li.clearfix 
+                      %span.titbold Mô tả: 
+                      %span Ứng viên quan tâm vui lòng liên hệ gửi hồ sơ, C.V Online hoặc trực tiếp đến 270 - 272 Cộng Hòa, P.13, Q. Tân Bình  TP. Hồ Chí Minh
+                    %li.clearfix 
+                      %span.titbold Tên liên hệ:
+                      %span CareerLink
+                    %li.clearfix 
+                      %span.titbold Cách liên hệ
+                      %span Nộp trực tiếp
+                    %li.clearfix 
+                      %span.titbold Địa chỉ:
+                      %span Phòng 302, 270-272 Cộng Hòa, P.13, Q.Tân Bình , Hồ Chí Minh , Viet Nam
+                    %li.clearfix 
+                      %span.titbold Email liên hệ:
+                      %span maihien.le@careerlink.vn     
+                    %li.clearfix 
+                      %span.titbold Người liên hệ:
+                      %span Ms. Mai Hien
+              %tr
+                %td{:style => "display:block; width:710px;"}
+                  %div.notejob ** Preferred language for applications: English and Japanese           
+          .bottom.nopdon.clearfix
+            %a.nop{:href => "#"}
+              %span Nộp đơn
+            %a.luuviec{:href => "#"} Lưu việc làm này
+            %a.mailbanbe{:href => "#"} Gửi email việc làm tương tự
+            %img{:alt => "Social2", :height => "18", :src => "images/social2.png", :width => "111"}
+          #tag
+            Tag:
+            %a{:href => "#"} Tieng anh,
+            %a{:href => "#"} Nhan vien van phong,
+            %a{:href => "#"} Quan 7
+        / /.job-description
+      = partial(:chitietright)
+    = partial(:lienquan)
+    = partial(:searchbottom)
+    = partial(:otherlinks)

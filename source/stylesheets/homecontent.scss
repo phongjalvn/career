@@ -19,6 +19,7 @@
     }
   }
   .box {
+    @include clearfix;
     margin-bottom: 10px;
     border-left: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
@@ -28,6 +29,11 @@
 
   .ad img{
     display: block;
+  }
+}
+.ie7 #left{
+  .box > div{
+    overflow: hidden;
   }
 }
 .listjob{
@@ -99,7 +105,7 @@
   position: relative;
   .description {
     @include float-left;
-    width: 50%;
+    width: 314px;
     padding: 15px 0 0 15px;
     h2 {
       font-size: 18px;
@@ -141,6 +147,7 @@
     @include horizontal-list(0);
     padding: 11px 0 11px 10px;
     border-bottom: 2px solid #fff;
+    zoom:1;
     li{
       border: 1px solid #90ccff;
       margin-right: 7px;
@@ -173,7 +180,7 @@
   }
   .box{
     @include float-left;
-    width: 33.3%;
+    width: 316px;
     padding: 0 20px;
   }
   .col-1{
@@ -192,6 +199,10 @@
       @include clearfix;
       padding-bottom: 10px;
       border-bottom: 1px solid #b4c6db;
+      overflow: hidden;
+    }
+    li{
+      width: 40px;
     }
   }
   blockquote{

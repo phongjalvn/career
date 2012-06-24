@@ -1,6 +1,7 @@
-%li{:class => "banner-#{image}"}
-  .banner-header= title
-  %img{:src=>"/images/banner/#{image}.png"}
+%dt{:class => "banner-#{image}"}
+  %span=title
+%dd
+  %img{:src=>"/images/bannerimages/#{image}.png"}
   .banner-content
     %h2= header
     %p= text
