@@ -1,0 +1,66 @@
+---
+logo: 'logo-ntd.png'
+trails:
+  - links:
+    title: "Careerlink"
+    link: "#"
+  - links:
+    title: "Trang tim viec nhanh"
+    link: "#"
+---
+- content_for :head do
+  %title Career Link - Search
+#login-page.details.nhatuyendung-login
+  .container
+    = partial(:breadcrumb)
+    %h2 Hồ sơ
+    .contents
+      .bg
+        .fbx.clearfix
+          .table-container
+            %table{:cellpadding => "0", :cellspacing => "0", :style => "padding: 10px; width: 100%;"}
+              %tbody
+                %tr
+                  %td.login{:style => "vertical-align: top"}
+                    %div
+                      %h1
+                        Sign In
+                      %p
+                        Vui lòng nhập đầy đủ các thông tin sau:
+                      %table{:cellpadding => "10", :cellspacing => "5", :style => "margin: 10px 0;"}
+                        %tbody
+                          %tr
+                            %td.l{:style => "width:30%"}
+                              Tên đăng nhập:
+                            %td.r
+                              %input{:style => "width:70%;", :type => "text"}
+                          %tr
+                            %td.l{:style => "width:30%;"}
+                              Mật khẩu:
+                            %td.r
+                              %input{ :style => "width:70%;", :type => "password"}
+                          %tr
+                            %td
+                            %td.r{:style => "color: #777"}
+                              %input{:type => "checkbox"}
+                                %label Ghi nhớ tôi
+                          %tr
+                            %td
+                            %td.r{:style => "padding-top: 8px;"}
+                              .btn
+                                %input{:type => "submit", :value => "Đăng nhập"}
+                                  %a{:href => "#", :style => "font-size:8pt;margin-top: 4px;display:inline-block; text-decoration:underline; color:#0046cf;"} Bạn quên password ?
+                          %tr
+                            %td.status{:colspan => "2"}
+                  %td.join{:style => "vertical-align: top"}
+                    %h2 Bạn chưa có tài khoản?
+                    %a{:href => "#"}
+                      %span
+                        Đăng ký
+                    %br.clear
+                      %p Kết nối thành công mục tiêu nghề nghiệp...
+                      %br
+                        %h2 Tại sao đăng ký?
+                        %ul{:style => "text-align:left;"}
+                          %li Tìm kiếm và cung cấp nhân sự cao cấp
+                          %li Tuyển dụng trực tuyến website

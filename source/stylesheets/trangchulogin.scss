@@ -136,3 +136,19 @@
   .fbx .regfrm {
     
     width: 310px; } }
+#login-page.nhatuyendung-login {
+  .table-container{
+    width: 880px;
+    margin: 9px 10px 9px 30px;
+    .btn {
+      input {
+        text-shadow: 0px 1px #3C3C3C;
+        border-color: #202020;
+        background: #525252;
+        background: -moz-linear-gradient(top, #9F9F9F 1px, #6C6C6C 1px, #525252);
+        background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #9F9F9F), color-stop(0.02, #6C6C6C), color-stop(1, #525252));
+
+      }
+    }
+  }
+}
